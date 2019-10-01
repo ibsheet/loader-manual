@@ -1,0 +1,25 @@
+{
+  "name": "ib-sheet-loader-manual",
+  "version": "0.0.0",
+  "description": "@ibsheet/loader manual",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "standard-version"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ibsheet/loader-manual.git"
+  },
+  "author": "Euiyeon Kim <ppang327@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ibsheet/loader-manual/issues"
+  },
+  "homepage": "https://github.com/ibsheet/loader-manual#readme",
+  "devDependencies": {
+    "standard-version": "^7.0.0"
+  }
+}

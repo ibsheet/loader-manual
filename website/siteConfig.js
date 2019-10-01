@@ -14,15 +14,15 @@ const users = [
     caption: 'ibsheet',
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/image.jpg'.
-    image: '/img/undraw_open_source.svg',
-    infoLink: 'https://ibsheet.com',
+    image: '/loader-manual/img/ibsheet7.svg',
+    infoLink: 'https://www.ibsheet.com',
     pinned: true
   }
 ]
 
 const siteConfig = {
-  title: '@ibsheet/loader', // Title for your website.
-  tagline: 'ibsheet grid javascript library',
+  title: 'IBSheetLoader', // Title for your website.
+  tagline: '@ibsheet/loader documents',
   // url: 'https://your-docusaurus-test-site.com', // Your website URL
   // baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
@@ -73,7 +73,7 @@ const siteConfig = {
   */
 
   // This copyright info is used in /core/Footer.js and blog RSS/Atom feeds.
-  copyright: `Copyright © ${new Date().getFullYear()} Your Name or Your Company Name`,
+  copyright: `Copyright © ${new Date().getFullYear()} IB Leaders`,
 
   highlight: {
     // Highlight.js theme to use for syntax highlighting in code blocks.
