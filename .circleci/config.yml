@@ -20,10 +20,10 @@ jobs:
       - run:
           name: Deploying to GitHub Pages
           command: |
-            git config --global user.email "$GITHUB_EMAIL@users.noreply.github.com"
-            git config --global user.name "$GITHUB_NAME"
-            echo "machine github.com login $GITHUB_EMAIL password $GITHUB_TOKEN" > ~/.netrc
-            cd website && yarn install && GIT_USER=$GITHUB_EMAIL yarn run publish-gh-pages
+            git config --global user.email "$GITHUB_USERNAME@users.noreply.github.com"
+            git config --global user.name "$AUTHOR_NAME"
+            echo "machine github.com login $GITHUB_USERNAME password $GITHUB_TOKEN" > ~/.netrc
+            cd website && yarn install && GIT_USER=$GITHUB_USERNAME yarn run publish-gh-pages
 
 workflows:
   version: 2
