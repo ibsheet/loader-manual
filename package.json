@@ -1,6 +1,6 @@
 {
   "name": "ibsheet-loader-manual",
-  "version": "0.0.0",
+  "version": "0.0.1-alpha",
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
@@ -30,6 +30,7 @@
     ]
   },
   "devDependencies": {
+    "dotenv": "^8.1.0",
     "standard-version": "^7.0.0"
   }
 }

@@ -4,18 +4,17 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-
 module.exports = {
-  title: 'My Site',
+  title: 'IBSheetLoader',
   tagline: 'The tagline of my site',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://ibsheet.github.io/loader-manual',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'ibsheet', // Usually your GitHub org/user name.
+  projectName: 'loader-manual', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'My Site',
+      title: 'IBSheetLoader',
       logo: {
         alt: 'My Site Logo',
         src: 'img/logo.svg'
@@ -24,7 +23,7 @@ module.exports = {
         { to: 'docs/doc1', label: 'Docs', position: 'left' },
         { to: 'blog', label: 'Blog', position: 'left' },
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://ibsheet.github.io/loader-manual',
           label: 'GitHub',
           position: 'right'
         }
