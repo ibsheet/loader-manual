@@ -5,7 +5,7 @@ const navbar = {
   title: 'IBSheetLoader',
   logo: {
     alt: 'ibsheet-loader',
-    src: 'img/logo/ibsheet-loader-x32.png'
+    src: 'img/logo/ibsheet-loader.jpg'
   },
   links: [
     { to: 'docs/doc1', label: 'Docs', position: 'left' },
