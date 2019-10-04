@@ -21,3 +21,8 @@
   --ifm-color-primary-lighter: rgb(102, 212, 189);
   --ifm-color-primary-lightest: rgb(146, 224, 208);
 }
+
+.navbar__logo {
+  width: 32px;
+  height: 32px;
+}

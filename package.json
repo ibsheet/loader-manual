@@ -7,7 +7,7 @@
     "start": "docusaurus start",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
-    "deploy": "docusaurus deploy",
+    "deploy": "GIT_USER=euiyeon USE_SSH=true docusaurus deploy",
     "version": "standard-version"
   },
   "dependencies": {
@@ -30,6 +30,8 @@
     ]
   },
   "devDependencies": {
+    "@docusaurus/plugin-content-blog": "^2.0.0-alpha.23",
+    "@docusaurus/plugin-content-pages": "^2.0.0-alpha.23",
     "dotenv": "^8.1.0",
     "standard-version": "^7.0.0"
   }
