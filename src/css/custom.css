@@ -27,3 +27,12 @@
   height: 32px;
   border-radius: .25rem;
 }
+
+/* nav.navbar .navbar__items a.navbar__item.navbar__link[href*=github]:before {
+  content: "";
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background-image: url('/loader-manual/img/brands/github-brands-black.svg');
+} */
+

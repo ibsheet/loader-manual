@@ -35,7 +35,7 @@ function Home () {
               )}
               to={withBaseUrl('docs/basic/getting-started')}
             >
-              Getting Started
+              GET STARTED
             </Link>
           </div>
         </div>

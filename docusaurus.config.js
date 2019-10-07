@@ -8,11 +8,16 @@ const navbar = {
     src: 'img/logo/ibsheet-loader.jpg'
   },
   links: [
-    { to: 'docs/basic/getting-started', label: 'Docs', position: 'left' },
-    { to: 'blog', label: 'Blog', position: 'left' },
+    {
+      label: 'Getting Started',
+      to: 'docs/basic/getting-started',
+      position: 'right'
+    },
+    { to: 'blog', label: 'Blog', position: 'right' },
     {
       href: 'https://www.github.com/ibsheet/loader-manual',
       label: 'GitHub',
+      target: '_blank',
       position: 'right'
     }
   ]
@@ -102,7 +107,7 @@ const presets = [
 
 module.exports = {
   title: 'IBSheetLoader',
-  tagline: 'Dynamically load support module for IBSheet',
+  tagline: 'Dynamically load support module for IBSheet.',
   url: 'https://ibsheet.github.io/loader-manual',
   baseUrl,
   favicon: 'img/favicon.ico',
