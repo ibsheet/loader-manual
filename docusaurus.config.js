@@ -1,83 +1,119 @@
-/**
- * Copyright (c) 2017-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
+const { resolve } = require('path')
+const { baseUrl } = require('./config/site')
+
+const navbar = {
+  title: 'IBSheetLoader',
+  logo: {
+    alt: 'ibsheet-loader',
+    src: 'img/logo/ibsheet-loader.jpg'
+  },
+  links: [
+    { to: 'docs/basic/getting-started', label: 'Docs', position: 'left' },
+    { to: 'blog', label: 'Blog', position: 'left' },
+    {
+      href: 'https://www.github.com/ibsheet/loader-manual',
+      label: 'GitHub',
+      position: 'right'
+    }
+  ]
+}
+
+const footer = {
+  style: 'dark',
+  links: [
+    {
+      title: 'Docs',
+      items: [
+        {
+          label: 'Getting Started',
+          to: 'docs/basic/getting-started'
+        },
+        {
+          label: 'Create Sheet',
+          to: 'docs/ibsheet/create-sheet'
+        },
+        {
+          label: 'API Reference',
+          to: 'https://ibsheet.github.io/loader/',
+          target: '_blank'
+        }
+      ]
+    },
+    {
+      title: 'Community',
+      items: [
+        {
+          label: 'GitHub Issues',
+          href: 'https://github.com/ibsheet/loader/issues',
+          target: '_blank'
+        },
+        {
+          label: 'Discord',
+          href: 'https://discordapp.com/invite/H2wyHXb'
+        }
+      ]
+    },
+    {
+      title: 'Social',
+      items: [
+        {
+          label: 'GitHub @ibsheet/loader',
+          to: 'https://github.com/ibsheet/loader',
+          target: '_blank'
+        },
+        {
+          label: 'Blog',
+          to: 'blog'
+        }
+      ]
+    },
+    {
+      title: 'Links',
+      items: [
+        {
+          label: 'npm @ibsheet/loader',
+          to: 'https://www.npmjs.com/package/@ibsheet/loader',
+          target: '_blank'
+        }
+      ]
+    }
+  ],
+  logo: {
+    alt: 'IB Leaders',
+    // src: 'img/logo/ibleaders-245x58-2.png'
+    src: 'img/logo/ibleaders-ci.svg'
+  },
+  copyright: `©${new Date().getFullYear()} IBSheet Team`
+}
+
+const presets = [
+  [
+    '@docusaurus/preset-classic',
+    {
+      docs: {
+        sidebarPath: require.resolve('./sidebars.js')
+      },
+      theme: {
+        customCss: require.resolve('./src/css/custom.css')
+      }
+    }
+  ]
+]
+
 module.exports = {
   title: 'IBSheetLoader',
-  tagline: 'The tagline of my site',
+  tagline: 'Dynamically load support module for IBSheet',
   url: 'https://ibsheet.github.io/loader-manual',
-  baseUrl: '/',
+  baseUrl,
   favicon: 'img/favicon.ico',
   organizationName: 'ibsheet', // Usually your GitHub org/user name.
   projectName: 'loader-manual', // Usually your repo name.
   themeConfig: {
-    navbar: {
-      title: 'IBSheetLoader',
-      logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg'
-      },
-      links: [
-        { to: 'docs/doc1', label: 'Docs', position: 'left' },
-        { to: 'blog', label: 'Blog', position: 'left' },
-        {
-          href: 'https://ibsheet.github.io/loader-manual',
-          label: 'GitHub',
-          position: 'right'
-        }
-      ]
-    },
-    footer: {
-      style: 'dark',
-      links: [
-        {
-          title: 'Docs',
-          items: [
-            {
-              label: 'Docs',
-              to: 'docs/doc1'
-            }
-          ]
-        },
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus'
-            }
-          ]
-        },
-        {
-          title: 'Social',
-          items: [
-            {
-              label: 'Blog',
-              to: 'blog'
-            }
-          ]
-        }
-      ],
-      logo: {
-        alt: 'Facebook Open Source Logo',
-        src: 'https://docusaurus.io/img/oss_logo.png'
-      },
-      copyright: `Copyright © ${new Date().getFullYear()} Facebook, Inc. Built with Docusaurus.`
-    }
+    navbar,
+    footer
   },
-  presets: [
-    [
-      '@docusaurus/preset-classic',
-      {
-        docs: {
-          sidebarPath: require.resolve('./sidebars.js')
-        },
-        theme: {
-          customCss: require.resolve('./src/css/custom.css')
-        }
-      }
-    ]
+  presets,
+  plugins: [
+    resolve('./plugins/custom-watch-plugin')
   ]
 }

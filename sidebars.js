@@ -1,13 +1,32 @@
-/**
- * Copyright (c) 2017-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
 module.exports = {
   docs: {
-    Docusaurus: ['doc1', 'doc2', 'doc3'],
-    Features: ['mdx']
+    Basic: [
+      'basic/getting-started',
+      'basic/configuration',
+      'basic/registry',
+      'basic/load',
+      'basic/unload',
+      'basic/events'
+    ],
+    IBSheet: [
+      'ibsheet/create-sheet',
+      'ibsheet/remove-sheet'
+    ],
+    // Advanced: [],
+    SPA: [
+      'spa/vue',
+      'spa/react',
+      'spa/angular'
+    ],
+    Appendix: [
+      'appendix/external-lib',
+      'appendix/trouble-shooting'
+    ]
+    // Samples: [
+    //   'samples/md-sample-1',
+    //   'samples/md-sample-2',
+    //   'samples/md-sample-3',
+    //   'samples/mdx'
+    // ]
   }
 }
