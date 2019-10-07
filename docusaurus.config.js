@@ -8,7 +8,7 @@ const navbar = {
     src: 'img/logo/ibsheet-loader.jpg'
   },
   links: [
-    { to: 'docs/doc1', label: 'Docs', position: 'left' },
+    { to: 'docs/basic/getting-started', label: 'Docs', position: 'left' },
     { to: 'blog', label: 'Blog', position: 'left' },
     {
       href: 'https://www.github.com/ibsheet/loader-manual',
@@ -26,13 +26,27 @@ const footer = {
       items: [
         {
           label: 'Getting Started',
-          to: 'docs/doc1'
+          to: 'docs/basic/getting-started'
+        },
+        {
+          label: 'Create Sheet',
+          to: 'docs/ibsheet/create-sheet'
+        },
+        {
+          label: 'API Reference',
+          to: 'https://ibsheet.github.io/loader/',
+          target: '_blank'
         }
       ]
     },
     {
       title: 'Community',
       items: [
+        {
+          label: 'GitHub Issues',
+          href: 'https://github.com/ibsheet/loader/issues',
+          target: '_blank'
+        },
         {
           label: 'Discord',
           href: 'https://discordapp.com/invite/H2wyHXb'
@@ -43,17 +57,33 @@ const footer = {
       title: 'Social',
       items: [
         {
+          label: 'GitHub @ibsheet/loader',
+          to: 'https://github.com/ibsheet/loader',
+          target: '_blank'
+        },
+        {
           label: 'Blog',
           to: 'blog'
+        }
+      ]
+    },
+    {
+      title: 'Links',
+      items: [
+        {
+          label: 'npm @ibsheet/loader',
+          to: 'https://www.npmjs.com/package/@ibsheet/loader',
+          target: '_blank'
         }
       ]
     }
   ],
   logo: {
     alt: 'IB Leaders',
-    src: 'img/logo/ibleaders-245x58-2.png'
+    // src: 'img/logo/ibleaders-245x58-2.png'
+    src: 'img/logo/ibleaders-ci.svg'
   },
-  copyright: `Copyright © ${new Date().getFullYear()} IB Leaders`
+  copyright: `©${new Date().getFullYear()} IBSheet Team`
 }
 
 const presets = [
@@ -70,12 +100,6 @@ const presets = [
   ]
 ]
 
-/**
- * Copyright (c) 2017-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
 module.exports = {
   title: 'IBSheetLoader',
   tagline: 'Dynamically load support module for IBSheet',

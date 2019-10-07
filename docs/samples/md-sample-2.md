@@ -1,5 +1,5 @@
 ---
-id: doc2
+id: md-sample-2
 title: Document Number 2
 ---
 

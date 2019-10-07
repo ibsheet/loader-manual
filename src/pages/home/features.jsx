@@ -9,32 +9,30 @@ const { Component } = React
 
 const features = [
   {
-    title: <>Easy to Use</>,
-    imageUrl: 'img/undraw_docusaurus_mountain.svg',
+    title: <>JavaScript Modules</>,
+    imageUrl: 'img/features/es6-es8-x512.jpg',
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        UMD, CommonJS, ESModule 형식을 모두 지원합니다.
       </>
     )
   },
   {
-    title: <>Focus on What Matters</>,
-    imageUrl: 'img/undraw_docusaurus_tree.svg',
+    title: <>Browser</>,
+    imageUrl: 'img/features/browsers-1024x1024.png',
+    // imageUrl: 'img/features/intro-web-browsers.jpg',
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        웹브라우저 환경에서도 쉽게 적용할 수 있습니다.
       </>
     )
   },
   {
-    title: <>Powered by React</>,
-    imageUrl: 'img/undraw_docusaurus_react.svg',
+    title: <>SPA Component <small className='text--info'><i>(comming soon)</i></small></>,
+    imageUrl: 'img/features/undraw_JavaScript_frameworks_8qpc.svg',
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Angular, React, Vue Framework 전용 컴포넌트를 제공합니다.
       </>
     )
   }
