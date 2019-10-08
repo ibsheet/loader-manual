@@ -38,6 +38,7 @@ $ yarn add @ibsheet/loader
 var loader = window.IBSheetLoader
 ```
 
+---
 ### CommonJS usage
 
 ```js
@@ -50,6 +51,7 @@ or
 const { IBSheetLoader: loader } = require('@ibsheet/loader')
 ```
 
+---
 ### ESModule, TypeScript usage
 
 ```ts
