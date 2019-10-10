@@ -28,11 +28,18 @@
   border-radius: .25rem;
 }
 
-/* nav.navbar .navbar__items a.navbar__item.navbar__link[href*=github]:before {
-  content: "";
-  display: inline-block;
-  width: 32px;
-  height: 32px;
-  background-image: url('/loader-manual/img/brands/github-brands-black.svg');
-} */
-
+/**
+ * Font Awesome 5 Free
+ * Font Awesome 5 Brands
+ * font-weight: 900 - regular, brands
+ * font-weight: 400 - solid
+ */
+ nav.navbar .navbar__items a.navbar__item.navbar__link[href*=github] {
+   padding: 0 1rem;
+ }
+nav.navbar .navbar__items a.navbar__item.navbar__link[href*=github]:before {
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 400;
+  content: "\f09b";
+  font-size: 1.8rem;
+}

@@ -16,7 +16,7 @@ const navbar = {
     { to: 'blog', label: 'Blog', position: 'right' },
     {
       href: 'https://www.github.com/ibsheet/loader-manual',
-      label: 'GitHub',
+      // label: 'GitHub',
       target: '_blank',
       position: 'right'
     }
