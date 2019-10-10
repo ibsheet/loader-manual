@@ -6,40 +6,26 @@
  */
 
 import React from 'react'
-import classnames from 'classnames'
 import Layout from '@theme/Layout'
-import Link from '@docusaurus/Link'
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
-import withBaseUrl from '@docusaurus/withBaseUrl'
+import Helmet from '@docusaurus/Head'
 
 import styles from './styles.module.css'
-import { Features } from './home'
+import { Features, Header } from './home'
 
 function Home () {
   const context = useDocusaurusContext()
   const { siteConfig = {} } = context
+  const { title, tagline } = siteConfig
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}
       description='Description will go into a meta tag in <head />'
     >
-      <header className={classnames('hero hero--primary', styles.heroBanner)}>
-        <div className='container'>
-          <h1 className='hero__title'>{siteConfig.title}</h1>
-          <p className='hero__subtitle'>{siteConfig.tagline}</p>
-          <div className={styles.buttons}>
-            <Link
-              className={classnames(
-                'button button--secondary button--lg',
-                styles.getStarted
-              )}
-              to={withBaseUrl('docs/basic/getting-started')}
-            >
-              Getting Started
-            </Link>
-          </div>
-        </div>
-      </header>
+      <Helmet>
+        <link rel='stylesheet' type="text/css" href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css' />
+      </Helmet>
+      <Header title={title} tagline={tagline} />
       <main>
         <Features />
       </main>

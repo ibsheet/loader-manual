@@ -38,7 +38,17 @@
 }
 
 .featureImage {
-  height: 200px;
+  height: 170px;
   /* max-width: 280px; */
   margin-bottom: 1rem;
+}
+
+.getStarted {
+  font-size: 1.5rem;
+  color: royalblue !important;
+}
+
+.getStarted:hover {
+  color: #111 !important;
+  background-color: white !important;
 }

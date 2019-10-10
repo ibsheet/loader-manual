@@ -1,16 +1,12 @@
 import React from 'react'
 import classnames from 'classnames'
-
 import { withBaseUrl } from '../../shared'
-
 import styles from '../styles.module.css'
-
-const { Component } = React
 
 const features = [
   {
     title: <>JavaScript Modules</>,
-    imageUrl: 'img/features/es6-es8-x512.jpg',
+    imageUrl: 'img/features/icons8-module-1.png',
     description: (
       <>
         UMD, CommonJS, ESModule 형식을 모두 지원합니다.
@@ -20,7 +16,6 @@ const features = [
   {
     title: <>Browser</>,
     imageUrl: 'img/features/browsers-1024x1024.png',
-    // imageUrl: 'img/features/intro-web-browsers.jpg',
     description: (
       <>
         웹브라우저 환경에서도 쉽게 적용할 수 있습니다.
@@ -29,7 +24,8 @@ const features = [
   },
   {
     title: <>SPA Component <small className='text--info'><i>(comming soon)</i></small></>,
-    imageUrl: 'img/features/undraw_JavaScript_frameworks_8qpc.svg',
+    // imageUrl: 'img/features/undraw_JavaScript_frameworks_8qpc.svg',
+    imageUrl: 'img/features/1_7zccGWE4o5LmxegijjK_xQ.png',
     description: (
       <>
         Angular, React, Vue Framework 전용 컴포넌트를 제공합니다.
@@ -38,7 +34,7 @@ const features = [
   }
 ]
 
-class Features extends Component {
+class Features extends React.Component {
   constructor (props) {
     super(props)
     return this
@@ -78,12 +74,5 @@ class Features extends Component {
   }
 }
 
-// function Welcome (props) {
-//   return <h1>Hello, {props.name}</h1>;
-// }
-
-export {
-  // Welcome,
-  Features
-}
+export { Features}
 export default Features
