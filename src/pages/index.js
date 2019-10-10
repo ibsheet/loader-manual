@@ -9,9 +9,8 @@ import React from 'react'
 import Layout from '@theme/Layout'
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
 import Helmet from '@docusaurus/Head'
-
-import styles from './styles.module.css'
-import { Features, Header } from './home'
+import Header from './home/header'
+import Features from './home/features'
 
 function Home () {
   const context = useDocusaurusContext()
