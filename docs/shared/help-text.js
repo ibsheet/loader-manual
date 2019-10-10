@@ -2,9 +2,8 @@ import React from 'react'
 import get from 'lodash/get'
 
 const DEFAULT_COLOR = '#787878'
-const DEFAULT_BGCOLOR = '#FEFC79'
 
-export class Highlight extends React.Component {
+export class HelpText extends React.Component {
   constructor (props) {
     super(props)
     return this
@@ -12,14 +11,14 @@ export class Highlight extends React.Component {
 
   render () {
     const color = get(this.props, 'color', DEFAULT_COLOR)
-    const bgColor = get(this.props, 'bgColor', DEFAULT_BGCOLOR)
     const children = this.props.children
     return (
       <span
         style={{
           color,
-          backgroundColor: bgColor
-          // fontWeight: 'bolder'
+          fontStyle: 'italic',
+          fontSize: '.9em',
+          padding: '0.2rem'
         }}
       >
         {children}
