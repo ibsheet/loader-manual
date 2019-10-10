@@ -74,5 +74,4 @@ class Features extends React.Component {
   }
 }
 
-export { Features}
 export default Features
