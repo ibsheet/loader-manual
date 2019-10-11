@@ -1,0 +1,67 @@
+@startuml loadflow
+(*) --> "load(args: any)"
+if "args type?" then
+  --> "data: object"
+  --> [data parsing] ===REGISTER_ITEM===
+else
+  --> "URL: string"
+  --> [casting data] ===REGISTER_ITEM===
+  if "exists item?" then
+    --> [YES] "update item"
+    --> [get alias] ===ADD_LOAD_TASK===
+  else
+    -left-> [NO] "registry.add(data)"
+    --> [get alias] ===ADD_LOAD_TASK===
+  endif
+  
+else
+  --> "alias: string"
+  if "exists alias?" then
+    -right-> [YES] ===ADD_LOAD_TASK===
+    --> "LoadTaskMan.add(job)"
+    -right-> ===TEST_IBSHEET_LOADED===
+  else
+    --> [NO] ===WARNING===
+    --> "LOAD_WARNING"
+    --> [Ending process] (*)
+  endif
+else
+  --> "undefined"
+  --> ===TEST_IBSHEET_LOADED===
+  --> "check ibsheet\n(default library)"
+  note left: 다른 라이브러리를 로드하더라도\nibsheet 라이브러리 또한 로드
+  if "ibsheet loaded?" then
+    -left-> [NO] "LoadTaskMan.add('ibsheet')"
+    --> ===CHECK_START_TASKS===
+    if "tasks.length" then
+      --> [ONE MORE] ===START_LOAD_TASKS===
+      --> "asyncLoadTasks()"
+      note right: script or link element \nappend to body or head
+      if "create elements" then
+        --> [SUCCESS] ===VALIDATE_TEST===
+        --> "test validate"
+        if "pass?" then
+          --> [YES] ===SUCCESS_LOAD_TASK===
+          --> "LOADED"
+          --> [Ending process] (*)
+        else
+          if "retry?" then
+          ' note left: max >= count
+            --> [YES] ===VALIDATE_TEST===
+          else
+            -right-> [NO] ===FAILED_LOAD_TASK===
+          endif
+        endif
+      else
+        --> [ERROR] ===FAILED_LOAD_TASK===
+        --> "LOAD_FAILED"
+        --> [Ending process] (*)
+      endif
+    else
+      -right-> [EMPTY] ===WARNING===
+    endif
+  else
+    --> [YES] ===CHECK_START_TASKS===
+  endif
+endif
+@enduml

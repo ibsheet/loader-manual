@@ -4,6 +4,7 @@ title: Load
 sidebar_label: 스크립트 불러오기
 ---
 
-import { HelpText } from '../shared'
+## Dynamically Load Flow
 
-<HelpText>** 가이드 추가예정</HelpText>
+![load-flow](/loader-manual/img/uml/load-flow-191011-2.png)
+

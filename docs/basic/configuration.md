@@ -4,11 +4,11 @@ title: Configuration
 sidebar_label: 설정하기
 ---
 
-## Usage
+## 환경설정
 
-`IBSheetLoader`를 본격적으로 사용하기 전에 `config`기능을 통해 기본 설정을 변경하거나 추가 할 수 있습니다.
+[`load`]('./load')기능을 사용하기 전에 `config`기능을 통해 기본 설정을 변경하거나 추가 할 수 있습니다.
 
-## Interfaces
+## 인터페이스
 
 ```ts
 interface IBSheetLoader extends EventEmitter {

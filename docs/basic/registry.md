@@ -6,9 +6,11 @@ sidebar_label: 스크립트 등록하기
 
 import { Highlight, Badge, BadgeGroup } from '../shared'
 
-## Usage
+## LoaderRegistry?
 
-로더의 레지스트리에 아이템(라이브러리)을 추가하는 방법은 세 가지가 있습니다.
+`LoaderRegistry`는 [`load`]('./load') 기능을 보다 수월하게 사용하기 위해 미리 사용할 라이브러리들을 등록해 놓을 수 있는 저장소입니다.
+
+이 레지스트리에 아이템(라이브러리)을 추가하는 방법은 세 가지가 있습니다.
 
 * 이전단계의 [`config`](./configuration#loaderconfigoptions) 옵션에 추가
 * [`registry.add`](#add) 기능을 사용
@@ -16,7 +18,7 @@ import { Highlight, Badge, BadgeGroup } from '../shared'
 
 > <Highlight color="#555">이하 문서에서 "regsitry"에 추가할 또는 추가된 라이브러리(스크립트) 객체는 "<b>아이템</b>"이라고 일컫습니다.</Highlight>
 
-## Interfaces
+## 인터페이스
 
 ### CustomEventEmitter
 
@@ -45,7 +47,7 @@ abstract class IBSheetLoader extends CustomEventEmitter {
 }
 ```
 
-* class extends [`EventEmitter`](https://nodejs.org/api/events.html#events_class_eventemitter)
+* class extends [`CustomEventEmitter`](#customeventemitter)
 
 ### LoaderRegistry
 
@@ -58,7 +60,7 @@ abstract class LoaderRegistry extends CustomEventEmitter {
 }
 ```
 
-* class extends [`EventEmitter`](https://nodejs.org/api/events.html#events_class_eventemitter)
+* class extends [`CustomEventEmitter`](#customeventemitter)
 
 ### RegistryItem
 
@@ -75,7 +77,7 @@ abstract class RegistryItem extends CustomEventEmitter {
 }
 ```
 
-* class extends [`EventEmitter`](https://nodejs.org/api/events.html#events_class_eventemitter)
+* class extends [`CustomEventEmitter`](#customeventemitter)
 * `name`: `string` - 아이템 식별자(`name`), 유일하지만 여러개의 버전을 가질 수 있음
 * `version`: `string` - 아이템의 버전
 * `alias`: `string` - 식별자(`name`)와 버전`version`의 조합 문자열(`name@version`), 버전이 없다면 식별자와 동일
@@ -95,7 +97,7 @@ abstract class RegistryItem extends CustomEventEmitter {
 * `dependentUrls` - 함께 제거시킬 URL 목록([`unload`](./unload)시 사용)
 * `validate`: `() => boolean` - 스크립트 추가 후 검증 로직
 
-## Functions
+## 주요 기능
 
 ### add
 <BadgeGroup><Badge class="since">1.0.0</Badge></BadgeGroup>
