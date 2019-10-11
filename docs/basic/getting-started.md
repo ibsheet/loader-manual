@@ -45,7 +45,7 @@ var loader = window.IBSheetLoader
 const loader = require('@ibsheet/loader')
 ```
 
-or 
+또는
 
 ```js
 const { IBSheetLoader: loader } = require('@ibsheet/loader')
@@ -58,7 +58,7 @@ const { IBSheetLoader: loader } = require('@ibsheet/loader')
 import loader from '@ibsheet/loader'
 ```
 
-or
+또는
 
 ```ts
 import { IBSheetLoader as loader } from '@ibsheet/loader'

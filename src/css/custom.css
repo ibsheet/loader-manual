@@ -37,20 +37,40 @@
  * font-weight: 900 - regular, brands
  * font-weight: 400 - solid
  */
- nav.navbar .navbar__items a.navbar__item.navbar__link[href*=github] {
+ NAV.navbar .navbar__items a.navbar__item.navbar__link[href*=github] {
    padding: 0 1rem;
  }
-nav.navbar .navbar__items a.navbar__item.navbar__link[href*=github]:before {
-  font-family: "Font Awesome 5 Brands";
+NAV.navbar .navbar__items a.navbar__item.navbar__link[href*=github]:before {
+  font-family: 'Font Awesome 5 Brands';
   font-weight: 400;
-  content: "\f09b";
+  content: '\f09b';
   font-size: 1.8rem;
 }
 
 
-h3 + span.badge {
-  display: block;
-  float: right;
+/* badges */
+H3 + .badge-group,
+H3 + .badge {
   margin-top: -2.2rem;
+  float: right;
+}
+
+H3 + .badge {
+  display: block;
+}
+
+.badge-group .badge + .badge{
+  margin-left: .25rem;
+}
+
+H3 + .badge-group .badge,
+H3 + .badge {
   font-size: .7rem;
+}
+
+.badge.since:before {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: '\f126';
+  margin-right: .25rem;
 }
