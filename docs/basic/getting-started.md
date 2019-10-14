@@ -6,9 +6,9 @@ sidebar_label: 시작하기
 
 <!-- import { HelpText } from '../shared' -->
 
-## 소개
+## IBSheetLoader?
 
-`IBSheetLoader`는 [IBSheet](https://www.ibsheet.com) 라이브러리를 웹페이지상에서 동적으로 로드하는데 사용하는 라이브러리입니다.
+`IBSheetLoader`는 [IBSheet](https://www.ibsheet.com) 스크립트를 웹페이지상에서 동적으로 로드하는데 사용하는 라이브러리입니다.
 
 ## 설치하기
 
@@ -45,7 +45,7 @@ var loader = window.IBSheetLoader
 const loader = require('@ibsheet/loader')
 ```
 
-or 
+또는
 
 ```js
 const { IBSheetLoader: loader } = require('@ibsheet/loader')
@@ -58,7 +58,7 @@ const { IBSheetLoader: loader } = require('@ibsheet/loader')
 import loader from '@ibsheet/loader'
 ```
 
-or
+또는
 
 ```ts
 import { IBSheetLoader as loader } from '@ibsheet/loader'

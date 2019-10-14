@@ -8,9 +8,13 @@
 import React from 'react'
 import Layout from '@theme/Layout'
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
-import Helmet from '@docusaurus/Head'
 import Header from './home/header'
 import Features from './home/features'
+
+// import Helmet from '@docusaurus/Head'
+// <Helmet>
+//   <link rel='stylesheet' type="text/css" href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css' />
+// </Helmet>
 
 function Home () {
   const context = useDocusaurusContext()
@@ -21,9 +25,6 @@ function Home () {
       title={`Hello from ${siteConfig.title}`}
       description='Description will go into a meta tag in <head />'
     >
-      <Helmet>
-        <link rel='stylesheet' type="text/css" href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css' />
-      </Helmet>
       <Header title={title} tagline={tagline} />
       <main>
         <Features />
