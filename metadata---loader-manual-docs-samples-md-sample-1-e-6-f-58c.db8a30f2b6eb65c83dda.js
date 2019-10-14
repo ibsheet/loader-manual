@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[53],{58:function(e){e.exports=JSON.parse('{"id":"samples/md-sample-1","title":"Markdown Guide","description":"You can write content using [GitHub-flavored Markdown syntax](https://github.github.com/gfm/).","source":"/home/circleci/project/docs/samples/md-sample-1.md","permalink":"/loader-manual/docs/samples/md-sample-1"}')}}]);

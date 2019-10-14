@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[56],{64:function(e){e.exports=JSON.parse('{"id":"samples/mdx","title":"Powered by MDX","description":"You can write JSX and use React components within your Markdown thanks to [MDX](https://mdxjs.com/).","source":"/home/circleci/project/docs/samples/mdx.md","permalink":"/loader-manual/docs/samples/mdx"}')}}]);
