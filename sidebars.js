@@ -19,6 +19,7 @@ module.exports = {
       'spa/angular'
     ],
     Appendix: [
+      'appendix/load-flow',
       'appendix/external-lib',
       'appendix/trouble-shooting'
     ]

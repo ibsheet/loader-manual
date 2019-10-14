@@ -29,7 +29,7 @@ else
   --> "undefined"
   --> ===TEST_IBSHEET_LOADED===
   --> "check ibsheet\n(default library)"
-  note left: 다른 라이브러리를 로드하더라도\nibsheet 라이브러리 또한 로드
+  note left: ibsheet 라이브러리가 로드되어있지 않으면,\n다른 라이브러리를 로드할 때 함께 로드
   if "ibsheet loaded?" then
     -left-> [NO] "LoadTaskMan.add('ibsheet')"
     --> ===CHECK_START_TASKS===
