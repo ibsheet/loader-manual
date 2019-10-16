@@ -1,7 +1,7 @@
 {
   "main": [
-    "/loader-manual/main.de62f8fa76bdf8a84ad0.css",
-    "/loader-manual/main.de62f8fa76bdf8a84ad0.js"
+    "/loader-manual/main.a51169e99a30c371b85f.css",
+    "/loader-manual/main.a51169e99a30c371b85f.js"
   ],
   "component---theme-blog-post-pageccc-cab": [
     "/loader-manual/component---theme-blog-post-pageccc-cab.b2e9e3cdd9ebf626f7b0.js"
@@ -47,7 +47,7 @@
     "/loader-manual/component---theme-doc-legacy-page-9-e-7-ca5.59c0dcc849d3784973bc.js"
   ],
   "docsMetadata---loader-manual-docs-7-e-5-bfb": [
-    "/loader-manual/docsMetadata---loader-manual-docs-7-e-5-bfb.9ea935d2e3aa20d8f82b.js"
+    "/loader-manual/docsMetadata---loader-manual-docs-7-e-5-bfb.eaff6cdac9fea28bd8a2.js"
   ],
   "component---theme-doc-legacy-item-031-769": [
     "/loader-manual/component---theme-doc-legacy-item-031-769.4feeacf058ccd50f38d7.css",
@@ -77,41 +77,41 @@
   "metadata---loader-manual-docs-basic-configuration-36-d-640": [
     "/loader-manual/metadata---loader-manual-docs-basic-configuration-36-d-640.8a11d499a8cc4a99c31d.js"
   ],
-  "content---loader-manual-docs-basic-events-816-3b5": [
-    "/loader-manual/content---loader-manual-docs-basic-events-816-3b5.c324e34a8f3987bce0a8.js"
-  ],
-  "metadata---loader-manual-docs-basic-eventsca-3-4c5": [
-    "/loader-manual/metadata---loader-manual-docs-basic-eventsca-3-4c5.c27e13aed7e1fdc4a442.js"
-  ],
   "content---loader-manual-docs-basic-getting-started-406-fea": [
-    "/loader-manual/content---loader-manual-docs-basic-getting-started-406-fea.ea9c6603bd195bd30fd4.js"
+    "/loader-manual/content---loader-manual-docs-basic-getting-started-406-fea.7c37e5063caff8413229.js"
   ],
   "metadata---loader-manual-docs-basic-getting-startedc-3-b-756": [
-    "/loader-manual/metadata---loader-manual-docs-basic-getting-startedc-3-b-756.fbd75d3cc73cffeeeb12.js"
-  ],
-  "content---loader-manual-docs-basic-registry-13-f-db1": [
-    "/loader-manual/content---loader-manual-docs-basic-registry-13-f-db1.ffd0ea0109e4821c90f0.js"
-  ],
-  "metadata---loader-manual-docs-basic-registry-825-225": [
-    "/loader-manual/metadata---loader-manual-docs-basic-registry-825-225.740d7c6a87d7082aaa43.js"
+    "/loader-manual/metadata---loader-manual-docs-basic-getting-startedc-3-b-756.36ce88637b8a351c2737.js"
   ],
   "content---loader-manual-docs-basic-load-76-a-7cc": [
-    "/loader-manual/content---loader-manual-docs-basic-load-76-a-7cc.c5ade4c3277adb08edab.js"
+    "/loader-manual/content---loader-manual-docs-basic-load-76-a-7cc.8224754bf37b547733fd.js"
   ],
   "metadata---loader-manual-docs-basic-load-126-665": [
-    "/loader-manual/metadata---loader-manual-docs-basic-load-126-665.2398591ba90788e9df6d.js"
-  ],
-  "content---loader-manual-docs-ibsheet-create-sheet-1-ca-46f": [
-    "/loader-manual/content---loader-manual-docs-ibsheet-create-sheet-1-ca-46f.f4df8b7eabbfaedce3b4.js"
-  ],
-  "metadata---loader-manual-docs-ibsheet-create-sheet-3-fc-fbc": [
-    "/loader-manual/metadata---loader-manual-docs-ibsheet-create-sheet-3-fc-fbc.8886d2cbbf663c614a25.js"
+    "/loader-manual/metadata---loader-manual-docs-basic-load-126-665.4bc3e961efce11df0818.js"
   ],
   "content---loader-manual-docs-basic-unload-009-95b": [
-    "/loader-manual/content---loader-manual-docs-basic-unload-009-95b.a9a21d5aa0da980c2cb4.js"
+    "/loader-manual/content---loader-manual-docs-basic-unload-009-95b.ea152e00a35a102dadd1.js"
   ],
   "metadata---loader-manual-docs-basic-unloaddc-1-36a": [
-    "/loader-manual/metadata---loader-manual-docs-basic-unloaddc-1-36a.0b77c0956ff408d11159.js"
+    "/loader-manual/metadata---loader-manual-docs-basic-unloaddc-1-36a.bd0a9748e794c688dd48.js"
+  ],
+  "content---loader-manual-docs-basic-registry-13-f-db1": [
+    "/loader-manual/content---loader-manual-docs-basic-registry-13-f-db1.f3cfef8c1424860ef09f.js"
+  ],
+  "metadata---loader-manual-docs-basic-registry-825-225": [
+    "/loader-manual/metadata---loader-manual-docs-basic-registry-825-225.914a0cc7d019d200b9f2.js"
+  ],
+  "content---loader-manual-docs-basic-events-816-3b5": [
+    "/loader-manual/content---loader-manual-docs-basic-events-816-3b5.6e305deb43268d11ff69.js"
+  ],
+  "metadata---loader-manual-docs-basic-eventsca-3-4c5": [
+    "/loader-manual/metadata---loader-manual-docs-basic-eventsca-3-4c5.69f667cf22f740a0149a.js"
+  ],
+  "content---loader-manual-docs-ibsheet-create-sheet-1-ca-46f": [
+    "/loader-manual/content---loader-manual-docs-ibsheet-create-sheet-1-ca-46f.21e2bfb5142f60a12adf.js"
+  ],
+  "metadata---loader-manual-docs-ibsheet-create-sheet-3-fc-fbc": [
+    "/loader-manual/metadata---loader-manual-docs-ibsheet-create-sheet-3-fc-fbc.9153fb611e156cf3c796.js"
   ],
   "content---loader-manual-docs-ibsheet-remove-sheetacb-89c": [
     "/loader-manual/content---loader-manual-docs-ibsheet-remove-sheetacb-89c.fd7626b5f05a035e08b8.js"
