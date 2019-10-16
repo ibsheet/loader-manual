@@ -409,142 +409,142 @@
     "16": {
       "js": [
         {
-          "file": "content---loader-manual-docs-appendix-load-flow-121-9bf.7469c0d030aeb5900e73.js",
-          "hash": "7469c0d030aeb5900e73",
-          "publicPath": "/loader-manual/content---loader-manual-docs-appendix-load-flow-121-9bf.7469c0d030aeb5900e73.js"
+          "file": "content---loader-manual-docs-appendix-load-flow-121-9bf.c2040a88d745d6939a73.js",
+          "hash": "c2040a88d745d6939a73",
+          "publicPath": "/loader-manual/content---loader-manual-docs-appendix-load-flow-121-9bf.c2040a88d745d6939a73.js"
         }
       ]
     },
     "17": {
       "js": [
         {
-          "file": "content---loader-manual-docs-appendix-trouble-shooting-842-66b.5d420561bdb5da00085f.js",
-          "hash": "5d420561bdb5da00085f",
-          "publicPath": "/loader-manual/content---loader-manual-docs-appendix-trouble-shooting-842-66b.5d420561bdb5da00085f.js"
+          "file": "content---loader-manual-docs-appendix-trouble-shooting-842-66b.21dc7dcf7c9ffe76092b.js",
+          "hash": "21dc7dcf7c9ffe76092b",
+          "publicPath": "/loader-manual/content---loader-manual-docs-appendix-trouble-shooting-842-66b.21dc7dcf7c9ffe76092b.js"
         }
       ]
     },
     "18": {
       "js": [
         {
-          "file": "content---loader-manual-docs-basic-configuration-61-e-bf7.50f95c20ce60a94889df.js",
-          "hash": "50f95c20ce60a94889df",
-          "publicPath": "/loader-manual/content---loader-manual-docs-basic-configuration-61-e-bf7.50f95c20ce60a94889df.js"
+          "file": "content---loader-manual-docs-basic-configuration-61-e-bf7.2bd08e5891edecf45b99.js",
+          "hash": "2bd08e5891edecf45b99",
+          "publicPath": "/loader-manual/content---loader-manual-docs-basic-configuration-61-e-bf7.2bd08e5891edecf45b99.js"
         }
       ]
     },
     "19": {
       "js": [
         {
-          "file": "content---loader-manual-docs-basic-events-816-3b5.6e305deb43268d11ff69.js",
-          "hash": "6e305deb43268d11ff69",
-          "publicPath": "/loader-manual/content---loader-manual-docs-basic-events-816-3b5.6e305deb43268d11ff69.js"
+          "file": "content---loader-manual-docs-basic-events-816-3b5.b0a42f4284597c72f54a.js",
+          "hash": "b0a42f4284597c72f54a",
+          "publicPath": "/loader-manual/content---loader-manual-docs-basic-events-816-3b5.b0a42f4284597c72f54a.js"
         }
       ]
     },
     "20": {
       "js": [
         {
-          "file": "content---loader-manual-docs-basic-getting-started-406-fea.7c37e5063caff8413229.js",
-          "hash": "7c37e5063caff8413229",
-          "publicPath": "/loader-manual/content---loader-manual-docs-basic-getting-started-406-fea.7c37e5063caff8413229.js"
+          "file": "content---loader-manual-docs-basic-getting-started-406-fea.ea9c6603bd195bd30fd4.js",
+          "hash": "ea9c6603bd195bd30fd4",
+          "publicPath": "/loader-manual/content---loader-manual-docs-basic-getting-started-406-fea.ea9c6603bd195bd30fd4.js"
         }
       ]
     },
     "21": {
       "js": [
         {
-          "file": "content---loader-manual-docs-basic-load-76-a-7cc.8224754bf37b547733fd.js",
-          "hash": "8224754bf37b547733fd",
-          "publicPath": "/loader-manual/content---loader-manual-docs-basic-load-76-a-7cc.8224754bf37b547733fd.js"
+          "file": "content---loader-manual-docs-basic-load-76-a-7cc.aa6e17e6cacc2f641baa.js",
+          "hash": "aa6e17e6cacc2f641baa",
+          "publicPath": "/loader-manual/content---loader-manual-docs-basic-load-76-a-7cc.aa6e17e6cacc2f641baa.js"
         }
       ]
     },
     "22": {
       "js": [
         {
-          "file": "content---loader-manual-docs-basic-registry-13-f-db1.f3cfef8c1424860ef09f.js",
-          "hash": "f3cfef8c1424860ef09f",
-          "publicPath": "/loader-manual/content---loader-manual-docs-basic-registry-13-f-db1.f3cfef8c1424860ef09f.js"
+          "file": "content---loader-manual-docs-basic-registry-13-f-db1.d85925e54674fae56335.js",
+          "hash": "d85925e54674fae56335",
+          "publicPath": "/loader-manual/content---loader-manual-docs-basic-registry-13-f-db1.d85925e54674fae56335.js"
         }
       ]
     },
     "23": {
       "js": [
         {
-          "file": "content---loader-manual-docs-basic-unload-009-95b.ea152e00a35a102dadd1.js",
-          "hash": "ea152e00a35a102dadd1",
-          "publicPath": "/loader-manual/content---loader-manual-docs-basic-unload-009-95b.ea152e00a35a102dadd1.js"
+          "file": "content---loader-manual-docs-basic-unload-009-95b.d707ac8eca1f07dde750.js",
+          "hash": "d707ac8eca1f07dde750",
+          "publicPath": "/loader-manual/content---loader-manual-docs-basic-unload-009-95b.d707ac8eca1f07dde750.js"
         }
       ]
     },
     "24": {
       "js": [
         {
-          "file": "content---loader-manual-docs-ibsheet-create-sheet-1-ca-46f.21e2bfb5142f60a12adf.js",
-          "hash": "21e2bfb5142f60a12adf",
-          "publicPath": "/loader-manual/content---loader-manual-docs-ibsheet-create-sheet-1-ca-46f.21e2bfb5142f60a12adf.js"
+          "file": "content---loader-manual-docs-ibsheet-create-sheet-1-ca-46f.c90f0e5fbeaec6a9542a.js",
+          "hash": "c90f0e5fbeaec6a9542a",
+          "publicPath": "/loader-manual/content---loader-manual-docs-ibsheet-create-sheet-1-ca-46f.c90f0e5fbeaec6a9542a.js"
         }
       ]
     },
     "25": {
       "js": [
         {
-          "file": "content---loader-manual-docs-ibsheet-remove-sheetacb-89c.fd7626b5f05a035e08b8.js",
-          "hash": "fd7626b5f05a035e08b8",
-          "publicPath": "/loader-manual/content---loader-manual-docs-ibsheet-remove-sheetacb-89c.fd7626b5f05a035e08b8.js"
+          "file": "content---loader-manual-docs-ibsheet-remove-sheetacb-89c.b4128e11ef59e999ebf4.js",
+          "hash": "b4128e11ef59e999ebf4",
+          "publicPath": "/loader-manual/content---loader-manual-docs-ibsheet-remove-sheetacb-89c.b4128e11ef59e999ebf4.js"
         }
       ]
     },
     "26": {
       "js": [
         {
-          "file": "content---loader-manual-docs-spa-angular-542-977.7ed402f35de6f7745c66.js",
-          "hash": "7ed402f35de6f7745c66",
-          "publicPath": "/loader-manual/content---loader-manual-docs-spa-angular-542-977.7ed402f35de6f7745c66.js"
+          "file": "content---loader-manual-docs-spa-angular-542-977.de281a0a38a801c5e831.js",
+          "hash": "de281a0a38a801c5e831",
+          "publicPath": "/loader-manual/content---loader-manual-docs-spa-angular-542-977.de281a0a38a801c5e831.js"
         }
       ]
     },
     "27": {
       "js": [
         {
-          "file": "content---loader-manual-docs-spa-react-130-4fb.0f87e399f7b9bd65fb0e.js",
-          "hash": "0f87e399f7b9bd65fb0e",
-          "publicPath": "/loader-manual/content---loader-manual-docs-spa-react-130-4fb.0f87e399f7b9bd65fb0e.js"
+          "file": "content---loader-manual-docs-spa-react-130-4fb.c2796d2f218b6fd95077.js",
+          "hash": "c2796d2f218b6fd95077",
+          "publicPath": "/loader-manual/content---loader-manual-docs-spa-react-130-4fb.c2796d2f218b6fd95077.js"
         }
       ]
     },
     "28": {
       "js": [
         {
-          "file": "content---loader-manual-docs-spa-vue-521-840.7cb5f6e69126dea2dca7.js",
-          "hash": "7cb5f6e69126dea2dca7",
-          "publicPath": "/loader-manual/content---loader-manual-docs-spa-vue-521-840.7cb5f6e69126dea2dca7.js"
+          "file": "content---loader-manual-docs-spa-vue-521-840.04cb316621f36e737497.js",
+          "hash": "04cb316621f36e737497",
+          "publicPath": "/loader-manual/content---loader-manual-docs-spa-vue-521-840.04cb316621f36e737497.js"
         }
       ]
     },
     "29": {
       "js": [
         {
-          "file": "docsMetadata---loader-manual-docs-7-e-5-bfb.eaff6cdac9fea28bd8a2.js",
-          "hash": "eaff6cdac9fea28bd8a2",
-          "publicPath": "/loader-manual/docsMetadata---loader-manual-docs-7-e-5-bfb.eaff6cdac9fea28bd8a2.js"
+          "file": "docsMetadata---loader-manual-docs-7-e-5-bfb.b702f6cce4b05dd4435a.js",
+          "hash": "b702f6cce4b05dd4435a",
+          "publicPath": "/loader-manual/docsMetadata---loader-manual-docs-7-e-5-bfb.b702f6cce4b05dd4435a.js"
         }
       ]
     },
     "30": {
       "css": [
         {
-          "file": "main.a51169e99a30c371b85f.css",
-          "hash": "a51169e99a30c371b85f",
-          "publicPath": "/loader-manual/main.a51169e99a30c371b85f.css"
+          "file": "main.7064bfaf209123cece19.css",
+          "hash": "7064bfaf209123cece19",
+          "publicPath": "/loader-manual/main.7064bfaf209123cece19.css"
         }
       ],
       "js": [
         {
-          "file": "main.a51169e99a30c371b85f.js",
-          "hash": "a51169e99a30c371b85f",
-          "publicPath": "/loader-manual/main.a51169e99a30c371b85f.js"
+          "file": "main.7064bfaf209123cece19.js",
+          "hash": "7064bfaf209123cece19",
+          "publicPath": "/loader-manual/main.7064bfaf209123cece19.js"
         }
       ]
     },
@@ -623,117 +623,117 @@
     "39": {
       "js": [
         {
-          "file": "metadata---loader-manual-docs-appendix-load-flow-707-3f5.170ac0cc5b5f7331b0be.js",
-          "hash": "170ac0cc5b5f7331b0be",
-          "publicPath": "/loader-manual/metadata---loader-manual-docs-appendix-load-flow-707-3f5.170ac0cc5b5f7331b0be.js"
+          "file": "metadata---loader-manual-docs-appendix-load-flow-707-3f5.1ffe7582fb6c42f0feca.js",
+          "hash": "1ffe7582fb6c42f0feca",
+          "publicPath": "/loader-manual/metadata---loader-manual-docs-appendix-load-flow-707-3f5.1ffe7582fb6c42f0feca.js"
         }
       ]
     },
     "40": {
       "js": [
         {
-          "file": "metadata---loader-manual-docs-appendix-trouble-shooting-574-952.78a5e6b81d7fa9985554.js",
-          "hash": "78a5e6b81d7fa9985554",
-          "publicPath": "/loader-manual/metadata---loader-manual-docs-appendix-trouble-shooting-574-952.78a5e6b81d7fa9985554.js"
+          "file": "metadata---loader-manual-docs-appendix-trouble-shooting-574-952.d6f476dbe7a74064c168.js",
+          "hash": "d6f476dbe7a74064c168",
+          "publicPath": "/loader-manual/metadata---loader-manual-docs-appendix-trouble-shooting-574-952.d6f476dbe7a74064c168.js"
         }
       ]
     },
     "41": {
       "js": [
         {
-          "file": "metadata---loader-manual-docs-basic-configuration-36-d-640.8a11d499a8cc4a99c31d.js",
-          "hash": "8a11d499a8cc4a99c31d",
-          "publicPath": "/loader-manual/metadata---loader-manual-docs-basic-configuration-36-d-640.8a11d499a8cc4a99c31d.js"
+          "file": "metadata---loader-manual-docs-basic-configuration-36-d-640.f829e32141707f82b72f.js",
+          "hash": "f829e32141707f82b72f",
+          "publicPath": "/loader-manual/metadata---loader-manual-docs-basic-configuration-36-d-640.f829e32141707f82b72f.js"
         }
       ]
     },
     "42": {
       "js": [
         {
-          "file": "metadata---loader-manual-docs-basic-eventsca-3-4c5.69f667cf22f740a0149a.js",
-          "hash": "69f667cf22f740a0149a",
-          "publicPath": "/loader-manual/metadata---loader-manual-docs-basic-eventsca-3-4c5.69f667cf22f740a0149a.js"
+          "file": "metadata---loader-manual-docs-basic-eventsca-3-4c5.e9d1480d8d3308bd2e9b.js",
+          "hash": "e9d1480d8d3308bd2e9b",
+          "publicPath": "/loader-manual/metadata---loader-manual-docs-basic-eventsca-3-4c5.e9d1480d8d3308bd2e9b.js"
         }
       ]
     },
     "43": {
       "js": [
         {
-          "file": "metadata---loader-manual-docs-basic-getting-startedc-3-b-756.36ce88637b8a351c2737.js",
-          "hash": "36ce88637b8a351c2737",
-          "publicPath": "/loader-manual/metadata---loader-manual-docs-basic-getting-startedc-3-b-756.36ce88637b8a351c2737.js"
+          "file": "metadata---loader-manual-docs-basic-getting-startedc-3-b-756.fbd75d3cc73cffeeeb12.js",
+          "hash": "fbd75d3cc73cffeeeb12",
+          "publicPath": "/loader-manual/metadata---loader-manual-docs-basic-getting-startedc-3-b-756.fbd75d3cc73cffeeeb12.js"
         }
       ]
     },
     "44": {
       "js": [
         {
-          "file": "metadata---loader-manual-docs-basic-load-126-665.4bc3e961efce11df0818.js",
-          "hash": "4bc3e961efce11df0818",
-          "publicPath": "/loader-manual/metadata---loader-manual-docs-basic-load-126-665.4bc3e961efce11df0818.js"
+          "file": "metadata---loader-manual-docs-basic-load-126-665.63901332545533418554.js",
+          "hash": "63901332545533418554",
+          "publicPath": "/loader-manual/metadata---loader-manual-docs-basic-load-126-665.63901332545533418554.js"
         }
       ]
     },
     "45": {
       "js": [
         {
-          "file": "metadata---loader-manual-docs-basic-registry-825-225.914a0cc7d019d200b9f2.js",
-          "hash": "914a0cc7d019d200b9f2",
-          "publicPath": "/loader-manual/metadata---loader-manual-docs-basic-registry-825-225.914a0cc7d019d200b9f2.js"
+          "file": "metadata---loader-manual-docs-basic-registry-825-225.b777856f197cafd6b8c5.js",
+          "hash": "b777856f197cafd6b8c5",
+          "publicPath": "/loader-manual/metadata---loader-manual-docs-basic-registry-825-225.b777856f197cafd6b8c5.js"
         }
       ]
     },
     "46": {
       "js": [
         {
-          "file": "metadata---loader-manual-docs-basic-unloaddc-1-36a.bd0a9748e794c688dd48.js",
-          "hash": "bd0a9748e794c688dd48",
-          "publicPath": "/loader-manual/metadata---loader-manual-docs-basic-unloaddc-1-36a.bd0a9748e794c688dd48.js"
+          "file": "metadata---loader-manual-docs-basic-unloaddc-1-36a.7cc71a906799dd09e943.js",
+          "hash": "7cc71a906799dd09e943",
+          "publicPath": "/loader-manual/metadata---loader-manual-docs-basic-unloaddc-1-36a.7cc71a906799dd09e943.js"
         }
       ]
     },
     "47": {
       "js": [
         {
-          "file": "metadata---loader-manual-docs-ibsheet-create-sheet-3-fc-fbc.9153fb611e156cf3c796.js",
-          "hash": "9153fb611e156cf3c796",
-          "publicPath": "/loader-manual/metadata---loader-manual-docs-ibsheet-create-sheet-3-fc-fbc.9153fb611e156cf3c796.js"
+          "file": "metadata---loader-manual-docs-ibsheet-create-sheet-3-fc-fbc.b389f515dff17d8d969a.js",
+          "hash": "b389f515dff17d8d969a",
+          "publicPath": "/loader-manual/metadata---loader-manual-docs-ibsheet-create-sheet-3-fc-fbc.b389f515dff17d8d969a.js"
         }
       ]
     },
     "48": {
       "js": [
         {
-          "file": "metadata---loader-manual-docs-ibsheet-remove-sheet-642-10e.b08c0620bed9f9dbac2d.js",
-          "hash": "b08c0620bed9f9dbac2d",
-          "publicPath": "/loader-manual/metadata---loader-manual-docs-ibsheet-remove-sheet-642-10e.b08c0620bed9f9dbac2d.js"
+          "file": "metadata---loader-manual-docs-ibsheet-remove-sheet-642-10e.195078047d96f966babc.js",
+          "hash": "195078047d96f966babc",
+          "publicPath": "/loader-manual/metadata---loader-manual-docs-ibsheet-remove-sheet-642-10e.195078047d96f966babc.js"
         }
       ]
     },
     "49": {
       "js": [
         {
-          "file": "metadata---loader-manual-docs-spa-angularc-68-2a3.5026ad4614699980a327.js",
-          "hash": "5026ad4614699980a327",
-          "publicPath": "/loader-manual/metadata---loader-manual-docs-spa-angularc-68-2a3.5026ad4614699980a327.js"
+          "file": "metadata---loader-manual-docs-spa-angularc-68-2a3.cdf820247e2c675c7b1c.js",
+          "hash": "cdf820247e2c675c7b1c",
+          "publicPath": "/loader-manual/metadata---loader-manual-docs-spa-angularc-68-2a3.cdf820247e2c675c7b1c.js"
         }
       ]
     },
     "50": {
       "js": [
         {
-          "file": "metadata---loader-manual-docs-spa-react-88-e-d60.5151ba424d212d57fda2.js",
-          "hash": "5151ba424d212d57fda2",
-          "publicPath": "/loader-manual/metadata---loader-manual-docs-spa-react-88-e-d60.5151ba424d212d57fda2.js"
+          "file": "metadata---loader-manual-docs-spa-react-88-e-d60.9e1cc4178c1b6abf443c.js",
+          "hash": "9e1cc4178c1b6abf443c",
+          "publicPath": "/loader-manual/metadata---loader-manual-docs-spa-react-88-e-d60.9e1cc4178c1b6abf443c.js"
         }
       ]
     },
     "51": {
       "js": [
         {
-          "file": "metadata---loader-manual-docs-spa-vued-4-c-b21.14def7232013350fe689.js",
-          "hash": "14def7232013350fe689",
-          "publicPath": "/loader-manual/metadata---loader-manual-docs-spa-vued-4-c-b21.14def7232013350fe689.js"
+          "file": "metadata---loader-manual-docs-spa-vued-4-c-b21.11e9b3338552ba12e12a.js",
+          "hash": "11e9b3338552ba12e12a",
+          "publicPath": "/loader-manual/metadata---loader-manual-docs-spa-vued-4-c-b21.11e9b3338552ba12e12a.js"
         }
       ]
     },
@@ -758,9 +758,9 @@
     "54": {
       "js": [
         {
-          "file": "runtime~main.c47763bff554d2bbbe12.js",
-          "hash": "c47763bff554d2bbbe12",
-          "publicPath": "/loader-manual/runtime~main.c47763bff554d2bbbe12.js"
+          "file": "runtime~main.6fac8e133616b9ae0046.js",
+          "hash": "6fac8e133616b9ae0046",
+          "publicPath": "/loader-manual/runtime~main.6fac8e133616b9ae0046.js"
         }
       ]
     },
