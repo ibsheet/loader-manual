@@ -94,7 +94,7 @@ const footer = {
     // src: 'img/logo/ibleaders-245x58-2.png'
     src: 'img/logo/ibleaders-ci.svg'
   },
-  copyright: `©${new Date().getFullYear()} IBSheet Team`
+  copyright: `© ${new Date().getFullYear()} IBSheet Team`
 }
 
 const presets = [

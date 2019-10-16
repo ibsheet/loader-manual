@@ -13,10 +13,9 @@ sidebar_label: 시트 만들기
 * `options` - `IBSheet` 옵션(`config`)
 * `data` - sheet 데이터
 
-
 ## 사용 방법
 
-이 예제에서는 `ibsheet` 라이브러리를 [`registry.add`](../basic/registry#add)를 통해 등록하였습니다.
+### createSheet
 
 ```js
 // get global loader instance
@@ -26,19 +25,53 @@ import loader from '@ibsheet/loader'
 loader.registry.add({
   {
     name: 'ibsheet',
-    // ...
+    baseUrl: '<YOUR_IBSHEET_DIR>'
   }
 })
 
 // load ibsheet and create sheet
 loader.createSheet({
   id: 'sheet',
-  elementId: 'sheetWrapper',
+  el: 'sheetWrapper',
   options: {
-    // ...
+    // ...your options
   },
-  data: []
+  data: [
+    // ...your data
+  ]
 }).then(function(sheet) {
   console.log('created ibsheet:', sheet.id)
+})
+```
+
+### sheetReady
+
+`sheetReady` 기능을 사용해서 `IBSheetStatic` 객체로부터 시트를 직접 생성할 수 있습니다.
+
+```js
+// get global loader instance
+import loader from '@ibsheet/loader'
+
+// setup configuration
+loader.config({
+  registry: [{
+    name: 'ibsheet',
+    baseUrl: '<YOUR_IBSHEET_DIR>'
+  }]
+})
+
+// load ibsheet and create sheet
+loader.sheetReady(function(ibsheet) {
+  // ibsheet and this is IBSheetStatic
+  ibsheet.create({
+    id: 'sheet',
+    el: 'sheetWrapper',
+    options: {
+      // ...your options
+    },
+    data: [
+      // ...your data
+    ]
+  })
 })
 ```
