@@ -23,6 +23,12 @@ const navbar = {
   ]
 }
 
+const algolia = {
+  apiKey: 'a562b61bd0bec14591d25a37aca77723',
+  indexName: 'ibsheetloader',
+  algoliaOptions: {}
+}
+
 const footer = {
   style: 'dark',
   links: [
@@ -96,7 +102,12 @@ const presets = [
     '@docusaurus/preset-classic',
     {
       docs: {
-        sidebarPath: require.resolve('./sidebars.js')
+        sidebarPath: require.resolve('./sidebars.js'),
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true
+      },
+      blog: {
+        psotsPerPage: 3
       },
       theme: {
         customCss: require.resolve('./src/css/custom.css')
@@ -115,6 +126,7 @@ module.exports = {
   projectName: 'loader-manual', // Usually your repo name.
   themeConfig: {
     navbar,
+    algolia,
     footer
   },
   presets,

@@ -10,7 +10,7 @@ sidebar_label: 시트 만들기
 
 * `id` - sheet의 ID(전역변수 이름)
 * `el` - sheet의 Wrapper `HTMLElement` 아이디(`elementId`)
-* `options` - ibsheet 옵션(`config`)
+* `options` - `IBSheet` 옵션(`config`)
 * `data` - sheet 데이터
 
 
