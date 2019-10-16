@@ -13,7 +13,7 @@ sidebar_label: 시트 만들기
 * `options` - `IBSheet` 옵션(`config`)
 * `data` - sheet 데이터
 
-## 사용 방법
+## 사용 예제
 
 ### createSheet
 
