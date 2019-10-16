@@ -53,7 +53,7 @@ interface RetryOptions {
 ### 옵션 정의하기
 
 ```js
-// define loader config
+// define loader config options
 const loaderOptions = {
   retry: {
     intervalTime: 200,
