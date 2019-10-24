@@ -21,7 +21,7 @@ interface IBSheetLoader extends EventEmitter {
 
 ```ts
 interface LoaderConfigOptions {
-  registry?: RegistryItemData[]
+  registry?: RegistryItemData | RegistryItemData[]
   retry?: RetryOptions
   ready?: evt => void
   debug?: boolean
