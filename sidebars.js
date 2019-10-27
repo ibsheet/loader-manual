@@ -14,12 +14,13 @@ module.exports = {
     ],
     // Advanced: [],
     SPA: [
+      'spa/angular',
       'spa/vue',
-      'spa/react',
-      'spa/angular'
+      'spa/react'
     ],
     Appendix: [
       'appendix/load-flow',
+      'appendix/spa-sample-data',
       'appendix/external-lib',
       'appendix/trouble-shooting'
     ]
