@@ -37,7 +37,7 @@ npm install --save @ibsheet/loader
 
 ```
 ├── assets/
-|  └── ibsheets/
+|  └── ibsheet/
 |     ├── css/
 |     ├── locale/
 |     ├── fonts/
