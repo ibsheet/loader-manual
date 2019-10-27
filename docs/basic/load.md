@@ -35,7 +35,7 @@ import loader from '@ibsheet/loader'
 // define ibsheet for loader registry
 const ibsheetLibrary = {
   name: 'ibsheet',
-  // ...
+  baseUrl: '<publicpath>/ibsheet'
 }
 
 // load ibsheet
@@ -51,11 +51,13 @@ import loader from '@ibsheet/loader'
 // define ibsheet libs for loader registry
 const ibsheetLibrary1 = {
   name: 'ibsheet',
+  baseUrl: '<publicpath>/ibsheet/v1'
   version: 1,
   // ...
 }
 const ibsheetLibrary2 = {
   name: 'ibsheet',
+  baseUrl: '<publicpath>/ibsheet/v2'
   version: 2,
   // ...
 }
@@ -80,14 +82,13 @@ import loader from '@ibsheet/loader'
 // load ibsheet
 loader.load({
   name: 'ibsheet',
-  locale: 'en',
-  // ...
+  baseUrl: '<publicpath>/ibsheet',
+  locale: 'ko'
 })
 
 // update and reload ibsheet
 loader.load({
   name: 'ibsheet',
-  locale: 'ko',
-  // ...
+  locale: 'en'
 })
 ```

@@ -16,7 +16,7 @@ import { Highlight, Badge, BadgeGroup } from '../shared'
 * [`registry.add`](#add) 기능을 사용
 * [`load`](./load) 기능을 사용
 
-> <Highlight color="#555">이하 문서에서 "regsitry"에 추가할 또는 추가된 라이브러리(스크립트) 객체는 "<b>아이템</b>"이라고 일컫습니다.</Highlight>
+> <Highlight color="#555">이하 문서에서 LoaderRegistry에 추가할 또는 추가된 라이브러리(스크립트) 객체는 "<b>아이템</b>"이라고 일컫습니다.</Highlight>
 
 ## 인터페이스
 
@@ -101,13 +101,15 @@ abstract class RegistryItem extends CustomEventEmitter {
 
 #### only for IBSheet
 
-* `license`: 전역 스코프의 `ibleaders` 객체에, `license` 키 값을 추가합니다.
-  * `type`: `text|file|url` 라이센스 유형
-  * `value`: `string` 키 값 또는 경로
+* `license`: `URL|string`
+  * `URL` - 라이센스 파일 URL을 목록에 추가(ex: `ibleaders.js`)
+  * `string` - 전역 스코프의 `ibleaders` 객체에, `license` 키 값을 추가합니다.
 * `theme`: CSS 테마 로드 옵션(기본값: `default`)
-* `locale`: 메시지 데이터 로드 옵션(기본값: `ko`)
+  * 설정에 따라 CSS 파일 URL을 완성합니다. `css/<theme>/main.css`
+* `locales`: 메시지 데이터 로드 옵션(기본값: `['ko']`)
+  *  설정에 따라 언어팩 파일 URL을 완성합니다. `locale/<locale>.js`
 * `corefile`: 코어 파일이름 사용자화 옵션(기본값: `ibsheet.js`)
-* `plugins`: IBSheet 제공 모듈 로드 옵션 
+* `plugins`: IBSheet 제공 모듈, 설정에 따라 스크립트 파일 URL을 완성합니다.
   * `excel` - `ibsheet-excel.js`
   * `common` - `ibsheet-common.js`
   * `dialog` - `ibsheet-dialog.js`
@@ -236,15 +238,13 @@ loader.registry.remove(alias)
 ```js
 // define ibsheet for loader registry
 const ibsheetLibrary = {
-  name: 'ibsheet',
+  name: 'ibsheet',          // unique name
   // <publicpath>: your public directory
   baseUrl: '<publicpath>/ibsheet',
-  urls: [
-    'css/default/main.css',
-    'ibleaders.js',
-    'locale/ko.js',
-    'ibsheet.js'
-  ]
+  theme: 'default',         // default value
+  locales: ['ko'],          // default value
+  // or locale: 'ko'
+  // license: './ibleaders.js'
 }
 ```
 
@@ -254,15 +254,14 @@ const ibsheetLibrary = {
 import loader from '@ibsheet/loader'
 
 // define registry list
-const registry = [
-  ibsheetLibrary
-]
+const registry = [ibsheetLibrary]
 
 // method 1: setup registry with loader configuration
 loader.config({ registry })
 
 // method 2: use add or addAll
 loader.registry.add(ibsheetLibrary)
+// or addAll
 loader.registry.addAll(registry)
 ```
 

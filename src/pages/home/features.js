@@ -23,7 +23,7 @@ const features = [
     )
   },
   {
-    title: <>SPA Component <small className='text--info'><i>(comming soon)</i></small></>,
+    title: <>SPA Component <small className='text--info'><i>(upcoming)</i></small></>,
     // imageUrl: 'img/features/undraw_JavaScript_frameworks_8qpc.svg',
     imageUrl: 'img/features/1_7zccGWE4o5LmxegijjK_xQ.png',
     description: (
