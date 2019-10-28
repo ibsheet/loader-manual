@@ -19,6 +19,7 @@ module.exports = {
       'spa/react'
     ],
     Appendix: [
+      'appendix/starter-packages',
       'appendix/load-flow',
       'appendix/spa-sample-data',
       'appendix/external-lib',
