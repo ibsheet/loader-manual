@@ -141,14 +141,14 @@ export default App
 ## 서브 컴포넌트
 
 * `src/components/home.js`
-* `src/components/Page1.vue`
-* `src/components/page2.vue`
+* `src/components/page1.js`
+* `src/components/page2.js`
 
 ### Home
 
 홈 화면에서는 `IBSheet` 라이브러리를 로드하지 않습니다. 만약 로드되어 있다면 컴포넌트 마운트시 `unload` 합니다.
 
-`src/components/home.vue`
+`src/components/home.js`
 
 ```jsx
 import React, { Component } from 'react';
@@ -174,7 +174,7 @@ export class Home extends Component {
 
 컴포넌트 마운트시 첫 번째 샘플 데이터로 `IBSheet` 테이블을 생성합니다. 컴포넌트가 제거될 때, 해당 테이블도 제거합니다.
 
-`src/components/page1.vue`
+`src/components/page1.js`
 
 ```jsx
 import React, { Component } from 'react';
@@ -213,7 +213,7 @@ export default Page1
 
 두 번째 샘플 데이터로 `IBSheet` 테이블을 생성합니다. 컴포넌트가 제거될 때, 해당 테이블도 제거합니다.
 
-`src/components/page2.vue`
+`src/components/page2.js`
 
 ```jsx
 import React, { Component } from 'react';
