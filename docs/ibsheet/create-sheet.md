@@ -83,7 +83,7 @@ loader.sheetReady(function(ibsheet) {
 
 ### getIBSheetStatic
 
-`ibsheet` 라이브러리가 로드된 경우, `getIBSheetStaic` 기능을 통해 해당 객체를 얻을 수 있습니다.
+`ibsheet` 라이브러리가 로드된 경우, `getIBSheetStatic` 기능을 통해 해당 객체를 얻을 수 있습니다.
 
 ```js
 // get global loader instance
@@ -98,7 +98,7 @@ loader
     const target = evt.target
     console.log('ibsheet loaded!')
     if (target.alias === 'ibsheet') {
-      IBSheet = loader.getIBSheetStaic()
+      IBSheet = loader.getIBSheetStatic()
     }
   })
   // load ibsheet
