@@ -21,13 +21,17 @@ interface IBSheetLoader extends EventEmitter {
 
 ```ts
 interface LoaderConfigOptions {
-  registry?: RegistryItemData[]
+  globals?: {
+    ibsheet?: string
+  },
+  registry?: RegistryItemData | RegistryItemData[]
   retry?: RetryOptions
   ready?: evt => void
   debug?: boolean
 }
 ```
 
+* `globals`: 라이브러리 전역변수 이름설정 옵션
 * `registry`: 라이브러리 등록 데이터 리스트
 * `ready`: 설정이 완료되었을 때의 이벤트 콜백
 * `retry`: 재시도 옵션([`load`](./load)시 사용)
@@ -55,21 +59,25 @@ interface RetryOptions {
 ```js
 // define loader config options
 const loaderOptions = {
-  retry: {
-    intervalTime: 200,
-    maxCount: 10
+  globals: {
+    ibsheet: 'IBSheet'  // default value
   },
   registry: [
     // items you need
   ],
+  retry: {
+    intervalTime: 200,  // default value
+    maxCount: 10        // default value
+  },
   ready: function (evt) {
     console.log('IBSheetLoader configuration complete.')
-  }
+  },
+  debug: false          // default value
 }
 ```
 
 * `retry`: [`RetryOptions`](#retryoptions)
-* `registry`: [`RegistryItemData[]`](./registry#registryitemdata)
+* `registry`: [`RegistryItemData`](./registry#registryitemdata)|[`RegistryItemData[]`](./registry#registryitemdata)
 
 ### 적용하기
 

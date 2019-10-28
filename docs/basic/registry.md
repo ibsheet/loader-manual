@@ -8,15 +8,15 @@ import { Highlight, Badge, BadgeGroup } from '../shared'
 
 ## LoaderRegistry?
 
-`LoaderRegistry`는 [`load`]('./load') 기능을 보다 수월하게 사용하기 위해 미리 사용할 라이브러리들을 등록해 놓을 수 있는 저장소입니다.
+`LoaderRegistry`는 [`load`]('./load') 기능을 보다 간편하게 사용하기 위해 미리 사용할 라이브러리들을 등록해 놓을 수 있는 저장소입니다.
 
 이 레지스트리에 아이템(라이브러리)을 추가하는 방법은 세 가지가 있습니다.
 
-* 이전단계의 [`config`](./configuration#loaderconfigoptions) 옵션에 추가
+* 이전단계의 [`config`](./configuration#loaderconfigoptions)기능의 `registry` 옵션에 추가
 * [`registry.add`](#add) 기능을 사용
 * [`load`](./load) 기능을 사용
 
-> <Highlight color="#555">이하 문서에서 "regsitry"에 추가할 또는 추가된 라이브러리(스크립트) 객체는 "<b>아이템</b>"이라고 일컫습니다.</Highlight>
+> <Highlight color="#555">이하 문서에서 LoaderRegistry에 추가할 또는 추가된 라이브러리(스크립트) 객체는 "<b>아이템</b>"이라고 일컫습니다.</Highlight>
 
 ## 인터페이스
 
@@ -87,15 +87,32 @@ abstract class RegistryItem extends CustomEventEmitter {
 
 라이브러리 등록 데이터
 
+#### Common Interface
+
 * `name`: `string` - 식별자(Must be unique)
 * `version`: `string` - 버전
 * `baseUrl`: `string` - URL의 기본 경로(프로토콜 또는 절대경로를 포함하지 않은 경우)
 * `urls`: `string[]|object[]` - URL 목록
   * `url`: `string` - URL 문자열
-  * `target`: `'head'|'body'` - 추가시킬 부모 HTML 태그 이름(`head` 또는 `body`)
-  * `type`: `'css'|'js'` - 스크립트 타입, URL에 파일의 확장자가 포함되지 않은 경우 명시
+  * `target`: `head|body` - 추가시킬 부모 HTML 태그 이름(`head` 또는 `body`)
+  * `type`: `css|js` - 스크립트 타입, URL에 파일의 확장자가 포함되지 않은 경우 명시
 * `dependentUrls` - 함께 제거시킬 URL 목록([`unload`](./unload)시 사용)
 * `validate`: `() => boolean` - 스크립트 추가 후 검증 로직
+
+#### only for IBSheet
+
+* `license`: `URL|string`
+  * `URL` - 라이센스 파일 URL을 목록에 추가(ex: `ibleaders.js`)
+  * `string` - 전역 스코프의 `ibleaders` 객체에, `license` 키 값을 추가합니다.
+* `theme`: CSS 테마 로드 옵션(기본값: `default`)
+  * 설정에 따라 CSS 파일 URL을 완성합니다. `css/<theme>/main.css`
+* `locales`: 메시지 데이터 로드 옵션(기본값: `['ko']`)
+  *  설정에 따라 언어팩 파일 URL을 완성합니다. `locale/<locale>.js`
+* `corefile`: 코어 파일이름 사용자화 옵션(기본값: `ibsheet.js`)
+* `plugins`: IBSheet 제공 모듈, 설정에 따라 스크립트 파일 URL을 완성합니다.
+  * `excel` - `ibsheet-excel.js`
+  * `common` - `ibsheet-common.js`
+  * `dialog` - `ibsheet-dialog.js`
 
 ## 주요 기능
 
@@ -116,7 +133,7 @@ loader.registry.add(data)
 ```
 
 * `data`: 등록 데이터
-* `overwrite`: 이미 동일한 `alias`의 아이템이 존재할 때 덮어쓰기 (기본값: `false`)
+* `overwrite`: 이미 동일한 `alias`의 아이템이 존재할 때 업데이트 하기 (기본값: `false`)
 
 ### addAll
 <BadgeGroup><Badge class="since">1.0.0</Badge></BadgeGroup>
@@ -221,15 +238,13 @@ loader.registry.remove(alias)
 ```js
 // define ibsheet for loader registry
 const ibsheetLibrary = {
-  name: 'ibsheet',
+  name: 'ibsheet',          // unique name
   // <publicpath>: your public directory
   baseUrl: '<publicpath>/ibsheet',
-  urls: [
-    'css/default/main.css',
-    'ibleaders.js',
-    'locale/ko.js',
-    'ibsheet.js'
-  ]
+  theme: 'default',         // default value
+  locales: ['ko'],          // default value
+  // or locale: 'ko'
+  // license: './ibleaders.js'
 }
 ```
 
@@ -239,15 +254,14 @@ const ibsheetLibrary = {
 import loader from '@ibsheet/loader'
 
 // define registry list
-const registry = [
-  ibsheetLibrary
-]
+const registry = [ibsheetLibrary]
 
 // method 1: setup registry with loader configuration
 loader.config({ registry })
 
 // method 2: use add or addAll
 loader.registry.add(ibsheetLibrary)
+// or addAll
 loader.registry.addAll(registry)
 ```
 
