@@ -21,7 +21,7 @@ interface LoaderEventInterface {
 }
 ```
 
-* [API 문서 바로가기](https://nodejs.org/api/events.html#events_emitter_on_eventname_listener)
+* [공식 문서 바로가기](https://nodejs.org/api/events.html#events_emitter_on_eventname_listener)
 
 ### once
 
@@ -33,7 +33,7 @@ interface LoaderEventInterface {
 }
 ```
 
-* [API 문서 바로가기](https://nodejs.org/api/events.html#events_emitter_once_eventname_listener)
+* [공식 문서 바로가기](https://nodejs.org/api/events.html#events_emitter_once_eventname_listener)
 
 ### removeListener
 
@@ -45,7 +45,7 @@ interface LoaderEventInterface {
 }
 ```
 
-* [API 문서 바로가기](https://nodejs.org/api/events.html#events_emitter_removelistener_eventname_listener)
+* [공식 문서 바로가기](https://nodejs.org/api/events.html#events_emitter_removelistener_eventname_listener)
 * alias: [`off`](https://nodejs.org/api/events.html#events_emitter_off_eventname_listener)
 
 ### removeAllListeners
@@ -58,7 +58,7 @@ interface LoaderEventInterface {
 }
 ```
 
-* [API 문서 바로가기](https://nodejs.org/api/events.html#events_emitter_removealllisteners_eventname)
+* [공식 문서 바로가기](https://nodejs.org/api/events.html#events_emitter_removealllisteners_eventname)
 
 ## 이벤트
 
@@ -85,6 +85,16 @@ interface LoaderEventInterface {
 * `this`: `IBSheetLoader`
 * `event.target`: [`RegistryItem`](./registry#registryitem)
 
+#### Usage
+
+```js
+loader.once('loaded', function(evt) {
+  // evt.target 로드된 레지스트리 아이템
+  const { target } = evt.target
+  console.log('loaded item:', target.alias)
+})
+```
+
 ### load-complete
 
 모든 요청 라이브러리가 로드되었을 때, 발생
@@ -102,15 +112,11 @@ interface LoaderEventInterface {
 
 ### load-reject
 
-라이브러리 로드가 거부되었을 때, 발생
+라이브러리 로드시, `DOM`에 `HTMLElement`를 생성할 때 오류 발생
 
 * `this`: `IBSheetLoader`
 * `event.target`: [`RegistryItem`](./registry#registryitem)
 * `event.error`: `Error`
-
-#### 상황
-
-* 해당 라이브러리의 스크립트를 `DOM`에 생성할 때, 오류 발생
 
 ### unload
 
@@ -142,7 +148,7 @@ interface LoaderEventInterface {
 
 ### unload-reject
 
-라이브러리 언로드 시, `HTMLElement`제거 단계에서 오류가 발생했을 때
+라이브러리 언로드시, `DOM`에 `HTMLElement`를 제거할 때 오류 발생
 
 * `this`: `IBSheetLoader`
 * `event.target`: [`RegistryItem`](./registry#registryitem)
@@ -151,7 +157,7 @@ interface LoaderEventInterface {
 
 ### create-sheet
 
-`IBSheet`를 생성 할 때, 발생
+`IBSheet`를 생성할 때, 발생
 
 * `this`: `IBSheetLoader`
 * `event.target`: `IBSheetStatic`
@@ -159,7 +165,7 @@ interface LoaderEventInterface {
 
 ### create-sheet-failed
 
-`IBSheet`를 생성에 실패했을 때, 발생
+`IBSheet` 생성에 실패했을 때, 발생
 
 * `this`: `IBSheetLoader`
 * `event.target`: `IBSheetStatic`
@@ -182,7 +188,7 @@ interface LoaderEventInterface {
 
 ### remove-sheet-failed
 
-`IBSheet`를 제거에 실패했을 때, 발생
+`IBSheet`제거에 실패했을 때, 발생
 
 * `this`: `IBSheetLoader`
 * `event.target`: `IBSheetStatic`
@@ -195,13 +201,3 @@ interface LoaderEventInterface {
 * `this`: `IBSheetLoader`
 * `event.target`: `IBSheetStatic`
 * `event.data.id`: 요청 아이디
-
-## 사용 예제
-
-```js
-loader.once('loaded', function(evt) {
-  // evt.target 로드된 레지스트리 아이템
-  const { target } = evt.target
-  console.log('loaded item:', target.alias)
-})
-```
