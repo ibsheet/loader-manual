@@ -9,9 +9,9 @@ sidebar_label: 시트 만들기
 `ibsheet`를 로드하고 `createSheet`의 인자를 기반으로 시트를 생성합니다. API는 [`IBSheet.create`](https://docs.ibleaders.com/ibsheet/v8/manual/#docs/static/create)와 동일하나 `el`, `options` 속성 이름의 별칭을 추가하였습니다.
 
 * `id` - 시트의 아이디(전역변수 이름)
-* `el` - 시트가 만들어질 `HTMLElement` 아이디(`elementId`)
-*  `options` - `IBSheet` 옵션(`config`)
-* `data` - sheet 데이터
+* `el` - 시트가 만들어질 `HTMLElement` 아이디(별칭: `elementId`)
+* `options` - `IBSheet` 옵션(별칭: `config`)
+* `data` - 시트의 데이터
 
 ## 사용 예제
 

@@ -22,7 +22,7 @@ import loader from '@ibsheet/loader'
 loader.config({
   registry: [{
     name: 'ibsheet',
-    // ...
+    baseUrl: '<publicpath>/ibsheet'
   }]
 })
 
