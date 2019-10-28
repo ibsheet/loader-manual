@@ -155,7 +155,7 @@ export class HomeComponent implements OnInit {
 
 ### Page1
 
-컴포넌트 마운트시 첫 번째 샘플 데이터로 `IBSheet` 테이블을 생성합니다. 컴포넌트가 제거할 때, 해당 테이블도 제거합니다.
+컴포넌트 마운트시 첫 번째 샘플 데이터로 `IBSheet` 테이블을 생성합니다. 컴포넌트가 제거될 때, 해당 테이블도 제거합니다.
 
 `src/page1/page1.component.html`
 
@@ -195,7 +195,7 @@ export class Page1Component implements OnInit, OnDestroy {
 
 ### Page2
 
-두 번째 샘플 데이터로 `IBSheet` 테이블을 생성합니다. 컴포넌트가 제거할 때, 해당 테이블도 제거합니다.
+두 번째 샘플 데이터로 `IBSheet` 테이블을 생성합니다. 컴포넌트가 제거될 때, 해당 테이블도 제거합니다.
 
 `src/page2/page2.component.html`
 

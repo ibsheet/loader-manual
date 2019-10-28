@@ -172,7 +172,7 @@ export class Home extends Component {
 
 ### Page1
 
-컴포넌트 마운트시 첫 번째 샘플 데이터로 `IBSheet` 테이블을 생성합니다. 컴포넌트가 제거할 때, 해당 테이블도 제거합니다.
+컴포넌트 마운트시 첫 번째 샘플 데이터로 `IBSheet` 테이블을 생성합니다. 컴포넌트가 제거될 때, 해당 테이블도 제거합니다.
 
 `src/components/page1.vue`
 
@@ -211,7 +211,7 @@ export default Page1
 
 ### Page2
 
-두 번째 샘플 데이터로 `IBSheet` 테이블을 생성합니다. 컴포넌트가 제거할 때, 해당 테이블도 제거합니다.
+두 번째 샘플 데이터로 `IBSheet` 테이블을 생성합니다. 컴포넌트가 제거될 때, 해당 테이블도 제거합니다.
 
 `src/components/page2.vue`
 
