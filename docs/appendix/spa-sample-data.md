@@ -8,7 +8,7 @@ sidebar_label: 샘플 데이터
 
 * angular: `src/shared/ibsheet-data.ts`
 * vue: `src/shared/ibsheet-data.js`
-* eract
+* react: `src/shared/ibsheet-data.js`
 
 ```js
 // ibsheet sample data
