@@ -260,4 +260,4 @@ export class AppModule { }
 
 ## 시작 패키지
 
-* <https://github.com/ibsheet/loader-ng-starter>
+* [문서 바로가기](../appendix/starter-packages)

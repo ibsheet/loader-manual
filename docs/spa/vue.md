@@ -282,4 +282,4 @@ export default {
 
 ## 시작 패키지
 
-* <https://github.com/ibsheet/loader-vue-starter>
+* [문서 바로가기](../appendix/starter-packages)
