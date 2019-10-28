@@ -58,5 +58,4 @@ loader.createSheet({
 }).then(function(sheet) {
   console.log(`"${sheet.id}" 시트가 만들어졌습니다.`)
 })
-
 ```

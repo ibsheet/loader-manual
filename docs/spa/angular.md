@@ -24,9 +24,10 @@ ng new <project_dir>
 
 ```bash
 cd <project_dir>
+yarn add @ibsheet/loader
 npm install --save @ibsheet/loader
-# using yarn
-# yarn add @ibsheet/loader
+# using npm
+# npm i -S @ibsheet/loader
 ```
 
 ### IBSheet 라이브러리
@@ -54,6 +55,11 @@ yarn start
 ```
 
 ## 메인 컴포넌트
+
+`IBSheet` 라이브러리는 로더에서 단 한번만 등록하면 되므로,
+메인 컴포넌트에서 로더의 환경을 설정합니다. (`IBSheet` 라이브러리를 등록)
+
+* 메인 컴포넌트: `IBSheet` 라이브러리를 사용할 최상위 컴포넌트
 
 ### app.component.ts
 
@@ -99,6 +105,8 @@ export class AppComponent {
 
 ## 샘플 공유 데이터
 
+각 컴포넌트에서 사용할 공용 샘플 데이터 파일을 만듭니다.
+
 * [`src/shared/ibsheet-data.ts`](../appendix/spa-sample-data)
 
 ## 서브 컴포넌트
@@ -114,7 +122,9 @@ ng generate component page1
 ng generate component page2
 ```
 
-### HomeComponent
+### Home
+
+홈 화면에서는 `IBSheet` 라이브러리를 로드하지 않습니다. 만약 로드되어 있다면 컴포넌트 마운트시 `unload` 합니다.
 
 `src/home/home.component.html`
 
@@ -143,7 +153,9 @@ export class HomeComponent implements OnInit {
 }
 ```
 
-### Page1Component
+### Page1
+
+컴포넌트 마운트시 첫 번째 샘플 데이터로 `IBSheet` 테이블을 생성합니다. 컴포넌트가 제거할 때, 해당 테이블도 제거합니다.
 
 `src/page1/page1.component.html`
 
@@ -181,7 +193,9 @@ export class Page1Component implements OnInit, OnDestroy {
 }
 ```
 
-### Page2Component
+### Page2
+
+두 번째 샘플 데이터로 `IBSheet` 테이블을 생성합니다. 컴포넌트가 제거할 때, 해당 테이블도 제거합니다.
 
 `src/page2/page2.component.html`
 
@@ -221,6 +235,8 @@ export class Page2Component implements OnInit, OnDestroy {
 
 ## 라우터 설정하기
 
+이상 생성한 서브 컴포넌트들을 해당 모듈의 라우터 구성에 추가합니다.
+
 ### app.module.ts
 
 `src/app.module.ts`
@@ -243,10 +259,7 @@ const appRoutes: Routes = [
 
 @NgModule({
   declarations: [
-    AppComponent,
-    Page1Component,
-    Page2Component,
-    HomeComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
@@ -260,4 +273,4 @@ export class AppModule { }
 
 ## 시작 패키지
 
-* [문서 바로가기](../appendix/starter-packages)
+* [문서 바로가기](/loader-manual/docs/appendix/starter-packages)
