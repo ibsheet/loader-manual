@@ -4,8 +4,10 @@ title: Sample Data for SPA
 sidebar_label: 샘플 데이터
 ---
 
+## 예제 데이터 파일
+
 * angular: `src/shared/ibsheet-data.ts`
-* vue
+* vue: `src/shared/ibsheet-data.js`
 * eract
 
 ```js
@@ -195,3 +197,5 @@ export const SheetSampleData = [
 ];
 
 ```
+
+## BOTTOM

@@ -6,7 +6,7 @@ sidebar_label: Angular
 
 ## 사전 설정
 
-### CLI 설치하기
+### CLI 설치
 
 * <https://cli.angular.io/>
 
@@ -20,7 +20,7 @@ npm install -g @angular/cli
 ng new <project_dir>
 ```
 
-### 로더 설치하기
+### 패키지 설치
 
 ```bash
 cd <project_dir>
@@ -29,7 +29,7 @@ npm install --save @ibsheet/loader
 # yarn add @ibsheet/loader
 ```
 
-### ibsheet 라이브러리 복사
+### IBSheet 라이브러리
 
 만약 서버 URL을 사용한다면 이 단계는 생략합니다.
 
@@ -43,6 +43,14 @@ npm install --save @ibsheet/loader
 |     ├── fonts/
 |     ├── ibsheet.js
 |     └── ibleaders.js
+```
+
+### 개발서버 실행
+
+```bash
+yarn start
+# using npm
+# npm start
 ```
 
 ## 메인 컴포넌트
