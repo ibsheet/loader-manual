@@ -8,13 +8,13 @@ import { Highlight, Badge, BadgeGroup } from '../shared'
 
 ## LoaderRegistry?
 
-`LoaderRegistry`는 [`load`]('./load') 기능을 보다 간편하게 사용하기 위해 미리 사용할 라이브러리들을 등록해 놓을 수 있는 저장소입니다.
+`LoaderRegistry`는 [`load`](/loader-manual/docs/basic/load) 기능을 보다 간편하게 사용하기 위해 미리 사용할 라이브러리들을 등록해 놓을 수 있는 저장소입니다.
 
 이 레지스트리에 아이템(라이브러리)을 추가하는 방법은 세 가지가 있습니다.
 
-* 이전단계의 [`config`](./configuration#loaderconfigoptions)기능의 `registry` 옵션에 추가
+* 이전단계의 [`config`](/loader-manual/docs/basic/configuration.md#loaderconfigoptions)기능의 `registry` 옵션에 추가
 * [`registry.add`](#add) 기능을 사용
-* [`load`](./load) 기능을 사용
+* [`load`](/loader-manual/docs/basic/load) 기능을 사용
 
 > <Highlight color="#555">이하 문서에서 LoaderRegistry에 추가할 또는 추가된 라이브러리(스크립트) 객체는 "<b>아이템</b>"이라고 일컫습니다.</Highlight>
 

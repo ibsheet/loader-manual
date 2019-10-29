@@ -17,7 +17,7 @@ sidebar_label: 스크립트 불러오기
 
 * `undefined`
 * `string`: `alias` or `URL`
-* `object`: [`RegistryItemData`](./registry#registryitemdata)
+* `object`: [`RegistryItemData`](/loader-manual/docs/basic/registry#registryitemdata)
 * `array`: `(alias|URL|RegistryItemData)[]`
 
 ### 다이어그램

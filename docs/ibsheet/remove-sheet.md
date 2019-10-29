@@ -14,7 +14,7 @@ sidebar_label: 시트 제거하기
 
 ### removeSheet
 
-IBSheet 테이블을 생성하고 3초 후에 제거하는 예제
+`IBSheet` 테이블을 생성하고 3초 후에 제거하는 예제
 
 ```js
 // get global loader instance

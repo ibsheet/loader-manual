@@ -76,14 +76,14 @@ interface LoaderEventInterface {
 라이브러리를 로드할 때, 발생
 
 * `this`: `IBSheetLoader`
-* `event.target`: [`RegistryItem`](./registry#registryitem)
+* `event.target`: [`RegistryItem`](/loader-manual/docs/basic/registry#registryitem)
 
 ### loaded
 
 라이브러리가 로드되었을 때, 발생
 
 * `this`: `IBSheetLoader`
-* `event.target`: [`RegistryItem`](./registry#registryitem)
+* `event.target`: [`RegistryItem`](/loader-manual/docs/basic/registry#registryitem)
 
 #### Usage
 
@@ -101,7 +101,7 @@ loader.once('loaded', function(evt) {
 
 * `this`: `IBSheetLoader`
 * `event.target`: `IBSheetLoader`
-* `event.data`: [`RegistryItem[]`](./registry#registryitem)
+* `event.data`: [`RegistryItem[]`](/loader-manual/docs/basic/registry#registryitem)
 
 ### load-failed
 
@@ -115,7 +115,7 @@ loader.once('loaded', function(evt) {
 라이브러리 로드시, `DOM`에 `HTMLElement`를 생성할 때 오류 발생
 
 * `this`: `IBSheetLoader`
-* `event.target`: [`RegistryItem`](./registry#registryitem)
+* `event.target`: [`RegistryItem`](/loader-manual/docs/basic/registry#registryitem)
 * `event.error`: `Error`
 
 ### unload
@@ -123,35 +123,35 @@ loader.once('loaded', function(evt) {
 라이브러리를 언로드할 때, 발생
 
 * `this`: `IBSheetLoader`
-* `event.target`: [`RegistryItem`](./registry#registryitem)
+* `event.target`: [`RegistryItem`](/loader-manual/docs/basic/registry#registryitem)
 
 ### unloaded
 
 라이브러리가 언로드되었을 때, 발생
 
 * `this`: `IBSheetLoader`
-* `event.target`: [`RegistryItem`](./registry#registryitem)
+* `event.target`: [`RegistryItem`](/loader-manual/docs/basic/registry#registryitem)
 
 ### unload-complete
 
 모든 요청 라이브러리가 언로드되었을 때, 발생
 
 * `this`: `IBSheetLoader`
-* `event.data`: [`RegistryItem[]`](./registry#registryitem)
+* `event.data`: [`RegistryItem[]`](/loader-manual/docs/basic/registry#registryitem)
 
 ### unload-failed
 
 라이브러리 제거에 실패했을 때, 발생
 
 * `this`: `IBSheetLoader`
-* `event.data`: [`RegistryItem[]`](./registry#registryitem)
+* `event.data`: [`RegistryItem[]`](/loader-manual/docs/basic/registry#registryitem)
 
 ### unload-reject
 
 라이브러리 언로드시, `DOM`에 `HTMLElement`를 제거할 때 오류 발생
 
 * `this`: `IBSheetLoader`
-* `event.target`: [`RegistryItem`](./registry#registryitem)
+* `event.target`: [`RegistryItem`](/loader-manual/docs/basic/registry#registryitem)
 * `event.error`: `Error`
 
 
