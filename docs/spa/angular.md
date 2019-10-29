@@ -161,7 +161,7 @@ export class HomeComponent implements OnInit {
 
 ```html
 <p>page1 works!</p>
-<div class="sheetContainer"></div>
+<div id="sheetContainer"></div>
 ```
 
 `src/page1/page1.component.ts`
@@ -201,7 +201,7 @@ export class Page1Component implements OnInit, OnDestroy {
 
 ```html
 <p>page2 works!</p>
-<div class="sheetContainer"></div>
+<div id="sheetContainer"></div>
 ```
 
 `src/page2/page2.component.ts`
