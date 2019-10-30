@@ -109,10 +109,10 @@ abstract class RegistryItem extends CustomEventEmitter {
 * `locales`: 메시지 데이터 로드 옵션(기본값: `['ko']`)
   *  설정에 따라 언어팩 파일 URL을 완성합니다. `locale/<locale>.js`
 * `corefile`: 코어 파일이름 사용자화 옵션(기본값: `ibsheet.js`)
-* `plugins`: IBSheet 제공 모듈, 설정에 따라 스크립트 파일 URL을 완성합니다.
-  * `excel` - `ibsheet-excel.js`
-  * `common` - `ibsheet-common.js`
-  * `dialog` - `ibsheet-dialog.js`
+* `plugins`: IBSheet 제공 모듈, 설정에 따라 스크립트 파일 URL을 완성합니다. `plugins/ibsheet-<name>.js`
+  * `excel` - `plugins/ibsheet-excel.js`
+  * `common` - `plugins/ibsheet-common.js`
+  * `dialog` - `plugins/ibsheet-dialog.js`
 
 ## 주요 기능
 

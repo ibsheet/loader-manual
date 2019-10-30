@@ -8,7 +8,7 @@ sidebar_label: 시작하기
 
 ## IBSheetLoader?
 
-`IBSheetLoader`는 [IBSheet](https://www.ibsheet.com) 스크립트를 웹페이지상에서 동적으로 로드하는데 사용하는 라이브러리입니다.
+`IBSheetLoader`는 [`IBSheet`](https://www.ibsheet.com) [스크립트 파일들](https://docs.ibleaders.com/ibsheet/v8/manual/#docs/intro/files)을 웹페이지상에서 동적으로 로드하는데 사용하는 라이브러리입니다.
 
 ## 설치하기
 
