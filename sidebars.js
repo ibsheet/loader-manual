@@ -1,12 +1,14 @@
 module.exports = {
   docs: {
     Basic: [
-      'basic/getting-started',
-      'basic/configuration',
-      'basic/registry',
-      'basic/load',
-      'basic/unload',
-      'basic/events'
+      'basic/getting-started'
+    ],
+    Advanced: [
+      'adv/config',
+      'adv/registry',
+      'adv/load',
+      'adv/unload',
+      'adv/events'
     ],
     IBSheet: [
       'ibsheet/create-sheet',
@@ -19,11 +21,11 @@ module.exports = {
       'spa/react'
     ],
     Appendix: [
-      'appendix/starter-packages',
-      'appendix/load-flow',
-      'appendix/spa-sample-data',
-      'appendix/external-lib',
-      'appendix/trouble-shooting'
+      'etc/starter-packages',
+      'etc/load-flow',
+      'etc/spa-sample-data',
+      'etc/external-lib',
+      'etc/trouble-shooting'
     ]
     // Samples: [
     //   'samples/md-sample-1',

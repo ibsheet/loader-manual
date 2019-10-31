@@ -17,12 +17,12 @@ sidebar_label: 스크립트 불러오기
 
 * `undefined`
 * `string`: `alias` or `URL`
-* `object`: [`RegistryItemData`](/loader-manual/docs/basic/registry#registryitemdata)
+* `object`: [`RegistryItemData`](/loader-manual/docs/adv/registry#registryitemdata)
 * `array`: `(alias|URL|RegistryItemData)[]`
 
 ### 다이어그램
 
-* [로드 플로우](../appendix/load-flow)
+* [로드 플로우](../etc/load-flow)
 
 ## 사용 예제
 

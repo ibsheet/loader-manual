@@ -76,14 +76,14 @@ interface LoaderEventInterface {
 라이브러리를 로드할 때, 발생
 
 * `this`: `IBSheetLoader`
-* `event.target`: [`RegistryItem`](/loader-manual/docs/basic/registry#registryitem)
+* `event.target`: [`RegistryItem`](/loader-manual/docs/adv/registry#registryitem)
 
 ### loaded
 
 라이브러리가 로드되었을 때, 발생
 
 * `this`: `IBSheetLoader`
-* `event.target`: [`RegistryItem`](/loader-manual/docs/basic/registry#registryitem)
+* `event.target`: [`RegistryItem`](/loader-manual/docs/adv/registry#registryitem)
 
 #### Usage
 
@@ -101,7 +101,7 @@ loader.once('loaded', function(evt) {
 
 * `this`: `IBSheetLoader`
 * `event.target`: `IBSheetLoader`
-* `event.data`: [`RegistryItem[]`](/loader-manual/docs/basic/registry#registryitem)
+* `event.data`: [`RegistryItem[]`](/loader-manual/docs/adv/registry#registryitem)
 
 ### load-failed
 
@@ -115,7 +115,7 @@ loader.once('loaded', function(evt) {
 라이브러리 로드시, `DOM`에 `HTMLElement`를 생성할 때 오류 발생
 
 * `this`: `IBSheetLoader`
-* `event.target`: [`RegistryItem`](/loader-manual/docs/basic/registry#registryitem)
+* `event.target`: [`RegistryItem`](/loader-manual/docs/adv/registry#registryitem)
 * `event.error`: `Error`
 
 ### unload
@@ -123,41 +123,41 @@ loader.once('loaded', function(evt) {
 라이브러리를 언로드할 때, 발생
 
 * `this`: `IBSheetLoader`
-* `event.target`: [`RegistryItem`](/loader-manual/docs/basic/registry#registryitem)
+* `event.target`: [`RegistryItem`](/loader-manual/docs/adv/registry#registryitem)
 
 ### unloaded
 
 라이브러리가 언로드되었을 때, 발생
 
 * `this`: `IBSheetLoader`
-* `event.target`: [`RegistryItem`](/loader-manual/docs/basic/registry#registryitem)
+* `event.target`: [`RegistryItem`](/loader-manual/docs/adv/registry#registryitem)
 
 ### unload-complete
 
 모든 요청 라이브러리가 언로드되었을 때, 발생
 
 * `this`: `IBSheetLoader`
-* `event.data`: [`RegistryItem[]`](/loader-manual/docs/basic/registry#registryitem)
+* `event.data`: [`RegistryItem[]`](/loader-manual/docs/adv/registry#registryitem)
 
 ### unload-failed
 
 라이브러리 제거에 실패했을 때, 발생
 
 * `this`: `IBSheetLoader`
-* `event.data`: [`RegistryItem[]`](/loader-manual/docs/basic/registry#registryitem)
+* `event.data`: [`RegistryItem[]`](/loader-manual/docs/adv/registry#registryitem)
 
 ### unload-reject
 
 라이브러리 언로드시, `DOM`에 `HTMLElement`를 제거할 때 오류 발생
 
 * `this`: `IBSheetLoader`
-* `event.target`: [`RegistryItem`](/loader-manual/docs/basic/registry#registryitem)
+* `event.target`: [`RegistryItem`](/loader-manual/docs/adv/registry#registryitem)
 * `event.error`: `Error`
 
 
 ### create-sheet
 
-`IBSheet`를 생성할 때, 발생
+시트를 생성할 때, 발생
 
 * `this`: `IBSheetLoader`
 * `event.target`: `IBSheetStatic`
@@ -165,7 +165,7 @@ loader.once('loaded', function(evt) {
 
 ### create-sheet-failed
 
-`IBSheet` 생성에 실패했을 때, 발생
+시트 생성에 실패했을 때, 발생
 
 * `this`: `IBSheetLoader`
 * `event.target`: `IBSheetStatic`
@@ -174,21 +174,21 @@ loader.once('loaded', function(evt) {
 
 ### created-sheet
 
-`IBSheet`를 성공적으로 생성했을 때, 발생
+시트를 성공적으로 생성했을 때, 발생
 
 * `this`: `IBSheetLoader`
 * `event.target`: `IBSheetInstance`
 
 ### remove-sheet
 
-`IBSheet`를 제거 할 때, 발생
+시트를 제거 할 때, 발생
 
 * `this`: `IBSheetLoader`
 * `event.target`: `IBSheetInstance`
 
 ### remove-sheet-failed
 
-`IBSheet`제거에 실패했을 때, 발생
+시트제거에 실패했을 때, 발생
 
 * `this`: `IBSheetLoader`
 * `event.target`: `IBSheetStatic`
@@ -196,7 +196,7 @@ loader.once('loaded', function(evt) {
 
 ### removed-sheet
 
-`IBSheet`를 성공적으로 제거했을 때, 발생
+시트를 성공적으로 제거했을 때, 발생
 
 * `this`: `IBSheetLoader`
 * `event.target`: `IBSheetStatic`

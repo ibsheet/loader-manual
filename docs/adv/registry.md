@@ -8,13 +8,13 @@ import { Highlight, Badge, BadgeGroup } from '../shared'
 
 ## LoaderRegistry?
 
-`LoaderRegistry`는 [`load`](/loader-manual/docs/basic/load) 기능을 보다 간편하게 사용하기 위해 미리 사용할 라이브러리들을 등록해 놓을 수 있는 저장소입니다.
+`LoaderRegistry`는 [`load`](/loader-manual/docs/adv/load) 기능을 보다 간편하게 사용하기 위해 미리 사용할 라이브러리들을 등록해 놓을 수 있는 저장소입니다.
 
 이 레지스트리에 아이템(라이브러리)을 추가하는 방법은 세 가지가 있습니다.
 
-* 이전단계의 [`config`](/loader-manual/docs/basic/configuration.md#loaderconfigoptions)기능의 `registry` 옵션에 추가
+* 이전단계의 [`config`](/loader-manual/docs/adv/config.md#loaderconfigoptions)기능의 `registry` 옵션에 추가
 * [`registry.add`](#add) 기능을 사용
-* [`load`](/loader-manual/docs/basic/load) 기능을 사용
+* [`load`](/loader-manual/docs/adv/load) 기능을 사용
 
 > <Highlight color="#555">이하 문서에서 LoaderRegistry에 추가할 또는 추가된 라이브러리(스크립트) 객체는 "<b>아이템</b>"이라고 일컫습니다.</Highlight>
 
@@ -99,7 +99,7 @@ abstract class RegistryItem extends CustomEventEmitter {
 * `dependentUrls` - 함께 제거시킬 URL 목록([`unload`](./unload)시 사용)
 * `validate`: `() => boolean` - 스크립트 추가 후 검증 로직
 
-#### only for IBSheet
+#### only for ibsheet
 
 * `license`: `URL|string`
   * `URL` - 라이센스 파일 URL을 목록에 추가(ex: `ibleaders.js`)
@@ -109,7 +109,7 @@ abstract class RegistryItem extends CustomEventEmitter {
 * `locales`: 메시지 데이터 로드 옵션(기본값: `['ko']`)
   *  설정에 따라 언어팩 파일 URL을 완성합니다. `locale/<locale>.js`
 * `corefile`: 코어 파일이름 사용자화 옵션(기본값: `ibsheet.js`)
-* `plugins`: IBSheet 제공 모듈, 설정에 따라 스크립트 파일 URL을 완성합니다. `plugins/ibsheet-<name>.js`
+* `plugins`: 설정에 따라 스크립트 파일 URL을 완성합니다. `plugins/ibsheet-<name>.js`
   * `excel` - `plugins/ibsheet-excel.js`
   * `common` - `plugins/ibsheet-common.js`
   * `dialog` - `plugins/ibsheet-dialog.js`

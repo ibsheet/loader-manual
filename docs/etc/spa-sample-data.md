@@ -25,8 +25,7 @@ export const SheetSampleData = [
       Def: { Col: { RelWidth: 1 } },
       Cols: [
         { Header: '이름', Name: 'sa_nm', Type: 'Text' },
-        { Header: '사원번호', Name: 'sa_id', Type: 'Text',
-        Align: 'center' },
+        { Header: '사원번호', Name: 'sa_id', Type: 'Text', Align: 'center' },
         { Header: '부서', Name: 'sa_dept', Type: 'Enum',
           Enum: '|경영지원|총무|인사|설계|시공1|시공2',
           EnumKeys: '|01|02|03|04|05|06' },
@@ -57,10 +56,8 @@ export const SheetSampleData = [
           Enum: '|男|女|기타', EnumKeys: '|男|女|기타' },
         { Header: '연령대', Type: 'Enum', Name: 'sAgeRange', Align: 'Center',
           Enum: '|10대|20대|30대|40대|50대|60대',
-          EnumKeys: '|10대|20대|30대|40대|50대|60대'
-        },
-        { Header: '거주지', Type: 'Text', Name: 'sAddr',
-          Align: 'Center' },
+          EnumKeys: '|10대|20대|30대|40대|50대|60대' },
+        { Header: '거주지', Type: 'Text', Name: 'sAddr', Align: 'Center' },
         { Header: '나이', Type: 'Int', Name: 'sAge',
           Width: '130', Align: 'Right' },
         { Header: '근속기간(년)', Type: 'Int',

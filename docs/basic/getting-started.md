@@ -21,7 +21,7 @@ sidebar_label: 시작하기
 ### Using npm
 
 ```bash
-$ npm install @ibsheet/loader
+$ npm install --save @ibsheet/loader
 ```
 
 ### Using yarn
@@ -43,12 +43,8 @@ var loader = window.IBSheetLoader
 
 ```js
 const loader = require('@ibsheet/loader')
-```
-
-또는
-
-```js
-const { IBSheetLoader: loader } = require('@ibsheet/loader')
+// or
+// const { IBSheetLoader: loader } = require('@ibsheet/loader')
 ```
 
 ---
@@ -56,10 +52,30 @@ const { IBSheetLoader: loader } = require('@ibsheet/loader')
 
 ```ts
 import loader from '@ibsheet/loader'
+// or
+// import { IBSheetLoader as loader } from '@ibsheet/loader'
 ```
 
-또는
 
-```ts
-import { IBSheetLoader as loader } from '@ibsheet/loader'
+## 사용 예제
+
+```js
+import loader from '@ibsheet/loader'
+
+loader.load({
+  name: 'ibsheet',
+  baseUrl: '<publicpath>/ibsheet'
+}).once('loaded', function(evt) {
+  // ibsheet: IBSheetStatic
+  const ibsheet = this.getIBSheetStatic()
+  
+  // todo something
+})
 ```
+
+### 참고
+
+* [load 메소드](/loader-manual/docs/adv/load)
+* [loaded 이벤트](/loader-manual/docs/adv/events#loaded)
+* [getIBSheetStatic 메소드](/loader-manual/docs/ibsheet/create-sheet#getibsheetstatic)
+* [IBSheetStatic 클래스](https://docs.ibleaders.com/ibsheet/v8/manual/#docs/static/static)
