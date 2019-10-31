@@ -13,6 +13,59 @@ sidebar_label: 시트 만들기
 * `options` - 시트 옵션(별칭: `config`)
 * `data` - 시트의 데이터
 
+## 이벤트
+
+### create-sheet
+
+시트를 생성할 때 발생
+
+* `this`: `IBSheetLoader`
+* `event.target`: `IBSheetStatic`
+* `event.data`: `IBSheetCreateOptions`
+
+#### Usage
+
+```js
+loader.once('create-sheet', function(evt) {
+  const { data } = evt
+  console.log('create sheetId:', data.id)
+})
+```
+
+### created-sheet
+
+시트를 성공적으로 생성했을 때 발생
+
+* `this`: `IBSheetLoader`
+* `event.target`: `IBSheetInstance`
+
+#### Usage
+
+```js
+loader.once('created-sheet', function(evt) {
+  const sheet = evt.target
+  console.log('created sheetId:', sheet.id)
+})
+```
+
+### create-sheet-failed
+
+시트 생성에 실패했을 때 발생
+
+* `this`: `IBSheetLoader`
+* `event.target`: `IBSheetStatic`
+* `event.data`: `IBSheetCreateOptions`
+* `event.error`: `Error`
+
+#### Usage
+
+```js
+loader.once('create-sheet-failed', function(evt) {
+  const { data, error } = evt
+  console.error('[CREATE_SHEET_ERROR]', data.id, error)
+})
+```
+
 ## 사용 예제
 
 ### createSheet

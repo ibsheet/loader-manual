@@ -78,4 +78,4 @@ loader.load({
 * [load 메소드](/loader-manual/docs/adv/load)
 * [loaded 이벤트](/loader-manual/docs/adv/events#loaded)
 * [getIBSheetStatic 메소드](/loader-manual/docs/ibsheet/create-sheet#getibsheetstatic)
-* [IBSheetStatic 클래스](https://docs.ibleaders.com/ibsheet/v8/manual/#docs/static/static)
+* [IBSheetStatic 객체](https://docs.ibleaders.com/ibsheet/v8/manual/#docs/static/static)

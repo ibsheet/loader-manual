@@ -10,6 +10,58 @@ sidebar_label: 시트 제거하기
 
 * `id` - 시트의 아이디(전역변수 이름)
 
+## 이벤트
+
+### remove-sheet
+
+시트를 제거 할 때 발생
+
+* `this`: `IBSheetLoader`
+* `event.target`: `IBSheetInstance`
+
+#### Usage
+
+```js
+loader.once('remove-sheet', function(evt) {
+  const sheet = evt.target
+  console.log('remove sheetId:', sheet.id)
+})
+```
+
+### removed-sheet
+
+시트를 성공적으로 제거했을 때 발생
+
+* `this`: `IBSheetLoader`
+* `event.target`: `IBSheetStatic`
+* `event.data.id`: 요청 아이디
+
+#### Usage
+
+```js
+loader.once('removed-sheet', function(evt) {
+  const { data } = evt
+  console.log('removed sheetId:', data.id)
+})
+```
+
+### remove-sheet-failed
+
+시트제거에 실패했을 때 발생
+
+* `this`: `IBSheetLoader`
+* `event.target`: `IBSheetStatic`
+* `event.error`: `Error`
+
+#### Usage
+
+```js
+loader.once('remove-sheet-failed', function(evt) {
+  const { data, error } = evt
+  console.error('[REMOVE_SHEET_ERROR]', data.id, error)
+})
+```
+
 ## 사용 예제
 
 ### removeSheet
