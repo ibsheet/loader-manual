@@ -91,7 +91,7 @@ interface LoaderEvent {
 
 ### load
 
-라이브러리를 로드할 때, 발생
+라이브러리를 로드할 때 발생
 
 * `this`: `IBSheetLoader`
 * `event.target`: [`RegistryItem`](/loader-manual/docs/adv/registry#registryitem)
@@ -107,7 +107,7 @@ loader.once('load', function(evt) {
 
 ### loaded
 
-라이브러리가 로드되었을 때, 발생
+라이브러리가 로드되었을 때 발생
 
 * `this`: `IBSheetLoader`
 * `event.target`: [`RegistryItem`](/loader-manual/docs/adv/registry#registryitem)
@@ -123,7 +123,7 @@ loader.once('loaded', function(evt) {
 
 ### load-complete
 
-모든 요청 라이브러리가 로드되었을 때, 발생
+모든 요청 라이브러리가 로드되었을 때 발생
 
 * `this`: `IBSheetLoader`
 * `event.data`: [`RegistryItem[]`](/loader-manual/docs/adv/registry#registryitem)
@@ -166,7 +166,7 @@ loader
 
 ### load-failed
 
-라이브러리 로드에 실패했을 때, 발생
+라이브러리 로드에 실패했을 때 발생
 
 * `this`: `IBSheetLoader`
 * `event.target`: [`RegistryItem`](/loader-manual/docs/adv/registry#registryitem)
@@ -183,7 +183,7 @@ loader.once('load-failed', function(evt) {
 
 ### unload
 
-라이브러리를 언로드할 때, 발생
+라이브러리를 언로드할 때 발생
 
 * `this`: `IBSheetLoader`
 * `event.target`: [`RegistryItem`](/loader-manual/docs/adv/registry#registryitem)
@@ -199,7 +199,7 @@ loader.once('unload', function(evt) {
 
 ### unloaded
 
-라이브러리가 언로드되었을 때, 발생
+라이브러리가 언로드되었을 때 발생
 
 * `this`: `IBSheetLoader`
 * `event.target`: [`RegistryItem`](/loader-manual/docs/adv/registry#registryitem)
@@ -215,7 +215,7 @@ loader.once('unloaded', function(evt) {
 
 ### unload-complete
 
-모든 요청 라이브러리가 언로드되었을 때, 발생
+모든 요청 라이브러리가 언로드되었을 때 발생
 
 * `this`: `IBSheetLoader`
 * `event.data`: [`RegistryItem[]`](/loader-manual/docs/adv/registry#registryitem)
@@ -238,7 +238,7 @@ loader
 
 ### unload-failed
 
-라이브러리 제거에 실패했을 때, 발생
+라이브러리 제거에 실패했을 때 발생
 
 * `this`: `IBSheetLoader`
 * `event.data`: [`RegistryItem[]`](/loader-manual/docs/adv/registry#registryitem)

@@ -35,7 +35,7 @@ interface LoaderConfigOptions {
 * `registry`: 라이브러리 등록 데이터 리스트
 * `ready`: 설정이 완료되었을 때의 이벤트 콜백
 * `retry`: 재시도 옵션([`load`](/loader-manual/docs/adv/load)시 사용)
-* `debug`: 디버깅 로그 활성화 (기본값: `false`)
+* `debug`: 디버그용 로그 활성화 (기본값: `false`)
 
 ### RetryOptions
 

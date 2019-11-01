@@ -1,10 +1,10 @@
 ---
 id: create-sheet
-title: Create Sheet
+title: 시트 만들기
 sidebar_label: 시트 만들기
 ---
 
-## 동작 방식
+## createSheet
 
 `ibsheet`를 로드하고 `createSheet`의 인자를 기반으로 시트를 생성합니다. API는 [`IBSheet.create`](https://docs.ibleaders.com/ibsheet/v8/manual/#docs/static/create)와 동일하나 `el`, `options` 속성 이름의 별칭을 추가하였습니다.
 
@@ -13,62 +13,7 @@ sidebar_label: 시트 만들기
 * `options` - 시트 옵션(별칭: `config`)
 * `data` - 시트의 데이터
 
-## 이벤트
-
-### create-sheet
-
-시트를 생성할 때 발생
-
-* `this`: `IBSheetLoader`
-* `event.target`: `IBSheetStatic`
-* `event.data`: `IBSheetCreateOptions`
-
-#### Usage
-
-```js
-loader.once('create-sheet', function(evt) {
-  const { data } = evt
-  console.log('create sheetId:', data.id)
-})
-```
-
-### created-sheet
-
-시트를 성공적으로 생성했을 때 발생
-
-* `this`: `IBSheetLoader`
-* `event.target`: `IBSheetInstance`
-
-#### Usage
-
-```js
-loader.once('created-sheet', function(evt) {
-  const sheet = evt.target
-  console.log('created sheetId:', sheet.id)
-})
-```
-
-### create-sheet-failed
-
-시트 생성에 실패했을 때 발생
-
-* `this`: `IBSheetLoader`
-* `event.target`: `IBSheetStatic`
-* `event.data`: `IBSheetCreateOptions`
-* `event.error`: `Error`
-
-#### Usage
-
-```js
-loader.once('create-sheet-failed', function(evt) {
-  const { data, error } = evt
-  console.error('[CREATE_SHEET_ERROR]', data.id, error)
-})
-```
-
-## 사용 예제
-
-### createSheet
+### 사용 예제
 
 ```js
 // get global loader instance
@@ -99,6 +44,8 @@ loader.createSheet({
   console.log('created ibsheet:', sheet.id)
 })
 ```
+
+## 관련 기능
 
 ### sheetReady
 
@@ -164,3 +111,57 @@ loader
 function createIBSheet(options) {
   IBSheet.create(options)
 }
+```
+
+## 이벤트
+
+### create-sheet
+
+시트를 생성할 때 발생
+
+* `this`: `IBSheetLoader`
+* `event.target`: `IBSheetStatic`
+* `event.data`: `IBSheetCreateOptions`
+
+#### Usage
+
+```js
+loader.once('create-sheet', function(evt) {
+  const { data } = evt
+  console.log('create sheetId:', data.id)
+})
+```
+
+### created-sheet
+
+시트를 성공적으로 생성했을 때 발생
+
+* `this`: `IBSheetLoader`
+* `event.target`: `IBSheetInstance`
+
+#### Usage
+
+```js
+loader.once('created-sheet', function(evt) {
+  const sheet = evt.target
+  console.log('created sheetId:', sheet.id)
+})
+```
+
+### create-sheet-failed
+
+시트 생성에 실패했을 때 발생
+
+* `this`: `IBSheetLoader`
+* `event.target`: `IBSheetStatic`
+* `event.data`: `IBSheetCreateOptions`
+* `event.error`: `Error`
+
+#### Usage
+
+```js
+loader.once('create-sheet-failed', function(evt) {
+  const { data, error } = evt
+  console.error('[CREATE_SHEET_ERROR]', data.id, error)
+})
+```

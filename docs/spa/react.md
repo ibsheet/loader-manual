@@ -4,6 +4,8 @@ title: React Framework
 sidebar_label: React.js
 ---
 
+이 가이드는 [`create-react-app`](https://github.com/facebook/create-react-app#creating-an-app/)의 시작 패키지를 기준으로 작성되었습니다. 아래 가이드의 완성본은 [시작 패키지](/loader-manual/docs/etc/starter-packages) 문서에서 확인할 수 있습니다.
+
 ## 사전 설정
 
 ### CLI 설치
@@ -24,8 +26,7 @@ create-react-app <project_dir>
 
 ```bash
 cd <project_dir>
-yarn add @ibsheet/loader
-yarn add react-router-dom
+yarn add @ibsheet/loader react-router-dom
 # using npm
 # npm i -S @ibsheet/loader react-router-dom
 ```
@@ -58,10 +59,7 @@ yarn start
 
 ## 메인 컴포넌트
 
-`ibsheet` 라이브러리는 로더에서 단 한번만 등록하면 되므로,
-메인 컴포넌트에서 로더의 환경을 설정합니다.
-
-* 메인 컴포넌트: 최상위 컴포넌트
+메인 컴포넌트 혹은 모듈에서 사용할 라이브러리들을 설정(등록)합니다.
 
 ### App.js
 
@@ -249,5 +247,7 @@ export default Page2
 ```
 
 ## 시작 패키지
+
+위의 가이드 내용을 바탕으로 구성한 소스코드 저장소를 다음 페이지에서 확인할 수 있습니다.
 
 * [문서 바로가기](/loader-manual/docs/etc/starter-packages)

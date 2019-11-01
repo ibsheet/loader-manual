@@ -4,6 +4,8 @@ title: Angular Framework
 sidebar_label: Angular
 ---
 
+이 가이드는 [`@angular/cli`](https://cli.angular.io/)의 시작 패키지를 기준으로 작성되었습니다. 아래 가이드의 완성본은 [시작 패키지](/loader-manual/docs/etc/starter-packages) 문서에서 확인할 수 있습니다.
+
 ## 사전 설정
 
 ### CLI 설치
@@ -25,7 +27,6 @@ ng new <project_dir>
 ```bash
 cd <project_dir>
 yarn add @ibsheet/loader
-npm install --save @ibsheet/loader
 # using npm
 # npm i -S @ibsheet/loader
 ```
@@ -56,10 +57,7 @@ yarn start
 
 ## 메인 컴포넌트
 
-`ibsheet` 라이브러리는 로더에서 단 한번만 등록하면 되므로,
-메인 컴포넌트에서 로더의 환경을 설정합니다.
-
-* 메인 컴포넌트: 최상위 컴포넌트
+메인 컴포넌트 혹은 모듈에서 사용할 라이브러리들을 설정(등록)합니다.
 
 ### app.component.ts
 
@@ -235,7 +233,7 @@ export class Page2Component implements OnInit, OnDestroy {
 
 ## 라우터 설정하기
 
-이상 생성한 서브 컴포넌트들을 해당 모듈의 라우터 구성에 추가합니다.
+이상 만들었던 서브 컴포넌트들을 해당 모듈의 라우터 구성에 추가합니다.
 
 ### app.module.ts
 
@@ -272,5 +270,7 @@ export class AppModule { }
 ```
 
 ## 시작 패키지
+
+위의 가이드 내용을 바탕으로 구성한 소스코드 저장소를 다음 페이지에서 확인할 수 있습니다.
 
 * [문서 바로가기](/loader-manual/docs/etc/starter-packages)
