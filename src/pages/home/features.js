@@ -14,11 +14,11 @@ const features = [
     )
   },
   {
-    title: <>Browser</>,
-    imageUrl: 'img/features/browsers-1024x1024.png',
+    title: <>Optimized Usability</>,
+    imageUrl: 'img/features/rocket-ship-png-15.png',
     description: (
       <>
-        웹브라우저 환경에서도 쉽게 적용할 수 있습니다.
+        사용에 필요한 API를 최적화했습니다.
       </>
     )
   },
