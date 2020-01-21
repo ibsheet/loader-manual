@@ -95,7 +95,9 @@ loader.load({
 })
 ```
 
-### 여러개의 라이브러리 한번에 로드하기
+### Multiple Load
+
+여러개의 라이브러리 한번에 로드하기
 
 ```js
 // get global loader instance
