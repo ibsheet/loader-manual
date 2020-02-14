@@ -18,15 +18,13 @@ sidebar_label: 시작하기
 <script src="https://unpkg.com/@ibsheet/loader/dist/umd/ibsheet-loader.min.js"></script>
 ```
 
-### Using npm
+### Using node.js
 
 ```bash
+# using npm
 $ npm install --save @ibsheet/loader
-```
 
-### Using yarn
-
-```bash
+# using yarn (https://yarnpkg.com/)
 $ yarn add @ibsheet/loader
 ```
 
@@ -39,7 +37,7 @@ var loader = window.IBSheetLoader
 ```
 
 ---
-### CommonJS usage
+### Node.js(CommonJS) usage
 
 ```js
 const loader = require('@ibsheet/loader')
@@ -48,7 +46,7 @@ const loader = require('@ibsheet/loader')
 ```
 
 ---
-### ESModule, TypeScript usage
+### ES6(ESModule), TypeScript usage
 
 ```ts
 import loader from '@ibsheet/loader'
@@ -86,7 +84,7 @@ function testLoad() {
 
 위 예제에 대한 자세한 가이드는 아래 목록을 참고하세요.
 
-* [load 메소드](/loader-manual/docs/adv/load)
-* [loaded 이벤트](/loader-manual/docs/adv/events#loaded)
-* [getIBSheetStatic 메소드](/loader-manual/docs/ibsheet/create-sheet#getibsheetstatic)
-* [IBSheetStatic 객체](https://docs.ibleaders.com/ibsheet/v8/manual/#docs/static/static)
+* [`load` 메소드](/loader-manual/docs/adv/load)
+* [`loaded` 이벤트](/loader-manual/docs/adv/events#loaded)
+* [`getIBSheetStatic` 메소드](/loader-manual/docs/ibsheet/create-sheet#getibsheetstatic)
+* [`IBSheetStatic` 객체](https://docs.ibleaders.com/ibsheet/v8/manual/#docs/static/static)
