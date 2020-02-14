@@ -15,7 +15,7 @@ const navbar = {
     },
     { to: 'blog', label: 'Blog', position: 'right' },
     {
-      href: 'https://www.github.com/ibsheet/loader-manual',
+      href: 'https://www.github.com/ibsheet/loader',
       // label: 'GitHub',
       target: '_blank',
       position: 'right'
