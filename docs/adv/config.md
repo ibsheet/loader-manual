@@ -28,6 +28,7 @@ interface LoaderConfigOptions {
   retry?: RetryOptions
   ready?: evt => void
   debug?: boolean
+  autoload?: boolean
 }
 ```
 
@@ -36,6 +37,7 @@ interface LoaderConfigOptions {
 * `ready`: 설정이 완료되었을 때의 이벤트 콜백
 * `retry`: 재시도 옵션([`load`](/loader-manual/docs/adv/load)시 사용)
 * `debug`: 디버그용 로그 활성화 (기본값: `false`)
+* `autoload`: ibsheet 라이브러리 자동 로드 여부 (기본값: `true`)
 
 ### RetryOptions
 
