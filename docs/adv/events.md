@@ -31,7 +31,7 @@ loader.on(eventname, handle)
 
 ### once
 
-이벤트를 등록한다. 이벤트 콜백을 한번 실행 후 자동으로 제거.
+이벤트를 등록한다. 이벤트 콜백을 한 번 실행 후 자동으로 제거.
 
 ```ts
 interface EventEmitter {
