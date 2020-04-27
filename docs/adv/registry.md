@@ -78,7 +78,7 @@ abstract class RegistryItem extends CustomEventEmitter {
 ```
 
 * class extends [`CustomEventEmitter`](#customeventemitter)
-* `name`: `string` - 아이템 식별자(`name`), 유일하지만 여러개의 버전을 가질 수 있음
+* `name`: `string` - 아이템 식별자(`name`), 유일하지만 여러 개의 버전을 가질 수 있음
 * `version`: `string` - 아이템의 버전
 * `alias`: `string` - 식별자(`name`)와 버전`version`의 조합 문자열(`name@version`), 버전이 없다면 식별자와 동일
 * `loaded`: `boolean` - 아이템이 로드되었는지 여부를 반환
@@ -126,7 +126,7 @@ interface LoaderRegistryFunc {
   add(
     data: RegistryItemData,
     overwrite?: boolean = false
-  ): RegistryItem | undefined  
+  ): RegistryItem | undefined
 }
 // usage
 loader.registry.add(data)
