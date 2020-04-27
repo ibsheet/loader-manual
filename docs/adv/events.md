@@ -141,7 +141,7 @@ loader
     {
       name: 'swal2',
       url: 'https://cdn.jsdelivr.net/npm/sweetalert2@8',
-      // 위와같이 URL에 스크립트의 유형(파일확장자)이 포함되지 않은 경우
+      // 위와 같이 URL에 스크립트의 유형(파일확장자)이 포함되지 않은 경우
       // type 속성을 통해 지정해주어야 한다.
       type: 'js'
     },
@@ -160,7 +160,7 @@ loader
         'https://kit-free.fontawesome.com/releases/latest/css/free.min.css'
       ]
     }],
-    // 기본 라이브러리 체크기능을 사용하지 않기 위해 두번째인자로 false를 입력
+    // 기본 라이브러리 체크기능을 사용하지 않기 위해 두 번째 인자로 false를 입력
     false)
 ```
 
