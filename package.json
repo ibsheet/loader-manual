@@ -34,6 +34,6 @@
     "@docusaurus/plugin-content-blog": "^2.0.0-alpha.23",
     "@docusaurus/plugin-content-pages": "^2.0.0-alpha.23",
     "dotenv": "^8.1.0",
-    "standard-version": "^7.0.0"
+    "standard-version": "^8.0.1"
   }
 }
