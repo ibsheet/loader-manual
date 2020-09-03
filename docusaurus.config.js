@@ -60,7 +60,7 @@ const footer = {
         },
         {
           label: 'Discord',
-          href: 'https://discordapp.com/invite/H2wyHXb'
+          href: 'https://discord.gg/2XN7AQk'
         }
       ]
     },
