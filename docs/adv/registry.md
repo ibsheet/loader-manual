@@ -281,5 +281,5 @@ console.log('ibsheet info:', loader.registry.info('ibsheet'))
 
 // get registry list
 console.log('ibsheet aliases', loader.registry.list())
-console.log('loader list', laoder.list())
+console.log('loader list', loader.list())
 ```
