@@ -85,13 +85,13 @@ import loader from '@ibsheet/loader'
 loader.load({
   name: 'ibsheet',
   baseUrl: '<publicpath>/ibsheet',
-  locale: 'ko'
+  locales: ['ko']
 })
 
 // update and reload ibsheet
 loader.load({
   name: 'ibsheet',
-  locale: 'en'
+  locales: ['en']
 })
 ```
 
