@@ -13,6 +13,11 @@ const navbar = {
       to: 'docs/basic/getting-started',
       position: 'right'
     },
+    {
+      label: 'IBSheet8-Manual',
+      href: 'https://docs.ibleaders.com/ibsheet/v8/manual/#docs/intro/featured',
+      position: 'right'
+    },
     { to: 'blog', label: 'Blog', position: 'right' },
     {
       href: 'https://www.github.com/ibsheet/loader',
