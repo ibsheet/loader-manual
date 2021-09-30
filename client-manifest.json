@@ -433,36 +433,36 @@
     "18": {
       "js": [
         {
-          "file": "content---loader-manual-docs-adv-registry-18-b-ec3.9623c59275350296eca5.js",
-          "hash": "9623c59275350296eca5",
-          "publicPath": "/loader-manual/content---loader-manual-docs-adv-registry-18-b-ec3.9623c59275350296eca5.js"
+          "file": "content---loader-manual-docs-adv-registry-18-b-ec3.efdf4ba27d1b46f4f847.js",
+          "hash": "efdf4ba27d1b46f4f847",
+          "publicPath": "/loader-manual/content---loader-manual-docs-adv-registry-18-b-ec3.efdf4ba27d1b46f4f847.js"
         }
       ]
     },
     "19": {
       "js": [
         {
-          "file": "content---loader-manual-docs-adv-unload-593-b3f.3997e63416ebe2256e28.js",
-          "hash": "3997e63416ebe2256e28",
-          "publicPath": "/loader-manual/content---loader-manual-docs-adv-unload-593-b3f.3997e63416ebe2256e28.js"
+          "file": "content---loader-manual-docs-adv-unload-593-b3f.382279f5030d237c9e95.js",
+          "hash": "382279f5030d237c9e95",
+          "publicPath": "/loader-manual/content---loader-manual-docs-adv-unload-593-b3f.382279f5030d237c9e95.js"
         }
       ]
     },
     "20": {
       "js": [
         {
-          "file": "content---loader-manual-docs-basic-getting-started-406-fea.2ce7ab4590eac2dd3663.js",
-          "hash": "2ce7ab4590eac2dd3663",
-          "publicPath": "/loader-manual/content---loader-manual-docs-basic-getting-started-406-fea.2ce7ab4590eac2dd3663.js"
+          "file": "content---loader-manual-docs-basic-getting-started-406-fea.1221c50cc37f28f66286.js",
+          "hash": "1221c50cc37f28f66286",
+          "publicPath": "/loader-manual/content---loader-manual-docs-basic-getting-started-406-fea.1221c50cc37f28f66286.js"
         }
       ]
     },
     "21": {
       "js": [
         {
-          "file": "content---loader-manual-docs-demo-react-demo-658-e23.9bcee8539ee2f8f4e2b1.js",
-          "hash": "9bcee8539ee2f8f4e2b1",
-          "publicPath": "/loader-manual/content---loader-manual-docs-demo-react-demo-658-e23.9bcee8539ee2f8f4e2b1.js"
+          "file": "content---loader-manual-docs-demo-react-demo-658-e23.d703395785ee1358e7d6.js",
+          "hash": "d703395785ee1358e7d6",
+          "publicPath": "/loader-manual/content---loader-manual-docs-demo-react-demo-658-e23.d703395785ee1358e7d6.js"
         }
       ]
     },
@@ -559,25 +559,25 @@
     "32": {
       "js": [
         {
-          "file": "docsMetadata---loader-manual-docs-7-e-5-bfb.fe0b415f057bb8d986b7.js",
-          "hash": "fe0b415f057bb8d986b7",
-          "publicPath": "/loader-manual/docsMetadata---loader-manual-docs-7-e-5-bfb.fe0b415f057bb8d986b7.js"
+          "file": "docsMetadata---loader-manual-docs-7-e-5-bfb.9761bf314dcc86f63ff9.js",
+          "hash": "9761bf314dcc86f63ff9",
+          "publicPath": "/loader-manual/docsMetadata---loader-manual-docs-7-e-5-bfb.9761bf314dcc86f63ff9.js"
         }
       ]
     },
     "33": {
       "css": [
         {
-          "file": "main.d6ffe6e98e3e1dd78a82.css",
-          "hash": "d6ffe6e98e3e1dd78a82",
-          "publicPath": "/loader-manual/main.d6ffe6e98e3e1dd78a82.css"
+          "file": "main.7423fc10a8a4b4a6cb0f.css",
+          "hash": "7423fc10a8a4b4a6cb0f",
+          "publicPath": "/loader-manual/main.7423fc10a8a4b4a6cb0f.css"
         }
       ],
       "js": [
         {
-          "file": "main.d6ffe6e98e3e1dd78a82.js",
-          "hash": "d6ffe6e98e3e1dd78a82",
-          "publicPath": "/loader-manual/main.d6ffe6e98e3e1dd78a82.js"
+          "file": "main.7423fc10a8a4b4a6cb0f.js",
+          "hash": "7423fc10a8a4b4a6cb0f",
+          "publicPath": "/loader-manual/main.7423fc10a8a4b4a6cb0f.js"
         }
       ]
     },
@@ -674,36 +674,36 @@
     "44": {
       "js": [
         {
-          "file": "metadata---loader-manual-docs-adv-registryaa-3-b3e.c19a17398a976ea09225.js",
-          "hash": "c19a17398a976ea09225",
-          "publicPath": "/loader-manual/metadata---loader-manual-docs-adv-registryaa-3-b3e.c19a17398a976ea09225.js"
+          "file": "metadata---loader-manual-docs-adv-registryaa-3-b3e.7a5489dcc747b4aa75a7.js",
+          "hash": "7a5489dcc747b4aa75a7",
+          "publicPath": "/loader-manual/metadata---loader-manual-docs-adv-registryaa-3-b3e.7a5489dcc747b4aa75a7.js"
         }
       ]
     },
     "45": {
       "js": [
         {
-          "file": "metadata---loader-manual-docs-adv-unload-9-aa-49d.db3ca0f724a7ce2403be.js",
-          "hash": "db3ca0f724a7ce2403be",
-          "publicPath": "/loader-manual/metadata---loader-manual-docs-adv-unload-9-aa-49d.db3ca0f724a7ce2403be.js"
+          "file": "metadata---loader-manual-docs-adv-unload-9-aa-49d.817518ed1db5683dcf11.js",
+          "hash": "817518ed1db5683dcf11",
+          "publicPath": "/loader-manual/metadata---loader-manual-docs-adv-unload-9-aa-49d.817518ed1db5683dcf11.js"
         }
       ]
     },
     "46": {
       "js": [
         {
-          "file": "metadata---loader-manual-docs-basic-getting-startedc-3-b-756.927c84fa26f0239fe0c4.js",
-          "hash": "927c84fa26f0239fe0c4",
-          "publicPath": "/loader-manual/metadata---loader-manual-docs-basic-getting-startedc-3-b-756.927c84fa26f0239fe0c4.js"
+          "file": "metadata---loader-manual-docs-basic-getting-startedc-3-b-756.46057dad497876ccdd17.js",
+          "hash": "46057dad497876ccdd17",
+          "publicPath": "/loader-manual/metadata---loader-manual-docs-basic-getting-startedc-3-b-756.46057dad497876ccdd17.js"
         }
       ]
     },
     "47": {
       "js": [
         {
-          "file": "metadata---loader-manual-docs-demo-react-demo-754-794.8b9c414dcf54f5f7cdf4.js",
-          "hash": "8b9c414dcf54f5f7cdf4",
-          "publicPath": "/loader-manual/metadata---loader-manual-docs-demo-react-demo-754-794.8b9c414dcf54f5f7cdf4.js"
+          "file": "metadata---loader-manual-docs-demo-react-demo-754-794.cb86f36b59ec2b38b93c.js",
+          "hash": "cb86f36b59ec2b38b93c",
+          "publicPath": "/loader-manual/metadata---loader-manual-docs-demo-react-demo-754-794.cb86f36b59ec2b38b93c.js"
         }
       ]
     },
@@ -818,9 +818,9 @@
     "60": {
       "js": [
         {
-          "file": "runtime~main.88d31cd603105bd3d811.js",
-          "hash": "88d31cd603105bd3d811",
-          "publicPath": "/loader-manual/runtime~main.88d31cd603105bd3d811.js"
+          "file": "runtime~main.39194ce094d204f9e80c.js",
+          "hash": "39194ce094d204f9e80c",
+          "publicPath": "/loader-manual/runtime~main.39194ce094d204f9e80c.js"
         }
       ]
     },

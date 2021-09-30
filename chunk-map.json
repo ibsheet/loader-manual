@@ -1,7 +1,7 @@
 {
   "main": [
-    "/loader-manual/main.d6ffe6e98e3e1dd78a82.css",
-    "/loader-manual/main.d6ffe6e98e3e1dd78a82.js"
+    "/loader-manual/main.7423fc10a8a4b4a6cb0f.css",
+    "/loader-manual/main.7423fc10a8a4b4a6cb0f.js"
   ],
   "component---theme-blog-post-pageccc-cab": [
     "/loader-manual/component---theme-blog-post-pageccc-cab.1643328c97b617604d31.js"
@@ -47,7 +47,7 @@
     "/loader-manual/component---theme-doc-legacy-page-9-e-7-ca5.f75822a933c5f26210b2.js"
   ],
   "docsMetadata---loader-manual-docs-7-e-5-bfb": [
-    "/loader-manual/docsMetadata---loader-manual-docs-7-e-5-bfb.fe0b415f057bb8d986b7.js"
+    "/loader-manual/docsMetadata---loader-manual-docs-7-e-5-bfb.9761bf314dcc86f63ff9.js"
   ],
   "component---theme-doc-legacy-item-031-769": [
     "/loader-manual/component---theme-doc-legacy-item-031-769.bf2f097101e0694d71b2.css",
@@ -71,29 +71,29 @@
   "metadata---loader-manual-docs-adv-load-7-f-9-550": [
     "/loader-manual/metadata---loader-manual-docs-adv-load-7-f-9-550.f1462924d6604ac1e25f.js"
   ],
-  "content---loader-manual-docs-adv-registry-18-b-ec3": [
-    "/loader-manual/content---loader-manual-docs-adv-registry-18-b-ec3.9623c59275350296eca5.js"
-  ],
-  "metadata---loader-manual-docs-adv-registryaa-3-b3e": [
-    "/loader-manual/metadata---loader-manual-docs-adv-registryaa-3-b3e.c19a17398a976ea09225.js"
-  ],
   "content---loader-manual-docs-adv-unload-593-b3f": [
-    "/loader-manual/content---loader-manual-docs-adv-unload-593-b3f.3997e63416ebe2256e28.js"
+    "/loader-manual/content---loader-manual-docs-adv-unload-593-b3f.382279f5030d237c9e95.js"
   ],
   "metadata---loader-manual-docs-adv-unload-9-aa-49d": [
-    "/loader-manual/metadata---loader-manual-docs-adv-unload-9-aa-49d.db3ca0f724a7ce2403be.js"
-  ],
-  "content---loader-manual-docs-demo-react-demo-658-e23": [
-    "/loader-manual/content---loader-manual-docs-demo-react-demo-658-e23.9bcee8539ee2f8f4e2b1.js"
-  ],
-  "metadata---loader-manual-docs-demo-react-demo-754-794": [
-    "/loader-manual/metadata---loader-manual-docs-demo-react-demo-754-794.8b9c414dcf54f5f7cdf4.js"
+    "/loader-manual/metadata---loader-manual-docs-adv-unload-9-aa-49d.817518ed1db5683dcf11.js"
   ],
   "content---loader-manual-docs-basic-getting-started-406-fea": [
-    "/loader-manual/content---loader-manual-docs-basic-getting-started-406-fea.2ce7ab4590eac2dd3663.js"
+    "/loader-manual/content---loader-manual-docs-basic-getting-started-406-fea.1221c50cc37f28f66286.js"
   ],
   "metadata---loader-manual-docs-basic-getting-startedc-3-b-756": [
-    "/loader-manual/metadata---loader-manual-docs-basic-getting-startedc-3-b-756.927c84fa26f0239fe0c4.js"
+    "/loader-manual/metadata---loader-manual-docs-basic-getting-startedc-3-b-756.46057dad497876ccdd17.js"
+  ],
+  "content---loader-manual-docs-adv-registry-18-b-ec3": [
+    "/loader-manual/content---loader-manual-docs-adv-registry-18-b-ec3.efdf4ba27d1b46f4f847.js"
+  ],
+  "metadata---loader-manual-docs-adv-registryaa-3-b3e": [
+    "/loader-manual/metadata---loader-manual-docs-adv-registryaa-3-b3e.7a5489dcc747b4aa75a7.js"
+  ],
+  "content---loader-manual-docs-demo-react-demo-658-e23": [
+    "/loader-manual/content---loader-manual-docs-demo-react-demo-658-e23.d703395785ee1358e7d6.js"
+  ],
+  "metadata---loader-manual-docs-demo-react-demo-754-794": [
+    "/loader-manual/metadata---loader-manual-docs-demo-react-demo-754-794.cb86f36b59ec2b38b93c.js"
   ],
   "content---loader-manual-docs-etc-external-lib-78-c-511": [
     "/loader-manual/content---loader-manual-docs-etc-external-lib-78-c-511.9ead070eb9a46315d0dc.js"
