@@ -23,7 +23,6 @@ module.exports = {
     Appendix: [
       'etc/starter-packages',
       'etc/load-flow',
-      'etc/spa-sample-data',
       'etc/external-lib',
       'etc/trouble-shooting'
     ],
