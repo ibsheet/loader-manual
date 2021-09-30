@@ -1,7 +1,7 @@
 {
   "main": [
-    "/loader-manual/main.7423fc10a8a4b4a6cb0f.css",
-    "/loader-manual/main.7423fc10a8a4b4a6cb0f.js"
+    "/loader-manual/main.c4036de4cece5a3a7a97.css",
+    "/loader-manual/main.c4036de4cece5a3a7a97.js"
   ],
   "component---theme-blog-post-pageccc-cab": [
     "/loader-manual/component---theme-blog-post-pageccc-cab.1643328c97b617604d31.js"
@@ -47,7 +47,7 @@
     "/loader-manual/component---theme-doc-legacy-page-9-e-7-ca5.f75822a933c5f26210b2.js"
   ],
   "docsMetadata---loader-manual-docs-7-e-5-bfb": [
-    "/loader-manual/docsMetadata---loader-manual-docs-7-e-5-bfb.9761bf314dcc86f63ff9.js"
+    "/loader-manual/docsMetadata---loader-manual-docs-7-e-5-bfb.85b588538a53de49a368.js"
   ],
   "component---theme-doc-legacy-item-031-769": [
     "/loader-manual/component---theme-doc-legacy-item-031-769.bf2f097101e0694d71b2.css",
@@ -59,35 +59,35 @@
   "metadata---loader-manual-docs-adv-config-7-cd-fd7": [
     "/loader-manual/metadata---loader-manual-docs-adv-config-7-cd-fd7.4e88c81a83ef468ced6c.js"
   ],
-  "content---loader-manual-docs-adv-events-0-e-7-483": [
-    "/loader-manual/content---loader-manual-docs-adv-events-0-e-7-483.d0c9b2adac92bc5be6dc.js"
-  ],
-  "metadata---loader-manual-docs-adv-events-955-8b4": [
-    "/loader-manual/metadata---loader-manual-docs-adv-events-955-8b4.11a81bf4b80d05d8f7ff.js"
-  ],
   "content---loader-manual-docs-adv-loade-43-85f": [
-    "/loader-manual/content---loader-manual-docs-adv-loade-43-85f.aba90f550810531b748e.js"
+    "/loader-manual/content---loader-manual-docs-adv-loade-43-85f.5d1aebc0befbd62b1d1c.js"
   ],
   "metadata---loader-manual-docs-adv-load-7-f-9-550": [
-    "/loader-manual/metadata---loader-manual-docs-adv-load-7-f-9-550.f1462924d6604ac1e25f.js"
+    "/loader-manual/metadata---loader-manual-docs-adv-load-7-f-9-550.c4b3a19fd41f664fcb6e.js"
   ],
-  "content---loader-manual-docs-adv-unload-593-b3f": [
-    "/loader-manual/content---loader-manual-docs-adv-unload-593-b3f.382279f5030d237c9e95.js"
+  "content---loader-manual-docs-adv-events-0-e-7-483": [
+    "/loader-manual/content---loader-manual-docs-adv-events-0-e-7-483.f496b48203cc8649f9ba.js"
   ],
-  "metadata---loader-manual-docs-adv-unload-9-aa-49d": [
-    "/loader-manual/metadata---loader-manual-docs-adv-unload-9-aa-49d.817518ed1db5683dcf11.js"
-  ],
-  "content---loader-manual-docs-basic-getting-started-406-fea": [
-    "/loader-manual/content---loader-manual-docs-basic-getting-started-406-fea.1221c50cc37f28f66286.js"
-  ],
-  "metadata---loader-manual-docs-basic-getting-startedc-3-b-756": [
-    "/loader-manual/metadata---loader-manual-docs-basic-getting-startedc-3-b-756.46057dad497876ccdd17.js"
+  "metadata---loader-manual-docs-adv-events-955-8b4": [
+    "/loader-manual/metadata---loader-manual-docs-adv-events-955-8b4.8d9b897f37a1858acb41.js"
   ],
   "content---loader-manual-docs-adv-registry-18-b-ec3": [
-    "/loader-manual/content---loader-manual-docs-adv-registry-18-b-ec3.efdf4ba27d1b46f4f847.js"
+    "/loader-manual/content---loader-manual-docs-adv-registry-18-b-ec3.9623c59275350296eca5.js"
   ],
   "metadata---loader-manual-docs-adv-registryaa-3-b3e": [
-    "/loader-manual/metadata---loader-manual-docs-adv-registryaa-3-b3e.7a5489dcc747b4aa75a7.js"
+    "/loader-manual/metadata---loader-manual-docs-adv-registryaa-3-b3e.c19a17398a976ea09225.js"
+  ],
+  "content---loader-manual-docs-adv-unload-593-b3f": [
+    "/loader-manual/content---loader-manual-docs-adv-unload-593-b3f.3997e63416ebe2256e28.js"
+  ],
+  "metadata---loader-manual-docs-adv-unload-9-aa-49d": [
+    "/loader-manual/metadata---loader-manual-docs-adv-unload-9-aa-49d.db3ca0f724a7ce2403be.js"
+  ],
+  "content---loader-manual-docs-basic-getting-started-406-fea": [
+    "/loader-manual/content---loader-manual-docs-basic-getting-started-406-fea.d5f548c241d62b192465.js"
+  ],
+  "metadata---loader-manual-docs-basic-getting-startedc-3-b-756": [
+    "/loader-manual/metadata---loader-manual-docs-basic-getting-startedc-3-b-756.00bc10f2c22b0531e43a.js"
   ],
   "content---loader-manual-docs-demo-react-demo-658-e23": [
     "/loader-manual/content---loader-manual-docs-demo-react-demo-658-e23.d703395785ee1358e7d6.js"
@@ -161,11 +161,11 @@
   "metadata---loader-manual-blog-tags-npm-5-b-9-6ff": [
     "/loader-manual/metadata---loader-manual-blog-tags-npm-5-b-9-6ff.870dcffe15dc8264609a.js"
   ],
-  "metadata---loader-manual-blog-tags-ibsheet-loader-6-ce-794": [
-    "/loader-manual/metadata---loader-manual-blog-tags-ibsheet-loader-6-ce-794.194e2a426696ac221d05.js"
-  ],
   "metadata---loader-manual-blog-tags-release-0-ae-64c": [
-    "/loader-manual/metadata---loader-manual-blog-tags-release-0-ae-64c.450ca709ad0e063e6d50.js"
+    "/loader-manual/metadata---loader-manual-blog-tags-release-0-ae-64c.da5466a8817b883bfeb7.js"
+  ],
+  "metadata---loader-manual-blog-tags-ibsheet-loader-6-ce-794": [
+    "/loader-manual/metadata---loader-manual-blog-tags-ibsheet-loader-6-ce-794.2cbacd8a45d901e13a5b.js"
   ],
   "metadata---loader-manual-blog-tags-v-0-0-9-ca-3-268": [
     "/loader-manual/metadata---loader-manual-blog-tags-v-0-0-9-ca-3-268.e5c526bd18a380890e8b.js"
