@@ -26,12 +26,9 @@ module.exports = {
       'etc/spa-sample-data',
       'etc/external-lib',
       'etc/trouble-shooting'
+    ],
+    Demo: [
+      'demo/react-demo'
     ]
-    // Samples: [
-    //   'samples/md-sample-1',
-    //   'samples/md-sample-2',
-    //   'samples/md-sample-3',
-    //   'samples/mdx'
-    // ]
   }
 }
