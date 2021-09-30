@@ -6,8 +6,9 @@ sidebar_label: React
 
 ## React Demo Packages
 
-👋 `React, React-Hooks, Redux` 를 사용한 React 데모 샘플을 제공합니다.
+👋 `Javascript, React, React-Hooks, Redux` 를 사용한 React 데모 샘플을 제공합니다.
 
 ### 데모 패키지
 
-* [React 데모 패키지 (javascript, react, react-hooks, redux)](https://github.com/ibsheet/loader-react-guide-samples/tree/main/samples)
+* [React 데모 패키지 (github)](https://github.com/ibsheet/loader-react-guide-samples/tree/main/samples)
+* [React 데모 패키지 (codesandbox)](https://codesandbox.io/s/github/ibsheet/loader-react-guide-samples/tree/main/samples?file=/src/index.js)
