@@ -4,7 +4,9 @@ title: React Framework
 sidebar_label: React.js
 ---
 
-이 가이드는 [`create-react-app`](https://github.com/facebook/create-react-app#creating-an-app/)의 시작 패키지를 기준으로 작성되었습니다. 아래 가이드의 완성본은 [시작 패키지](/loader-manual/docs/etc/starter-packages) 문서에서 확인할 수 있습니다.
+가이드는 [`create-react-app`](https://github.com/facebook/create-react-app#creating-an-app/)의 시작 패키지를 기준으로 작성되었습니다. <br/>
+아래 가이드의 완성본은 [시작 패키지](/loader-manual/docs/etc/starter-packages) 문서에서 확인할 수 있습니다. <br/>
+React Hooks, Redux 를 적용한 가이드는 [데모 패키지](/)에서 확인할 수 있습니다.
 
 ## 사전 설정
 
@@ -56,6 +58,8 @@ yarn start
 # using npm
 # npm start
 ```
+
+## 시작 패키지
 
 ## 메인 컴포넌트
 
@@ -245,8 +249,6 @@ export class Page2 extends Component {
 
 export default Page2
 ```
-
-## 시작 패키지
 
 위의 가이드 내용을 바탕으로 구성한 소스코드 저장소를 다음 페이지에서 확인할 수 있습니다.
 

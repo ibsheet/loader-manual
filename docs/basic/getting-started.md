@@ -71,12 +71,12 @@ loader.config({
 
 function testLoad() {
   // add 'loaded' event listener
-  loader.once('loaded', function(evt) {
+  loader.once('loaded', (evt) => {
     // ibsheet: IBSheetStatic
     const ibsheet = this.getIBSheetStatic()
     // todo something
   })
-  
+
   // load ibsheet
   loader.load() // or loader.load('ibsheet')
 }

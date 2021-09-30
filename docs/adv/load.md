@@ -6,14 +6,14 @@ sidebar_label: 스크립트 불러오기
 
 ## 동작 방식
 
-`load` 메소드는 [`config`](/loader-manual/docs/adv/config)의 autoload(기본 값 true) 인자 값에 따라 `ibsheet` 라이브러리를 자동으로 로드한다.
+`load` 메소드는 [`config`](/loader-manual/docs/adv/config)의 `autoload(default(true))` 인자 값에 따라 `ibsheet` 라이브러리를 자동으로 로드한다.
 
 * `ibsheet`가 <strong>로드되어 있지 않은 상태</strong>이면, 인자에 상관없이 `ibsheet` 라이브러리 로드를 시도하고, 로드할 정보가 없다면 오류를 발생시킨다.
 * 인자로 <strong>새로운</strong> `ibsheet`를 주었을 때, 기존 라이브러리를 언로드하고 새로운 라이브러리를 로드한다.
 * 인자로 <strong>동일한 버전</strong>의 `ibsheet`를 주었을 때, 업데이트 후 라이브러리를 다시 로드한다.
 * 이외의 경우, 이미 라이브러리가 로드되어 있다면 아무일도 하지 않는다.
 
-> `ibsheet` 라이브러리 자동 로드 기능을 사용하지 않으려면 두 번째 인자로 `false`를 입력하고 호출한다.
+> `ibsheet` 라이브러리 자동 로드 기능을 사용하지 않으려면, `false`를 사용하시면 됩니다.
 
 ### 허용 파라메터 유형
 

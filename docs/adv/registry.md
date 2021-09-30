@@ -8,11 +8,11 @@ import { Highlight, Badge, BadgeGroup } from '../shared'
 
 ## LoaderRegistry?
 
-`LoaderRegistry`는 [`load`](/loader-manual/docs/adv/load) 기능을 보다 간편하게 사용하기 위해 미리 사용할 라이브러리들을 등록해 놓을 수 있는 저장소입니다.
+`LoaderRegistry`는 [`load`](/loader-manual/docs/adv/load) 기능을 보다 간편하게 사용하기 위해 미리 사용할 시트 라이브러리들을 등록해 놓을 수 있는 저장소입니다.
 
 이 레지스트리에 아이템(라이브러리)을 추가하는 방법은 세 가지가 있습니다.
 
-* 이전단계의 [`config`](/loader-manual/docs/adv/config.md#loaderconfigoptions)기능의 `registry` 옵션에 추가
+* [`config`](/loader-manual/docs/adv/config.md#loaderconfigoptions)기능의 `registry` 옵션에 추가
 * [`registry.add`](#add) 기능을 사용
 * [`load`](/loader-manual/docs/adv/load) 기능을 사용
 
@@ -51,7 +51,7 @@ abstract class IBSheetLoader extends CustomEventEmitter {
 
 ### LoaderRegistry
 
-IBSheetLoader registry class
+LoaderRegistry 클래스
 
 ```ts
 abstract class LoaderRegistry extends CustomEventEmitter {
@@ -64,7 +64,7 @@ abstract class LoaderRegistry extends CustomEventEmitter {
 
 ### RegistryItem
 
-registry의 아이템 객체
+RegistryItem의 아이템 객체
 
 ```ts
 abstract class RegistryItem extends CustomEventEmitter {
@@ -80,7 +80,8 @@ abstract class RegistryItem extends CustomEventEmitter {
 * class extends [`CustomEventEmitter`](#customeventemitter)
 * `name`: `string` - 아이템 식별자(`name`), 유일하지만 여러 개의 버전을 가질 수 있음
 * `version`: `string` - 아이템의 버전
-* `alias`: `string` - 식별자(`name`)와 버전`version`의 조합 문자열(`name@version`), 버전이 없다면 식별자와 동일
+* `alias`: `string` - 식별자(`name`)와 버전`version`의 조합 문자열(`name@version`), <br/>
+버전이 없다면 식별자와 동일
 * `loaded`: `boolean` - 아이템이 로드되었는지 여부를 반환
 
 ### RegistryItemData
@@ -89,7 +90,7 @@ abstract class RegistryItem extends CustomEventEmitter {
 
 #### Common Interface
 
-* `name`: `string` - 식별자(Must be unique)
+* `name`: `string` - 식별자(**Must be unique**)
 * `version`: `string` - 버전
 * `baseUrl`: `string` - URL의 기본 경로(프로토콜 또는 절대경로를 포함하지 않은 경우)
 * `urls`: `string[]|object[]` - URL 목록
@@ -99,7 +100,7 @@ abstract class RegistryItem extends CustomEventEmitter {
 * `dependentUrls` - 함께 제거시킬 URL 목록([`unload`](./unload)시 사용)
 * `validate`: `() => boolean` - 스크립트 추가 후 검증 로직
 
-#### only for ibsheet
+#### only for IBSheet
 
 * `license`: `URL|string`
   * `URL` - 라이센스 파일 URL을 목록에 추가(ex: `ibleaders.js`)
@@ -107,7 +108,8 @@ abstract class RegistryItem extends CustomEventEmitter {
 * `theme`: CSS 테마 로드 옵션(기본값: `default`)
   * 설정에 따라 CSS 파일 URL을 완성합니다. `css/<theme>/main.css`
 * `locales`: 메시지 데이터 로드 옵션(기본값: `['ko']`)
-  *  설정에 따라 언어팩 파일 URL을 완성합니다. `locale/<locale>.js`
+  * 설정에 따라 언어팩 파일 URL을 완성합니다. `locale/<locale>.js`
+  * `locales: ['ko']`를 `locales: 'ko'` 와 같이 사용할 수 있다.
 * `corefile`: 코어 파일이름 사용자화 옵션(기본값: `ibsheet.js`)
 * `plugins`: 설정에 따라 스크립트 파일 URL을 완성합니다. `plugins/ibsheet-<name>.js`
   * `excel` - `plugins/ibsheet-excel.js`
@@ -233,36 +235,35 @@ loader.registry.remove(alias)
 
 ## 사용 예제
 
-### 데이터 정의하기
-
-```js
-// define ibsheet for loader registry
-const ibsheetLibrary = {
-  name: 'ibsheet',          // unique name
-  // <publicpath>: your public directory
-  baseUrl: '<publicpath>/ibsheet',
-  theme: 'default',         // default value
-  locales: ['ko'],          // default value
-  // or locale: 'ko'
-  // license: './ibleaders.js'
-}
-```
-
 ### 등록하기
+
 ```js
 // get global loader instance
 import loader from '@ibsheet/loader'
 
+// 데이터 정의
+const ibsheetLibrary = {
+  name: 'ibsheet',          // unique name
+  // <publicpath>: your public directory
+  baseUrl: '<publicpath>/ibsheet',
+  theme: 'default',         // default
+  locales: ['ko'],          // or locales: 'ko' (default)
+  plugins: ['excel', 'common', 'dialog']
+  // license: './ibleaders.js'
+}
+
 // define registry list
 const registry = [ibsheetLibrary]
 
-// method 1: setup registry with loader configuration
-loader.config({ registry })
+// 방법 1: loader.config 를 사용.
+loader.config({ registry: registry })
 
-// method 2: use add or addAll
+// 방법 2: loader.registry.add 를 사용
 loader.registry.add(ibsheetLibrary)
-// or addAll
+
+// 방법 3: loader.registry.addAll 를 사용
 loader.registry.addAll(registry)
+
 ```
 
 ### 등록 아이템 확인하기

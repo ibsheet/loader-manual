@@ -6,7 +6,8 @@ sidebar_label: 시트 만들기
 
 ## createSheet
 
-`ibsheet`를 로드하고 `createSheet`의 인자를 기반으로 시트를 생성합니다. API는 [`IBSheet.create`](https://docs.ibleaders.com/ibsheet/v8/manual/#docs/static/create)와 동일하지만 `el`, `options` 속성 이름의 별칭과, 대상 엘리먼트의 아이디 대신 엘리먼트를 직접 설정할 수 있도록 인터페이스를 개선하였습니다.
+`ibsheet`를 로드하고 `createSheet`의 인자를 기반으로 시트를 생성합니다. <br/>
+API는 [`IBSheet.create`](https://docs.ibleaders.com/ibsheet/v8/manual/#docs/static/create)와 동일하지만 `el`, `options` 속성 이름의 별칭과, 대상 엘리먼트의 아이디 대신 엘리먼트를 직접 설정할 수 있도록 인터페이스를 개선하였습니다.
 
 * `id` - 시트의 아이디(전역변수 이름), 설정되지 않으면 자동으로 아이디를 생성
 * `el` - 시트가 만들어질 `HTMLElement` 아이디(별칭: `elementId`)
@@ -42,8 +43,9 @@ loader.createSheet({
   data: [
     // ...your data
   ]
-}).then(function(sheet) {
+}).then(sheet => {
   // sheet: IBSheetInstance
+  // 시트 객체가 생성되지만, 시트가 그려지지는 않은 상태.
   console.log('created ibsheet:', sheet.id)
 })
 ```
@@ -69,7 +71,7 @@ loader.config({
 })
 
 // load ibsheet and create sheet
-loader.sheetReady(function(ibsheet) {
+loader.sheetReady(ibsheet => {
   // 'ibsheet', 'this': IBSheetStatic
   this.create({
     id: 'sheet',
@@ -97,7 +99,7 @@ let IBSheet
 
 loader
   // add 'loaded' event listener
-  .once('loaded', function(evt) {
+  .once('loaded', evt => {
     const target = evt.target
     console.log('ibsheet loaded!')
     if (target.alias === 'ibsheet') {
@@ -129,7 +131,7 @@ function createIBSheet(options) {
 #### Usage
 
 ```js
-loader.once('create-sheet', function(evt) {
+loader.once('create-sheet', evt => {
   const { data } = evt
   console.log('create sheetId:', data.id)
 })
@@ -145,7 +147,7 @@ loader.once('create-sheet', function(evt) {
 #### Usage
 
 ```js
-loader.once('created-sheet', function(evt) {
+loader.once('created-sheet', evt => {
   const sheet = evt.target
   console.log('created sheetId:', sheet.id)
 })
@@ -163,7 +165,7 @@ loader.once('created-sheet', function(evt) {
 #### Usage
 
 ```js
-loader.once('create-sheet-failed', function(evt) {
+loader.once('create-sheet-failed', evt => {
   const { data, error } = evt
   console.error('[CREATE_SHEET_ERROR]', data.id, error)
 })

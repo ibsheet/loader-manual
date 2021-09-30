@@ -4,7 +4,8 @@ title: Angular Framework
 sidebar_label: Angular
 ---
 
-이 가이드는 [`@angular/cli`](https://cli.angular.io/)의 시작 패키지를 기준으로 작성되었습니다. 아래 가이드의 완성본은 [시작 패키지](/loader-manual/docs/etc/starter-packages) 문서에서 확인할 수 있습니다.
+이 가이드는 [`@angular/cli`](https://cli.angular.io/)의 시작 패키지를 기준으로 작성되었습니다. <br/>
+아래 가이드의 완성본은 [시작 패키지](/loader-manual/docs/etc/starter-packages) 문서에서 확인할 수 있습니다.
 
 ## 사전 설정
 
@@ -96,7 +97,7 @@ export class AppComponent {
   <li><a routerLink="/page2" routerLinkActive="active">Page2</a></li>
 </ul>
 <div class="main">
-  <router-outlet></router-outlet>  
+  <router-outlet></router-outlet>
   <!-- Routed components go here -->
 </div>
 ```

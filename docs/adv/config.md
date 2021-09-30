@@ -32,10 +32,10 @@ interface LoaderConfigOptions {
 }
 ```
 
-* `globals`: 라이브러리 전역변수 이름설정 옵션
+* `globals`: 라이브러리 전역변수 이름설정 옵션 (기본값: `{ ibsheet: 'IBSheet' }`)
 * `registry`: 라이브러리 등록 데이터 리스트
 * `ready`: 설정이 완료되었을 때의 이벤트 콜백
-* `retry`: 재시도 옵션([`load`](/loader-manual/docs/adv/load)시 사용)
+* `retry`: 재시도 옵션([`load`](/loader-manual/docs/adv/load)시 사용 (기본값: `{ intervalTime: 200`, `maxCount: 50 }`)
 * `debug`: 디버그용 로그 활성화 (기본값: `false`)
 * `autoload`: ibsheet 라이브러리 자동 로드 여부 (기본값: `true`)
 
@@ -51,42 +51,39 @@ interface RetryOptions {
 ```
 
 * `intervalTime`: `number` - 재시도 대기시간, ms (기본값: `200`)
-* `maxCount`: `number` - 최대 재시도 횟수 (기본값: `10`)
+* `maxCount`: `number` - 최대 재시도 횟수 (기본값: `50`)
 
-
-## 사용 예제
-
-### 옵션 정의하기
+## Config 사용 예제
 
 ```js
-// define loader config options
+// loader 인스턴스 가져오기
+import loader from '@ibsheet/loader'
+// 옵션 정의하기
 const loaderOptions = {
   globals: {
-    ibsheet: 'IBSheet'  // default value
+    ibsheet: 'IBSheet'  // default
   },
   registry: [
     // items you need
+    {
+      name: 'ibsheet',
+      baseUrl: '<publicpath>/ibsheet'
+      ...
+    }
   ],
   retry: {
-    intervalTime: 200,  // default value
-    maxCount: 10        // default value
+    intervalTime: 200,  // default
+    maxCount: 50        // default
   },
-  ready: function (evt) {
+  ready: evt => {
     console.log('IBSheetLoader configuration complete.')
   },
-  debug: false          // default value
+  debug: false          // default
 }
+
+// 옵션 적용하기
+loader.config(loaderOptions)
 ```
 
 * `retry`: [`RetryOptions`](#retryoptions)
 * `registry`: [`RegistryItemData`](/loader-manual/docs/adv/registry#registryitemdata)|[`RegistryItemData[]`](/loader-manual/docs/adv/registry#registryitemdata)
-
-### 적용하기
-
-```js
-// get global loader instance
-import loader from '@ibsheet/loader'
-
-// setup loader configuration
-loader.config(loaderOptions)
-```

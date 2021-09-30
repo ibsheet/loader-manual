@@ -28,16 +28,16 @@ const REMOVE_TIME = 3000
 
 loader
   // when created sheet
-  .once('created-sheet', function(evt) {
+  .once('created-sheet', evt => {
     // evt.target: IBSheet 인스턴스
     const sid = evt.target.id
     console.log(`"${sid}" 시트는 ${REMOVE_TIME}ms 후에 제거됩니다.`)
-    setTimeout(function() {
+    setTimeout(() => {
       loader.removeSheet(sid)
     }, REMOVE_TIME)
   })
   // when removed sheet
-  .once('removed-sheet', function(evt) {
+  .once('removed-sheet', evt => {
     // evt.data.id: 제거된 시트의 아이디
     const sid = evt.data.id
     console.log(`"${sid}" 시트가 제거되었습니다.`)
@@ -54,7 +54,7 @@ loader
     ]
   })
   // when created sheet
-  .then(function(sheet) {
+  .then(sheet => {
     console.log(`"${sheet.id}" 시트가 만들어졌습니다.`)
   })
 ```
@@ -71,7 +71,7 @@ loader
 #### Usage
 
 ```js
-loader.once('remove-sheet', function(evt) {
+loader.once('remove-sheet', evt => {
   const sheet = evt.target
   console.log('remove sheetId:', sheet.id)
 })
@@ -88,7 +88,7 @@ loader.once('remove-sheet', function(evt) {
 #### Usage
 
 ```js
-loader.once('removed-sheet', function(evt) {
+loader.once('removed-sheet', evt => {
   const { data } = evt
   console.log('removed sheetId:', data.id)
 })
@@ -105,7 +105,7 @@ loader.once('removed-sheet', function(evt) {
 #### Usage
 
 ```js
-loader.once('remove-sheet-failed', function(evt) {
+loader.once('remove-sheet-failed', evt => {
   const { data, error } = evt
   console.error('[REMOVE_SHEET_ERROR]', data.id, error)
 })

@@ -99,7 +99,7 @@ interface LoaderEvent {
 #### Usage
 
 ```js
-loader.once('load', function(evt) {
+loader.once('load', evt => {
   const { target } = evt
   console.log('load start:', target.alias)
 })
@@ -115,7 +115,7 @@ loader.once('load', function(evt) {
 #### Usage
 
 ```js
-loader.once('loaded', function(evt) {
+loader.once('loaded', evt => {
   const { target } = evt
   console.log('loaded item:', target.alias)
 })
@@ -132,7 +132,7 @@ loader.once('loaded', function(evt) {
 
 ```js
 loader
-  .once('load-complete', function(evt) {
+  .once('load-complete', evt => {
     const { data } = evt
     const items = data.map(item => item.alias).join(',')
     console.log('loaded items:', items)
@@ -175,7 +175,7 @@ loader
 #### Usage
 
 ```js
-loader.once('load-failed', function(evt) {
+loader.once('load-failed', evt => {
   const { target, error } = evt
   console.error('[LOAD_ERROR]', target.alias, error)
 })
@@ -191,7 +191,7 @@ loader.once('load-failed', function(evt) {
 #### Usage
 
 ```js
-loader.once('unload', function(evt) {
+loader.once('unload', evt => {
   const { target } = evt
   console.log('unload item:', target.alias)
 })
@@ -207,7 +207,7 @@ loader.once('unload', function(evt) {
 #### Usage
 
 ```js
-loader.once('unloaded', function(evt) {
+loader.once('unloaded', evt => {
   const { target } = evt
   console.log('unloaded item:', target.alias)
 })
@@ -224,7 +224,7 @@ loader.once('unloaded', function(evt) {
 
 ```js
 loader
-  .once('unload-complete', function(evt) {
+  .once('unload-complete', evt => {
     const { data } = evt
     const items = data.map(item => item.alias).join(',')
     console.log('unloaded items:', items)
@@ -246,7 +246,7 @@ loader
 #### Usage
 
 ```js
-loader.once('unload-failed', function(evt) {
+loader.once('unload-failed', evt => {
   const { target, error } = evt
   console.error('[UNLOAD_ERROR]', target.alias, error)
 })
