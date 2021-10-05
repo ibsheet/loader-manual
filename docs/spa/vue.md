@@ -177,7 +177,7 @@ export default {
 
 각 컴포넌트에서 사용할 공용 샘플 데이터 파일을 만듭니다.
 
-* [`src/shared/ibsheet-data.js`](../etc/spa-sample-data)
+* [`src/shared/ibsheet-data.js`](../etc/start-package)
 
 ## 서브 컴포넌트
 
