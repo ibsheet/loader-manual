@@ -14,11 +14,15 @@ const navbar = {
       position: 'right'
     },
     {
-      label: 'IBSheet8-Manual',
-      href: 'https://docs.ibleaders.com/ibsheet/v8/manual/#docs/intro/featured',
+      label: 'IBSheet8 Manual',
+      href: 'https://docs.ibleaders.com/ibsheet/v8/manual',
       position: 'right'
     },
-    { to: 'blog', label: 'Blog', position: 'right' },
+    {
+      to: 'blog',
+      label: 'Blog',
+      position: 'right'
+    },
     {
       href: 'https://www.github.com/ibsheet/loader',
       // label: 'GitHub',
@@ -52,6 +56,11 @@ const footer = {
           label: 'API Reference',
           to: 'https://ibsheet.github.io/loader/',
           target: '_blank'
+        },
+        {
+          label: 'IBSheet8 Manual',
+          to: 'https://docs.ibleaders.com/ibsheet/v8/manual',
+          target: '_blank'
         }
       ]
     },
@@ -62,10 +71,10 @@ const footer = {
           label: 'GitHub Issues',
           href: 'https://github.com/ibsheet/loader/issues',
           target: '_blank'
-        },
-        {
-          label: 'Discord',
-          href: 'https://discord.gg/2XN7AQk'
+        // },
+        // {
+        //   label: 'Discord',
+        //   href: 'https://discord.gg/2XN7AQk'
         }
       ]
     },
@@ -99,7 +108,7 @@ const footer = {
     // src: 'img/logo/ibleaders-245x58-2.png'
     src: 'img/logo/ibleaders-ci.svg'
   },
-  copyright: `© ${new Date().getFullYear()} IBSheet Team`
+  copyright: `© 2020 ~ ${new Date().getFullYear()} IBSheet Team`
 }
 
 const presets = [
