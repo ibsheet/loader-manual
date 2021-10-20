@@ -86,6 +86,26 @@ loader.sheetReady(ibsheet => {
 })
 ```
 
+`ibsheet-common.js`에 정의된 전역 변수 `IB_Preset`을 사용하기 위해서 `sheetReady` 기능을 사용할 수 있습니다. `sheetReady`는 라이브러리가 모두 로드된 시점에 발생합니다.
+
+```js
+options.LeftCols = [
+  {
+    Name: 'STATE',
+    Extend: IB_Preset.STATUS
+  }
+];
+
+loader.sheetReady(ibsheet => {
+  // 'ibsheet', 'this': IBSheetStatic
+  this.create({
+    id: 'sheet',
+    el: 'sheetWrapper',
+    options: options,
+  })
+})
+```
+
 ### getIBSheetStatic
 
 `ibsheet` 라이브러리 로드가 완료된 경우, `getIBSheetStatic` 메소드를 통해 [`IBSheetStatic`](https://docs.ibleaders.com/ibsheet/v8/manual/#docs/static/static)객체를 참조할 수 있습니다.
