@@ -86,7 +86,7 @@ loader.sheetReady(ibsheet => {
 })
 ```
 
-`ibsheet-common.js`에 정의된 전역 변수 `IB_Preset`을 사용하기 위해서 `sheetReady` 기능을 사용할 수 있습니다. `sheetReady`는 라이브러리가 모두 로드된 시점에 발생합니다.
+`ibsheet-common.js`에 정의된 전역 변수 `IB_Preset`은 `sheetReady` 이벤트에서 사용할 수 있습니다. `sheetReady`는 라이브러리가 모두 로드된 시점에 발생합니다.
 
 ```js
 options.LeftCols = [
@@ -102,6 +102,9 @@ loader.sheetReady(ibsheet => {
     id: 'sheet',
     el: 'sheetWrapper',
     options: options,
+    data: [
+      // ...your data
+    ]
   })
 })
 ```
