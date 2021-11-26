@@ -454,9 +454,9 @@
     "21": {
       "js": [
         {
-          "file": "content---loader-manual-docs-demo-react-demo-658-e23.ba0c57f11020e846d14d.js",
-          "hash": "ba0c57f11020e846d14d",
-          "publicPath": "/loader-manual/content---loader-manual-docs-demo-react-demo-658-e23.ba0c57f11020e846d14d.js"
+          "file": "content---loader-manual-docs-demo-react-demo-658-e23.d3c1eda0c6e625cb40ef.js",
+          "hash": "d3c1eda0c6e625cb40ef",
+          "publicPath": "/loader-manual/content---loader-manual-docs-demo-react-demo-658-e23.d3c1eda0c6e625cb40ef.js"
         }
       ]
     },
@@ -794,9 +794,9 @@
     "58": {
       "js": [
         {
-          "file": "runtime~main.a6c62e98422dfd43474f.js",
-          "hash": "a6c62e98422dfd43474f",
-          "publicPath": "/loader-manual/runtime~main.a6c62e98422dfd43474f.js"
+          "file": "runtime~main.96fa38849c07ed0d1fd6.js",
+          "hash": "96fa38849c07ed0d1fd6",
+          "publicPath": "/loader-manual/runtime~main.96fa38849c07ed0d1fd6.js"
         }
       ]
     },
