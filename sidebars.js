@@ -27,7 +27,8 @@ module.exports = {
       'etc/trouble-shooting'
     ],
     Demo: [
-      'demo/react-demo'
+      'demo/react-demo',
+      'demo/vue-demo'
     ]
   }
 }
