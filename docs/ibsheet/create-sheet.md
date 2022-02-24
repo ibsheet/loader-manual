@@ -55,6 +55,7 @@ loader.createSheet({
 ### sheetReady
 
 `sheetReady` 기능을 사용해서 [`IBSheetStatic`](https://docs.ibleaders.com/ibsheet/v8/manual/#docs/static/static) 객체로부터 시트를 직접 생성할 수 있습니다.
+`config` 완료시 `sheetReady` 가 한 번 발생합니다.
 
 ```js
 // get global loader instance
@@ -70,19 +71,9 @@ loader.config({
   ]
 })
 
-// load ibsheet and create sheet
+// load ibsheet event sheetReady
 loader.sheetReady(ibsheet => {
   // 'ibsheet', 'this': IBSheetStatic
-  this.create({
-    id: 'sheet',
-    el: 'sheetWrapper',
-    options: {
-      // ...your options
-    },
-    data: [
-      // ...your data
-    ]
-  })
 })
 ```
 
