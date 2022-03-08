@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[61],{45:function(e){e.exports=JSON.parse('{"permalink":"/loader-manual/home/features","source":"/home/circleci/project/src/pages/home/features.js"}')}}]);
