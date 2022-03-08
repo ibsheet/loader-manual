@@ -16,9 +16,9 @@ export class HelpText extends React.Component {
       <span
         style={{
           color,
-          fontStyle: 'italic',
+          // fontStyle: 'italic',
           fontSize: '.9em',
-          padding: '0.2rem'
+          // padding: '0.2rem'
         }}
       >
         {children}
