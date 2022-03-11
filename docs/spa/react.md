@@ -6,7 +6,7 @@ sidebar_label: React.js
 
 가이드는 [`create-react-app`](https://github.com/facebook/create-react-app#creating-an-app/)의 시작 패키지를 기준으로 작성되었습니다. <br/>
 아래 가이드의 완성본은 [시작 패키지](/loader-manual/docs/etc/starter-packages) 문서에서 확인할 수 있습니다. <br/>
-React Hooks, Redux 를 적용한 가이드는 [데모 패키지](/)에서 확인할 수 있습니다.
+React Hooks, Redux 를 적용한 가이드는 [데모 패키지](/loader-manual/docs/demo/react-demo)에서 확인할 수 있습니다.
 
 ## 사전 설정
 
