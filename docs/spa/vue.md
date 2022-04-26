@@ -6,7 +6,10 @@ sidebar_label: Vue.js
 
 이 가이드는 [`@vue/cli`](https://cli.vuejs.org/)의 시작 패키지를 기준으로 작성되었습니다. <br/>
 아래 가이드의 완성본은 [시작 패키지](/loader-manual/docs/etc/starter-packages) 문서에서 확인할 수 있습니다. <br/>
-vue3, vuex 를 적용한 가이드는 [데모 패키지](/loader-manual/docs/demo/vue-demo)에서 확인할 수 있습니다.
+vue3, vuex 를 적용한 가이드는 [데모 패키지](/loader-manual/docs/demo/vue-demo)에서 확인할 수 있습니다. <br/>
+
+**주의사항: 시트의 객체를 data 속성에 정의하면 안됩니다. 시트 객체를 정의시 Observer 가 추가되어 call stack 에러가 발생할 수 있습니다.** <br/>
+**마찬가지로 시트 객체에 강제로 Observer 를 추가하는 경우에도 call stack 에러가 발생할 수 있음으로 주의해주시기 바랍니다.**
 
 ## 사전 설정
 
