@@ -65,8 +65,8 @@ yarn start
 `src/app.component.ts`
 
 ```ts
-import { Component } from '@angular/core';
-import loader from '@ibsheet/loader';
+import { Component } from '@angular/core'
+import loader from '@ibsheet/loader'
 
 loader.config({
   registry: {
@@ -81,7 +81,7 @@ loader.config({
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  loaderVersion = loader.version;
+  loaderVersion = loader.version
 }
 ```
 
@@ -136,8 +136,8 @@ ng generate component page2
 `src/home/home.component.ts`
 
 ```ts
-import { Component, OnInit } from '@angular/core';
-import loader from '@ibsheet/loader';
+import { Component, OnInit } from '@angular/core'
+import loader from '@ibsheet/loader'
 
 @Component({
   selector: 'app-home',
@@ -145,9 +145,9 @@ import loader from '@ibsheet/loader';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  title = 'IBSheetLoader for Angular';
+  title = 'IBSheetLoader for Angular'
   ngOnInit() {
-    loader.unload();
+    loader.unload()
   }
 }
 ```
@@ -166,9 +166,9 @@ export class HomeComponent implements OnInit {
 `src/page1/page1.component.ts`
 
 ```ts
-import { Component, OnInit, OnDestroy } from '@angular/core';
-import loader from '@ibsheet/loader';
-import { SheetSampleData } from '../shared/ibsheet-data';
+import { Component, OnInit, OnDestroy } from '@angular/core'
+import loader from '@ibsheet/loader'
+import { SheetSampleData } from '../shared/ibsheet-data'
 
 @Component({
   selector: 'app-page1',
@@ -176,18 +176,18 @@ import { SheetSampleData } from '../shared/ibsheet-data';
   styleUrls: ['./page1.component.css']
 })
 export class Page1Component implements OnInit, OnDestroy {
-  sheetId = 'sheet';
+  sheetId = 'sheet'
   ngOnInit() {
-    const { options, data } = SheetSampleData[0];
+    const { options, data } = SheetSampleData[0]
     loader.createSheet({
       id: this.sheetId,
       el: 'sheetContainer',
       options,
       data
-    });
+    })
   }
   ngOnDestroy() {
-    loader.removeSheet(this.sheetId);
+    loader.removeSheet(this.sheetId)
   }
 }
 ```
@@ -206,9 +206,9 @@ export class Page1Component implements OnInit, OnDestroy {
 `src/page2/page2.component.ts`
 
 ```ts
-import { Component, OnInit, OnDestroy } from '@angular/core';
-import loader from '@ibsheet/loader';
-import { SheetSampleData } from '../shared/ibsheet-data';
+import { Component, OnInit, OnDestroy } from '@angular/core'
+import loader from '@ibsheet/loader'
+import { SheetSampleData } from '../shared/ibsheet-data'
 
 @Component({
   selector: 'app-page2',
@@ -216,18 +216,18 @@ import { SheetSampleData } from '../shared/ibsheet-data';
   styleUrls: ['./page2.component.css']
 })
 export class Page2Component implements OnInit, OnDestroy {
-  sheetId = 'sheet';
+  sheetId = 'sheet'
   ngOnInit() {
-    const { options, data } = SheetSampleData[1];
+    const { options, data } = SheetSampleData[1]
     loader.createSheet({
       id: this.sheetId,
       el: 'sheetContainer',
       options,
       data
-    });
+    })
   }
   ngOnDestroy() {
-    loader.removeSheet(this.sheetId);
+    loader.removeSheet(this.sheetId)
   }
 }
 ```
@@ -241,20 +241,20 @@ export class Page2Component implements OnInit, OnDestroy {
 `src/app.module.ts`
 
 ```ts
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { BrowserModule } from '@angular/platform-browser'
+import { NgModule } from '@angular/core'
+import { RouterModule, Routes } from '@angular/router'
 
-import { AppComponent } from './app.component';
-import { Page1Component } from './page1/page1.component';
-import { Page2Component } from './page2/page2.component';
-import { HomeComponent } from './home/home.component';
+import { AppComponent } from './app.component'
+import { Page1Component } from './page1/page1.component'
+import { Page2Component } from './page2/page2.component'
+import { HomeComponent } from './home/home.component'
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'page1', component: Page1Component },
   { path: 'page2', component: Page2Component },
-];
+]
 
 @NgModule({
   declarations: [

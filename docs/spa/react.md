@@ -70,23 +70,23 @@ yarn start
 `src/App.js`
 
 ```jsx
-import React from 'react';
-import { BrowserRouter, Route, Link } from 'react-router-dom';
-import loader from '@ibsheet/loader';
-import Home from './components/home';
-import Page1 from './components/page1';
-import Page2 from './components/page2';
-import './App.css';
+import React from 'react'
+import { BrowserRouter, Route, Link } from 'react-router-dom'
+import loader from '@ibsheet/loader'
+import Home from './components/home'
+import Page1 from './components/page1'
+import Page2 from './components/page2'
+import './App.css'
 
 loader.config({
   registry: [{
     name: 'ibsheet',
     baseUrl: '/ibsheet'
   }]
-});
+})
 
 const App = () => {
-  const loaderVersion = loader.version;
+  const loaderVersion = loader.version
 
   return (
     <div className="App">
@@ -104,7 +104,7 @@ const App = () => {
         <Route exact path="/page2" component={ Page2 }/>
       </BrowserRouter>
     </div>
-  );
+  )
 }
 
 export default App
@@ -153,26 +153,26 @@ export default App
 `src/components/home.js`
 
 ```jsx
-import React, { useEffect } from 'react';
+import React, { useEffect } from 'react'
 import loader from '@ibsheet/loader'
-import logo from '../logo.svg';
+import logo from '../logo.svg'
 
 const Home = () => {
-  const msg = 'IBSheetLoader for React!';
+  const msg = 'IBSheetLoader for React!'
 
   useEffect(() => {
-    loader.unload();
-  }, []);
+    loader.unload()
+  }, [])
 
   return (
     <div className="home">
       <img src={logo} className="App-logo" alt="logo" />
       <p>{ msg }</p>
     </div>
-  );
+  )
 }
 
-export default Home;
+export default Home
 ```
 
 ### Page1
@@ -182,16 +182,16 @@ export default Home;
 `src/components/page1.js`
 
 ```jsx
-import React, { useEffect } from 'react';
-import loader from '@ibsheet/loader';
-import { SheetSampleData } from '../shared/ibsheet-data';
+import React, { useEffect } from 'react'
+import loader from '@ibsheet/loader'
+import { SheetSampleData } from '../shared/ibsheet-data'
 
 const Page1 = () => {
-  const sheetId = 'sheet';
-  const sheetEl = 'sheetContainer';
+  const sheetId = 'sheet'
+  const sheetEl = 'sheetContainer'
 
   useEffect(() => {
-    const { data, options } = SheetSampleData[0];
+    const { data, options } = SheetSampleData[0]
 
     loader.createSheet({
       id: sheetId,
@@ -200,19 +200,19 @@ const Page1 = () => {
       data
     })
     return () => {
-      loader.removeSheet(sheetId);
-    };
-  }, []);
+      loader.removeSheet(sheetId)
+    }
+  }, [])
 
   return (
     <div>
       <p>page1 works!</p>
       <div id={ sheetEl }></div>
     </div>
-  );
+  )
 }
 
-export default Page1;
+export default Page1
 ```
 
 ### Page2
@@ -222,16 +222,16 @@ export default Page1;
 `src/components/page2.js`
 
 ```jsx
-import React, { useEffect } from 'react';
-import loader from '@ibsheet/loader';
-import { SheetSampleData } from '../shared/ibsheet-data';
+import React, { useEffect } from 'react'
+import loader from '@ibsheet/loader'
+import { SheetSampleData } from '../shared/ibsheet-data'
 
 const Page2 = () => {
-  const sheetId = 'sheet';
-  const sheetEl = 'sheetContainer';
+  const sheetId = 'sheet'
+  const sheetEl = 'sheetContainer'
 
   useEffect(() => {
-    const { data, options } = SheetSampleData[1];
+    const { data, options } = SheetSampleData[1]
 
     loader.createSheet({
       id: sheetId,
@@ -240,16 +240,16 @@ const Page2 = () => {
       data
     })
     return () => {
-      loader.removeSheet(sheetId);
-    };
-  }, []);
+      loader.removeSheet(sheetId)
+    }
+  }, [])
 
   return (
     <div>
       <p>page2 works!</p>
       <div id={ sheetEl }></div>
     </div>
-  );
+  )
 }
 
 export default Page2

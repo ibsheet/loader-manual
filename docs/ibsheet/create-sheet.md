@@ -110,12 +110,11 @@ loader
 import loader from '@ibsheet/loader'
 
 // 시트 Static 객체 가져오기
-const ibsheet = loader.getIBSheetStatic();
-const sheetId = 'sheet';
+const ibsheet = loader.getIBSheetStatic()
+const sheetId = 'sheet'
 
 // 시트 create 이후, ibsheet static 객체에서 sheet 아이디에 맞는 시트를 가져옵니다.
-
-console.log(ibsheet[sheetId]);
+console.log(ibsheet[sheetId])
 ```
 
 ## 이벤트
