@@ -55,6 +55,7 @@ loader
   })
   // when created sheet
   .then(sheet => {
+    // 주의: 해당 구간에서 데이터 조회를 하면 안됩니다. 데이터 조회는 onRenderFirstFinish 이벤트에서 실행해야합니다.
     console.log(`"${sheet.id}" 시트가 만들어졌습니다.`)
   })
 ```

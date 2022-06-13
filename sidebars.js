@@ -28,7 +28,8 @@ module.exports = {
     ],
     Demo: [
       'demo/react-demo',
-      'demo/vue-demo'
+      'demo/vue-demo',
+      'demo/angular-demo'
     ]
   }
 }

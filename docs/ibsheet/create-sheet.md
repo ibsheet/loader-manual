@@ -46,6 +46,7 @@ loader.createSheet({
 }).then(sheet => {
   // sheet: IBSheetInstance
   // 시트 객체가 생성되지만, 시트가 그려지지는 않은 상태.
+  // 주의: 해당 구간에서 데이터 조회를 하면 안됩니다. 데이터 조회는 onRenderFirstFinish 이벤트에서 실행해야합니다.
   console.log('created ibsheet:', sheet.id)
 })
 ```
