@@ -20,7 +20,7 @@ const navbar = {
     },
     {
       to: 'blog',
-      label: 'Relese',
+      label: 'Release',
       position: 'right'
     },
     {
@@ -87,7 +87,7 @@ const footer = {
           target: '_blank'
         },
         {
-          label: 'Relese',
+          label: 'Release',
           to: 'blog'
         }
       ]
