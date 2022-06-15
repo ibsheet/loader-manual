@@ -20,7 +20,7 @@ const navbar = {
     },
     {
       to: 'blog',
-      label: 'Blog',
+      label: 'Relese',
       position: 'right'
     },
     {
@@ -87,7 +87,7 @@ const footer = {
           target: '_blank'
         },
         {
-          label: 'Blog',
+          label: 'Relese',
           to: 'blog'
         }
       ]
@@ -108,7 +108,7 @@ const footer = {
     // src: 'img/logo/ibleaders-245x58-2.png'
     src: 'img/logo/ibleaders-ci.svg'
   },
-  copyright: `© 2020 ~ ${new Date().getFullYear()} IBSheet Team`
+  copyright: `${new Date().getFullYear()} IBSheet Team`
 }
 
 const presets = [
