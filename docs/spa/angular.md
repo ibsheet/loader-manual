@@ -176,16 +176,17 @@ import { SheetSampleData } from '../shared/ibsheet-data'
   styleUrls: ['./page1.component.css']
 })
 export class Page1Component implements OnInit, OnDestroy {
-  sheetId = 'sheet'
+  sheetId = '';
   ngOnInit() {
+    const A = this;
     const { options, data } = SheetSampleData[0]
     loader.createSheet({
-      id: this.sheetId,
       el: 'sheetContainer',
       options,
       data
     }).then((sheet: { id: any; }) => {
       // 주의: 해당 구간에서 데이터 조회를 하면 안됩니다. 데이터 조회는 onRenderFirstFinish 이벤트에서 실행해야합니다.
+      A.sheetId = sheet.id;
       console.log('created sheet', sheet.id);
     })
   }
@@ -219,16 +220,17 @@ import { SheetSampleData } from '../shared/ibsheet-data'
   styleUrls: ['./page2.component.css']
 })
 export class Page2Component implements OnInit, OnDestroy {
-  sheetId = 'sheet'
+  sheetId = ''
   ngOnInit() {
+    const A = this;
     const { options, data } = SheetSampleData[1]
     loader.createSheet({
-      id: this.sheetId,
       el: 'sheetContainer',
       options,
       data
     }).then((sheet: { id: any; }) => {
       // 주의: 해당 구간에서 데이터 조회를 하면 안됩니다. 데이터 조회는 onRenderFirstFinish 이벤트에서 실행해야합니다.
+      A.sheetId = sheet.id;
       console.log('created sheet', sheet.id);
     })
   }
