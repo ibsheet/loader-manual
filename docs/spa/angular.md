@@ -68,11 +68,13 @@ yarn start
 import { Component } from '@angular/core'
 import loader from '@ibsheet/loader'
 
+const ibsheetLib = {
+  name: 'ibsheet',
+    baseUrl: 'assets/ibsheet'
+    }
+
 loader.config({
-  registry: {
-    name: 'ibsheet',
-    baseUrl: '/assets/ibsheet'
-  }
+   registry: [ibsheetLib]
 })
 
 @Component({
@@ -276,6 +278,22 @@ const appRoutes: Routes = [
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+```
+
+## Package.json
+
+```
+ "dependencies": {
+    "@ibsheet/loader": "^1.1.22",
+    "@angular/animations": "^16.2.0",
+    "@angular/common": "^16.2.0",
+    "@angular/compiler": "^16.2.0",
+    "@angular/core": "^16.2.0",
+    "@angular/forms": "^16.2.0",
+    "@angular/platform-browser": "^16.2.0",
+    "@angular/platform-browser-dynamic": "^16.2.0",
+    "@angular/router": "^16.2.0",
+  },
 ```
 
 ## 시작 패키지

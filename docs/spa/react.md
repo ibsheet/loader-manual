@@ -71,7 +71,7 @@ yarn start
 
 ```jsx
 import React from 'react'
-import { BrowserRouter, Route, Link } from 'react-router-dom'
+import { BrowserRouter, Route, Link, Routes } from 'react-router-dom'
 import loader from '@ibsheet/loader'
 import Home from './components/home'
 import Page1 from './components/page1'
@@ -99,9 +99,11 @@ const App = () => {
             <li><Link to="/page2">Page2</Link></li>
           </ul>
         </div>
-        <Route exact path="/" component={ Home }/>
-        <Route exact path="/page1" component={ Page1 }/>
-        <Route exact path="/page2" component={ Page2 }/>
+       <Routes>
+          <Route path="/" element={ <Home /> }/>
+          <Route path="/page1" element={ <Page1 /> }/>
+          <Route path="/page2" element={ <Page2 /> }/>
+        </Routes>
       </BrowserRouter>
     </div>
   )
@@ -260,6 +262,24 @@ const Page2 = () => {
 
 export default Page2
 ```
+
+## Package.json
+
+```
+  "dependencies": {
+    "@ibsheet/loader": "^1.1.22",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.15.0",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
+  },
+```
+
+## 시작 패키지
 
 위의 가이드 내용을 바탕으로 구성한 소스코드 저장소를 다음 페이지에서 확인할 수 있습니다.
 

@@ -31,14 +31,15 @@ vue create <project_dir>
 
 ```bash
 cd <project_dir>
-yarn add @ibsheet/loader vue-router
+yarn add @ibsheet/loader vue-router@3.5.0
 yarn add -D node-sass sass-loader
 # using npm
-# npm i -S @ibsheet/loader vue-router
+# npm i -S @ibsheet/loader vue-router@3.5.0
 # npm i -D node-sass sass-loader
 ```
 
 * 라우트 기능의 사용을 위해 `vue-router` 패키지를 추가로 설치합니다.
+* vue2에서 vue-router는 3.x버전을 설치해야합니다. 
 * `scss` 스타일 시트 언어를 사용하기 위해 `node-sass`, `sass-loader`를 설치합니다.
 
 ### IBSheet 라이브러리
@@ -116,15 +117,15 @@ new Vue({
 import loader from '@ibsheet/loader'
 import VueRouter from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
-import Page1 from './components/Page1.vue'
-import Page2 from './components/Page2.vue'
+import Page1 from './components/PageOne.vue'
+import Page2 from './components/PageTwo.vue'
 
 const router = new VueRouter({
   mode: 'history',
   routes: [
     { path: '/', name: 'home', component: HelloWorld },
-    { path: '/page1', name: 'page1', component: Page1 },
-    { path: '/page2', name: 'page2', component: Page2 }
+    { path: '/page1', name: 'page1', component: PageOne },
+    { path: '/page2', name: 'page2', component: PageTwo }
   ]
 })
 
@@ -186,8 +187,8 @@ export default {
 ## 서브 컴포넌트
 
 * `src/components/HelloWorld.vue`
-* `src/components/Page1.vue`
-* `src/components/page2.vue`
+* `src/components/PageOne.vue`
+* `src/components/pageTwo.vue`
 
 ### HelloWorld
 
@@ -225,7 +226,7 @@ export default {
 
 컴포넌트 마운트시 첫 번째 샘플 데이터로 시트를 생성합니다. 컴포넌트가 제거될 때, 해당 테이블도 제거합니다.
 
-`src/components/Page1.vue`
+`src/components/PageOne.vue`
 
 #### template
 
@@ -265,7 +266,7 @@ export default {
 
 두 번째 샘플 데이터로 시트를 생성합니다. 컴포넌트가 제거될 때, 해당 테이블도 제거합니다.
 
-`src/components/Page2.vue`
+`src/components/PageTwo.vue`
 
 #### template
 
@@ -299,6 +300,17 @@ export default {
     loader.removeSheet(SHEET_ID)
   }
 }
+```
+
+## Package.json
+
+```
+  "dependencies": {
+    "@ibsheet/loader": "^1.1.22",
+    "core-js": "^3.8.3",
+    "vue": "^2.6.14",
+    "vue-router": "3.5.0"
+  }
 ```
 
 ## 시작 패키지
