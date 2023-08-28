@@ -21,6 +21,7 @@ npm install -g @angular/cli
 
 ```bash
 ng new <project_dir>
+# ? Which stylesheet format would you like to use? CSS
 ```
 
 ### 패키지 설치
@@ -282,7 +283,7 @@ export class AppModule { }
 
 ## Package.json
 
-```
+```json
  "dependencies": {
     "@ibsheet/loader": "^1.1.22",
     "@angular/animations": "^16.2.0",
