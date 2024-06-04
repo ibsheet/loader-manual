@@ -1,7 +1,7 @@
 {
   "main": [
-    "/loader-manual/main.e556cd82d99db1006d53.css",
-    "/loader-manual/main.e556cd82d99db1006d53.js"
+    "/loader-manual/main.acba40775cec7dbc582c.css",
+    "/loader-manual/main.acba40775cec7dbc582c.js"
   ],
   "component---home-circleci-project-src-pages-index-jsa-35-1c9": [
     "/loader-manual/component---home-circleci-project-src-pages-index-jsa-35-1c9.e9f3f541a5248e2c9cf9.css",
@@ -57,20 +57,20 @@
   "content---loader-manual-blog-release-1-1-191-a-6-b17": [
     "/loader-manual/content---loader-manual-blog-release-1-1-191-a-6-b17.926443e96431a531e474.js"
   ],
-  "nextItem---loader-manual-blog-release-1-1-19552-c28": [
-    "/loader-manual/nextItem---loader-manual-blog-release-1-1-19552-c28.2d2d7fa943bb1546e801.js"
-  ],
-  "content---loader-manual-blog-release-1-1-18270-6b5": [
-    "/loader-manual/content---loader-manual-blog-release-1-1-18270-6b5.68edd4bb1e94ba4532bf.js"
-  ],
-  "nextItem---loader-manual-blog-release-1-1-18-dc-6-22e": [
-    "/loader-manual/nextItem---loader-manual-blog-release-1-1-18-dc-6-22e.4616ad59122729bc6fdf.js"
+  "nextItem---loader-manual-blog-release-1-1-19-dc-6-ab8": [
+    "/loader-manual/nextItem---loader-manual-blog-release-1-1-19-dc-6-ab8.859295bff326c1b15a33.js"
   ],
   "content---loader-manual-blog-release-1-1-1645-d-715": [
-    "/loader-manual/content---loader-manual-blog-release-1-1-1645-d-715.e54141a60889890a926d.js"
+    "/loader-manual/content---loader-manual-blog-release-1-1-1645-d-715.8c19d3b86c67112e928c.js"
   ],
-  "nextItem---loader-manual-blog-release-1-1-16-bba-5f9": [
-    "/loader-manual/nextItem---loader-manual-blog-release-1-1-16-bba-5f9.9fd2adc5ed25e92687b8.js"
+  "nextItem---loader-manual-blog-release-1-1-16552-f8d": [
+    "/loader-manual/nextItem---loader-manual-blog-release-1-1-16552-f8d.4a25b6b17dbd036ed8b7.js"
+  ],
+  "content---loader-manual-blog-release-1-1-18270-6b5": [
+    "/loader-manual/content---loader-manual-blog-release-1-1-18270-6b5.c172d5fcfb5dc4bf77be.js"
+  ],
+  "nextItem---loader-manual-blog-release-1-1-18-bba-976": [
+    "/loader-manual/nextItem---loader-manual-blog-release-1-1-18-bba-976.ea7587f6094283455bd0.js"
   ],
   "content---loader-manual-blog-release-1-1-1525-c-26c": [
     "/loader-manual/content---loader-manual-blog-release-1-1-1525-c-26c.50e0346a68d96496c6a1.js"
@@ -92,7 +92,7 @@
     "/loader-manual/component---theme-doc-legacy-page-9-e-7-ca5.d8b74405e2cc25d87d02.js"
   ],
   "docsMetadata---loader-manual-docs-7-e-5-bfb": [
-    "/loader-manual/docsMetadata---loader-manual-docs-7-e-5-bfb.c6c4de0a6b06b911ced5.js"
+    "/loader-manual/docsMetadata---loader-manual-docs-7-e-5-bfb.947124047106c68b2d29.js"
   ],
   "component---theme-doc-legacy-item-031-769": [
     "/loader-manual/component---theme-doc-legacy-item-031-769.b354f139bfeeb21f0654.css",
@@ -104,11 +104,11 @@
   "metadata---loader-manual-docs-adv-config-7-cd-fd7": [
     "/loader-manual/metadata---loader-manual-docs-adv-config-7-cd-fd7.492443d901548004c0eb.js"
   ],
-  "content---loader-manual-docs-adv-loade-43-85f": [
-    "/loader-manual/content---loader-manual-docs-adv-loade-43-85f.9286eb9516726323fc9d.js"
+  "content---loader-manual-docs-basic-getting-started-406-fea": [
+    "/loader-manual/content---loader-manual-docs-basic-getting-started-406-fea.b04cb01c6787484ffbb2.js"
   ],
-  "metadata---loader-manual-docs-adv-load-7-f-9-550": [
-    "/loader-manual/metadata---loader-manual-docs-adv-load-7-f-9-550.7ee243da1486e37537c5.js"
+  "metadata---loader-manual-docs-basic-getting-startedc-3-b-756": [
+    "/loader-manual/metadata---loader-manual-docs-basic-getting-startedc-3-b-756.b3aa961c86eb0bf6d115.js"
   ],
   "content---loader-manual-docs-adv-events-0-e-7-483": [
     "/loader-manual/content---loader-manual-docs-adv-events-0-e-7-483.9db137ac4701b0e0bd8c.js"
@@ -116,23 +116,23 @@
   "metadata---loader-manual-docs-adv-events-955-8b4": [
     "/loader-manual/metadata---loader-manual-docs-adv-events-955-8b4.70b0dff17700e2e9b3c9.js"
   ],
+  "content---loader-manual-docs-adv-loade-43-85f": [
+    "/loader-manual/content---loader-manual-docs-adv-loade-43-85f.d5d3747f678c122017df.js"
+  ],
+  "metadata---loader-manual-docs-adv-load-7-f-9-550": [
+    "/loader-manual/metadata---loader-manual-docs-adv-load-7-f-9-550.fa7748fe2989bfd49342.js"
+  ],
   "content---loader-manual-docs-adv-registry-18-b-ec3": [
-    "/loader-manual/content---loader-manual-docs-adv-registry-18-b-ec3.4455c4f5b7245090ab94.js"
+    "/loader-manual/content---loader-manual-docs-adv-registry-18-b-ec3.9f6d8b580ff7694f973d.js"
   ],
   "metadata---loader-manual-docs-adv-registryaa-3-b3e": [
-    "/loader-manual/metadata---loader-manual-docs-adv-registryaa-3-b3e.1355a4418efd33e75912.js"
+    "/loader-manual/metadata---loader-manual-docs-adv-registryaa-3-b3e.8dc3aadf9824e10413f4.js"
   ],
   "content---loader-manual-docs-adv-unload-593-b3f": [
-    "/loader-manual/content---loader-manual-docs-adv-unload-593-b3f.15ca43c18ad57aa00957.js"
+    "/loader-manual/content---loader-manual-docs-adv-unload-593-b3f.5efb004a6f00096940d7.js"
   ],
   "metadata---loader-manual-docs-adv-unload-9-aa-49d": [
-    "/loader-manual/metadata---loader-manual-docs-adv-unload-9-aa-49d.9903f50451a67ac7c06f.js"
-  ],
-  "content---loader-manual-docs-basic-getting-started-406-fea": [
-    "/loader-manual/content---loader-manual-docs-basic-getting-started-406-fea.7ec2442cb62207cf8734.js"
-  ],
-  "metadata---loader-manual-docs-basic-getting-startedc-3-b-756": [
-    "/loader-manual/metadata---loader-manual-docs-basic-getting-startedc-3-b-756.a4d5e3baa9022a36f5ab.js"
+    "/loader-manual/metadata---loader-manual-docs-adv-unload-9-aa-49d.25435c79621458a612e3.js"
   ],
   "content---loader-manual-docs-demo-angular-demo-9-aa-414": [
     "/loader-manual/content---loader-manual-docs-demo-angular-demo-9-aa-414.62a6b3eb720c29a64459.js"
@@ -224,11 +224,11 @@
   "content---loader-manual-blogc-8-e-3c6": [
     "/loader-manual/content---loader-manual-blogc-8-e-3c6.7c61f136d6dd1719580e.js"
   ],
-  "content---loader-manual-blog-98-b-33b": [
-    "/loader-manual/content---loader-manual-blog-98-b-33b.72da9b850594011a1cbb.js"
-  ],
   "content---loader-manual-blog-464-0d7": [
-    "/loader-manual/content---loader-manual-blog-464-0d7.1dad03bd3870bf680d53.js"
+    "/loader-manual/content---loader-manual-blog-464-0d7.4a0385be17318cbe2c4f.js"
+  ],
+  "content---loader-manual-blog-98-b-33b": [
+    "/loader-manual/content---loader-manual-blog-98-b-33b.e6e74a3a73f9b41df2ca.js"
   ],
   "content---loader-manual-blog-6-a-0-0d7": [
     "/loader-manual/content---loader-manual-blog-6-a-0-0d7.b5ce05e67de0696d39bb.js"
@@ -248,14 +248,14 @@
   "metadata---loader-manual-blog-tags-npm-5-b-9-6ff": [
     "/loader-manual/metadata---loader-manual-blog-tags-npm-5-b-9-6ff.3e2b9a212ceeaef4589e.js"
   ],
-  "metadata---loader-manual-blog-tags-ibsheet-loader-6-ce-794": [
-    "/loader-manual/metadata---loader-manual-blog-tags-ibsheet-loader-6-ce-794.0713157e62215874df67.js"
-  ],
   "metadata---loader-manual-blog-tags-release-0-ae-64c": [
-    "/loader-manual/metadata---loader-manual-blog-tags-release-0-ae-64c.8477846201b941327789.js"
+    "/loader-manual/metadata---loader-manual-blog-tags-release-0-ae-64c.77dd1b508f289599ce9c.js"
   ],
   "metadata---loader-manual-blog-tags-v-1-1-24-c-0-d-ad5": [
-    "/loader-manual/metadata---loader-manual-blog-tags-v-1-1-24-c-0-d-ad5.de595bbcb57b91865201.js"
+    "/loader-manual/metadata---loader-manual-blog-tags-v-1-1-24-c-0-d-ad5.4aa83f1dad13b14c3c63.js"
+  ],
+  "metadata---loader-manual-blog-tags-ibsheet-loader-6-ce-794": [
+    "/loader-manual/metadata---loader-manual-blog-tags-ibsheet-loader-6-ce-794.c63202663d2e651fa035.js"
   ],
   "metadata---loader-manual-blog-tags-v-1-1-23-b-83-43e": [
     "/loader-manual/metadata---loader-manual-blog-tags-v-1-1-23-b-83-43e.f9e41fc9688dc68f7e94.js"
@@ -269,11 +269,11 @@
   "metadata---loader-manual-blog-tags-v-1-1-19611-11f": [
     "/loader-manual/metadata---loader-manual-blog-tags-v-1-1-19611-11f.107f1880dcf315a2537d.js"
   ],
-  "metadata---loader-manual-blog-tags-v-1-1-186-d-6-bea": [
-    "/loader-manual/metadata---loader-manual-blog-tags-v-1-1-186-d-6-bea.978111f24c0fc8f3e152.js"
-  ],
   "metadata---loader-manual-blog-tags-v-1-1-16636-8eb": [
-    "/loader-manual/metadata---loader-manual-blog-tags-v-1-1-16636-8eb.31c39a67d2bb0a124afd.js"
+    "/loader-manual/metadata---loader-manual-blog-tags-v-1-1-16636-8eb.4469bebcf1472fb3f296.js"
+  ],
+  "metadata---loader-manual-blog-tags-v-1-1-186-d-6-bea": [
+    "/loader-manual/metadata---loader-manual-blog-tags-v-1-1-186-d-6-bea.e607e93c8042bd63b5c1.js"
   ],
   "metadata---loader-manual-blog-tags-v-1-1-15246-b28": [
     "/loader-manual/metadata---loader-manual-blog-tags-v-1-1-15246-b28.5a018bd3b9513244c0bb.js"
@@ -288,6 +288,6 @@
     "/loader-manual/component---theme-blog-tags-list-page-01-a-d0b.2de8301c5995eb7dc6e2.js"
   ],
   "tags---loader-manual-blog-tags-63-c-f0e": [
-    "/loader-manual/tags---loader-manual-blog-tags-63-c-f0e.52d2f827f429e43be9ae.js"
+    "/loader-manual/tags---loader-manual-blog-tags-63-c-f0e.f9932f264d2e20d11982.js"
   ]
 }
