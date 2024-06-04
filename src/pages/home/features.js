@@ -22,16 +22,16 @@ const features = [
       </>
     )
   },
-  {
-    title: <>SPA Component <small className='text--info'><i>(upcoming)</i></small></>,
-    // imageUrl: 'img/features/undraw_JavaScript_frameworks_8qpc.svg',
-    imageUrl: 'img/features/1_7zccGWE4o5LmxegijjK_xQ.png',
-    description: (
-      <>
-        Angular, React, Vue Framework 전용 컴포넌트를 제공합니다.
-      </>
-    )
-  }
+  // {
+  //   title: <>SPA Component <small className='text--info'><i>(upcoming)</i></small></>,
+  //   // imageUrl: 'img/features/undraw_JavaScript_frameworks_8qpc.svg',
+  //   imageUrl: 'img/features/1_7zccGWE4o5LmxegijjK_xQ.png',
+  //   description: (
+  //     <>
+  //       Angular, React, Vue Framework 전용 컴포넌트를 제공합니다.
+  //     </>
+  //   )
+  // }
 ]
 
 class Features extends React.Component {
@@ -50,7 +50,7 @@ class Features extends React.Component {
                 {features.map(({ imageUrl, title, description }, idx) => (
                   <div
                     key={idx}
-                    className={classnames('col col--4', styles.feature)}
+                    className={classnames('col col--6', styles.feature)}
                   >
                     {imageUrl && (
                       <div className='text--center'>
@@ -61,8 +61,8 @@ class Features extends React.Component {
                         />
                       </div>
                     )}
-                    <h3>{title}</h3>
-                    <p>{description}</p>
+                    <h3 className='text--center'>{title}</h3>
+                    <p className='text--center'>{description}</p>
                   </div>
                 ))}
               </div>
