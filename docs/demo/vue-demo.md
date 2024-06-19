@@ -27,4 +27,4 @@ sidebar_label: Vue
 ### 데모 패키지
 
 * [Vue 데모 패키지 (github)](https://github.com/ibsheet/loader-vue-guide-samples)
-* [Vue 데모 패키지 (codesandbox)](https://codesandbox.io/s/github/ibsheet/loader-vue-guide-samples/tree/url_path?file=/src/main.js)
+<!-- * [Vue 데모 패키지 (codesandbox)](https://codesandbox.io/s/github/ibsheet/loader-vue-guide-samples/tree/url_path?file=/src/main.js) -->

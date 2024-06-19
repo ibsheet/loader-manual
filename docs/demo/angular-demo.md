@@ -32,4 +32,4 @@ sidebar_label: Angular
 ### 데모 패키지
 
 * [Angular 데모 패키지 (github)](https://github.com/ibsheet/loader-angular-guide-sample)
-* [Angular 데모 패키지 (stackblitz)](https://stackblitz.com/edit/github-qggetz-xqvocg?file=src%2Fapp%2Fapp.component.ts,src%2Findex.html)
+<!-- * [Angular 데모 패키지 (stackblitz)](https://stackblitz.com/edit/github-qggetz-xqvocg?file=src%2Fapp%2Fapp.component.ts,src%2Findex.html) -->
