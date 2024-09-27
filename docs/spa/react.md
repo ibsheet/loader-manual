@@ -265,7 +265,7 @@ export default Page2
 
 ## Package.json
 
-```
+```json
   "dependencies": {
     "@ibsheet/loader": "^1.1.22",
     "@testing-library/jest-dom": "^5.17.0",

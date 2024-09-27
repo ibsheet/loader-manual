@@ -25,6 +25,7 @@ npm install -g @vue/cli @vue/cli-service
 
 ```bash
 vue create <project_dir>
+#> Default ([Vue 2] babel, eslint)
 ```
 
 ### 패키지 설치
@@ -304,7 +305,7 @@ export default {
 
 ## Package.json
 
-```
+```json
   "dependencies": {
     "@ibsheet/loader": "^1.1.22",
     "core-js": "^3.8.3",
