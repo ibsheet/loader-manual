@@ -7,7 +7,7 @@ sidebar_label: 시트 만들기
 ## createSheet
 
 `ibsheet`를 로드하고 `createSheet`의 인자를 기반으로 시트를 생성합니다. <br/>
-API는 [`IBSheet.create`](https://docs.ibleaders.com/ibsheet/v8/manual/#docs/static/create)와 동일하지만 `el`, `options` 속성 이름의 별칭과, 대상 엘리먼트의 아이디 대신 엘리먼트를 직접 설정할 수 있도록 인터페이스를 개선하였습니다.
+API는 [`IBSheet.create`](https://docs.ibsheet.com/ibsheet/v8/manual/#docs/static/create)와 동일하지만 `el`, `options` 속성 이름의 별칭과, 대상 엘리먼트의 아이디 대신 엘리먼트를 직접 설정할 수 있도록 인터페이스를 개선하였습니다.
 
 * `id` - 시트의 아이디(전역변수 이름), 설정되지 않으면 자동으로 아이디를 생성
 * `el` - 시트가 만들어질 `HTMLElement` 아이디(별칭: `elementId`)
@@ -55,7 +55,7 @@ loader.createSheet({
 
 ### sheetReady
 
-`sheetReady` 기능을 사용해서 [`IBSheetStatic`](https://docs.ibleaders.com/ibsheet/v8/manual/#docs/static/static) 객체로부터 시트를 직접 생성할 수 있습니다.
+`sheetReady` 기능을 사용해서 [`IBSheetStatic`](https://docs.ibsheet.com/ibsheet/v8/manual/#docs/static/static) 객체로부터 시트를 직접 생성할 수 있습니다.
 `config` 완료시 `sheetReady` 가 한 번 발생합니다.
 
 ```js
@@ -80,7 +80,7 @@ loader.sheetReady(ibsheet => {
 
 ### getIBSheetStatic
 
-`ibsheet` 라이브러리 로드가 완료된 경우, `getIBSheetStatic` 메소드를 통해 [`IBSheetStatic`](https://docs.ibleaders.com/ibsheet/v8/manual/#docs/static/static)객체를 참조할 수 있습니다.
+`ibsheet` 라이브러리 로드가 완료된 경우, `getIBSheetStatic` 메소드를 통해 [`IBSheetStatic`](https://docs.ibsheet.com/ibsheet/v8/manual/#docs/static/static)객체를 참조할 수 있습니다.
 
 ```js
 // get global loader instance

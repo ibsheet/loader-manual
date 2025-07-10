@@ -15,7 +15,7 @@ const navbar = {
     },
     {
       label: 'IBSheet8 Manual',
-      href: 'https://docs.ibleaders.com/ibsheet/v8/manual',
+      href: 'https://docs.ibsheet.com/ibsheet/v8/manual',
       position: 'right'
     },
     {
@@ -59,7 +59,7 @@ const footer = {
         },
         {
           label: 'IBSheet8 Manual',
-          to: 'https://docs.ibleaders.com/ibsheet/v8/manual',
+          to: 'https://docs.ibsheet.com/ibsheet/v8/manual',
           target: '_blank'
         }
       ]
