@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[95],{65:function(e){e.exports=JSON.parse('{"permalink":"/loader-manual/home/header","source":"C:\\\\Users\\\\LG\\\\GitHub\\\\loader-manual\\\\src\\\\pages\\\\home\\\\header.js"}')}}]);
