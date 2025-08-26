@@ -28,4 +28,4 @@ sidebar_label: React
 ### 데모 패키지
 
 * [React 데모 패키지 (github)](https://github.com/ibsheet/loader-react-guide-samples)
-* [React 데모 패키지 (codesandbox)](https://codesandbox.io/s/github/ibsheet/loader-react-guide-samples/tree/main?file=/src/index.js)
+<!-- * [React 데모 패키지 (codesandbox)](https://codesandbox.io/s/github/ibsheet/loader-react-guide-samples/tree/main?file=/src/index.js) -->
