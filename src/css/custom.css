@@ -74,3 +74,8 @@ H3 + .badge {
   content: '\f126';
   margin-right: .25rem;
 }
+
+.footer {
+  position: absolute;
+  bottom: 0
+}
