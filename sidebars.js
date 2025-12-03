@@ -14,7 +14,14 @@ module.exports = {
       'ibsheet/create-sheet',
       'ibsheet/remove-sheet'
     ],
-    // Advanced: [],
+    IBChart: [
+      'ibchart/create-chart',
+      'ibchart/remove-chart'
+    ],
+    IBMap: [
+      'ibmap/create-map',
+      'ibmap/remove-map'
+    ],
     SPA: [
       'spa/angular',
       'spa/vue',
@@ -27,9 +34,19 @@ module.exports = {
       'etc/trouble-shooting'
     ],
     Demo: [
+      'demo/angular-demo',
       'demo/react-demo',
       'demo/vue-demo',
-      'demo/angular-demo'
+    ],
+    IBChartDemo: [
+      'demoIBChart/angular-ibchart-demo',
+      'demoIBChart/react-ibchart-demo',
+      'demoIBChart/vue-ibchart-demo',
+    ],
+    IBMapDemo: [
+      'demoIBMap/angular-ibmap-demo',
+      'demoIBMap/react-ibmap-demo',
+      'demoIBMap/vue-ibmap-demo',
     ]
   }
 }

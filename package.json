@@ -4,10 +4,10 @@
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
-    "start": "docusaurus start",
+    "start": "cross-env NODE_OPTIONS=--openssl-legacy-provider docusaurus start",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
-    "deploy": "docusaurus deploy",
+    "deploy": "cross-env NODE_OPTIONS=--openssl-legacy-provider docusaurus deploy",
     "release": "standard-version"
   },
   "dependencies": {
@@ -33,6 +33,7 @@
   "devDependencies": {
     "@docusaurus/plugin-content-blog": "^2.0.0-alpha.23",
     "@docusaurus/plugin-content-pages": "^2.0.0-alpha.23",
+    "cross-env": "^10.0.0",
     "dotenv": "^8.1.0",
     "standard-version": "^8.0.1"
   }
