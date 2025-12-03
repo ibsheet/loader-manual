@@ -1,5 +1,5 @@
 ---
-id: ibchart-demo
+id: react-demo
 title: IBChart React Demo Sample
 sidebar_label: React
 ---
