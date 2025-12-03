@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[61],{118:function(a){a.exports=JSON.parse('{"allTagsPath":"/loader-manual/blog/tags","slug":"ibsheet-loader","name":"ibsheet-loader","count":12,"permalink":"/loader-manual/blog/tags/ibsheet-loader"}')}}]);
