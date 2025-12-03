@@ -13,7 +13,8 @@ jobs:
     docker:
       # specify the version you desire here
       # - image: circleci/node:8.11.1
-      - image: circleci/node:10
+      #- image: circleci/node:10
+      - image: cimg/node:20.10
       
     steps:
       - checkout
