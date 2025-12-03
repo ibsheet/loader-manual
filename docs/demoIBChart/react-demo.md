@@ -1,7 +1,7 @@
 ---
-id: ibchart-react-demo
+id: ibchart-demo
 title: IBChart React Demo Sample
-sidebar_label: IBChart React
+sidebar_label: React
 ---
 
 ## IBChart React Demo Packages

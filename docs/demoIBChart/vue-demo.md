@@ -1,7 +1,7 @@
 ---
-id: ibchart-vue-demo
+id: vue-demo
 title: IBChart Vue Demo Sample
-sidebar_label: IBChart Vue
+sidebar_label: Vue
 ---
 
 ## IBChart Vue Demo Packages

@@ -1,7 +1,7 @@
 ---
-id: ibchart-angular-demo
+id: angular-demo
 title: IBChart Angular Demo Sample
-sidebar_label: IBChart Angular
+sidebar_label: Angular
 ---
 
 ## IBChart Angular Demo Packages

@@ -1,7 +1,7 @@
 ---
-id: ibmap-react-demo
+id: react-demo
 title: IBMap React Demo Sample
-sidebar_label: IBMap React
+sidebar_label: React
 ---
 
 ## IBMap React Demo Packages

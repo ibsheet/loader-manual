@@ -39,14 +39,14 @@ module.exports = {
       'demo/vue-demo',
     ],
     IBChartDemo: [
-      'demoIBChart/angular-ibchart-demo',
-      'demoIBChart/react-ibchart-demo',
-      'demoIBChart/vue-ibchart-demo',
+      'demoIBChart/angular-demo',
+      'demoIBChart/react-demo',
+      'demoIBChart/vue-demo',
     ],
     IBMapDemo: [
-      'demoIBMap/angular-ibmap-demo',
-      'demoIBMap/react-ibmap-demo',
-      'demoIBMap/vue-ibmap-demo',
+      'demoIBMap/angular-demo',
+      'demoIBMap/react-demo',
+      'demoIBMap/vue-demo',
     ]
   }
 }

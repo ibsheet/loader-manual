@@ -1,7 +1,7 @@
 ---
-id: ibma-vue-demo
+id: vue-demo
 title: IBMap Vue Demo Sample
-sidebar_label: IBMap Vue
+sidebar_label: Vue
 ---
 
 ## IBMap Vue Demo Packages

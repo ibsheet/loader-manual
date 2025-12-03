@@ -1,7 +1,7 @@
 ---
-id: ibmap-angular-demo
+id: angular-demo
 title: IBMap Angular Demo Sample
-sidebar_label: IBMap Angular
+sidebar_label: Angular
 ---
 
 ## IBMap Angular Demo Packages
@@ -31,4 +31,3 @@ sidebar_label: IBMap Angular
 ### 데모 패키지
 
 * [Angular 데모 패키지 (github)](https://github.com/ibsheet/loader-map-angular-guide-sample)
-<!-- * [Angular 데모 패키지 (stackblitz)](https://stackblitz.com/edit/github-qggetz-xqvocg?file=src%2Fapp%2Fapp.component.ts,src%2Findex.html) -->
