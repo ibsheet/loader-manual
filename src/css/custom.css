@@ -76,6 +76,11 @@ H3 + .badge {
 }
 
 .footer {
-  position: absolute;
-  bottom: 0
+  position: fixed;
+  bottom: 0;
+  height: 310px;
+}
+
+.container.margin-vert--xl {
+  margin-bottom: 330px !important;
 }
