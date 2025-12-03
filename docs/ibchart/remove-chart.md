@@ -32,18 +32,18 @@ const REMOVE_TIME = 3000
 loader
   // when created chart
   .once('created-chart', evt => {
-    // evt.target: IBSheet 인스턴스
+    // evt.target: IBChart 인스턴스
     const sid = evt.target.getId()
-    console.log(`"${sid}" 시트는 ${REMOVE_TIME}ms 후에 제거됩니다.`)
+    console.log(`"${sid}" 차트는 ${REMOVE_TIME}ms 후에 제거됩니다.`)
     setTimeout(() => {
       loader.removeChart(sid)
     }, REMOVE_TIME)
   })
   // when removed chart
   .once('removed-chart', evt => {
-    // evt.data.id: 제거된 시트의 아이디
+    // evt.data.id: 제거된 차트의 아이디
     const sid = evt.data.id
-    console.log(`"${sid}" 시트가 제거되었습니다.`)
+    console.log(`"${sid}" 차트가 제거되었습니다.`)
   })
   // create chart
   .createChart({
@@ -67,7 +67,7 @@ loader
 차트를 제거 할 때 발생
 
 * `this`: `IBSheetLoader`
-* `event.target`: `IBSheetInstance`
+* `event.target`: `IBChartInstance`
 
 #### Usage
 

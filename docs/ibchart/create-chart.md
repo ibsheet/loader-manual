@@ -31,13 +31,13 @@ loader.config({
       name: 'ibchart',
       baseUrl: '<publicpath>/ibchart',
       dependentUrls: [
-        'https://code.highcharts.com/highcharts.js'
+        '<publicpath>/HighCharts/highcharts.js'
       ]
     }
   ]
 })
 
-// load ibsheet and create sheet
+// load ibchart and create chart
 loader.createChart({
   id: 'chart',
   el: 'chartWrapper',
@@ -60,7 +60,7 @@ import 'highcharts/highcharts-more';
 import 'highcharts/modules/series-label';
 
 // Highcharts를 전역 객체에 설정
-(window as typeof window & { Highcharts: typeof Highcharts }).Highcharts = Highcharts;
+if (typeof window !== 'undefined') window.Highcharts = Highcharts;
 
 const ibchartLib = {
   name: 'ibchart',
@@ -82,8 +82,8 @@ import Highcharts from 'highcharts/highstock';
 import 'highcharts/highcharts-more';
 import 'highcharts/modules/series-label';
 
-// IBChart에서 전역 Highcharts 참조를 위해 window에 등록
-window.Highcharts = Highcharts;
+// Highcharts를 전역 객체에 설정
+if (typeof window !== 'undefined') window.Highcharts = Highcharts;
 
 const ibchartLib = {
   name: 'ibchart',
@@ -117,10 +117,8 @@ const initModule = (module, hc) => {
 initModule(HighchartsMore, Highcharts);
 initModule(SeriesLabel, Highcharts);
 
-// Highcharts를 전역으로 등록 (IBChart에서 사용)
-if (typeof window !== 'undefined') {
-  window.Highcharts = Highcharts;
-}
+// Highcharts를 전역 객체에 설정
+if (typeof window !== 'undefined') window.Highcharts = Highcharts;
 
 const ibchartLib = {
   name: 'ibchart',
