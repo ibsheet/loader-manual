@@ -4,6 +4,10 @@ title: 차트 제거하기
 sidebar_label: 차트 제거하기
 ---
 
+## 사용 시 유의 사항
+
+`ibchart` 사용 시 <b>`HighCharts` 모듈은 구매 시 전달받은 제품으로만 사용</b>하셔야 합니다.
+
 ## removeChart
 
 생성된 `IBChart` 객체를을 제거합니다.

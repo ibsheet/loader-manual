@@ -35,6 +35,10 @@ sidebar_label: React
 6. `yarn build` // build 파일 생성됨.
 7. `yarn dev` // start 로컬
 
+### 사용 시 유의 사항
+
+`ibchart` 사용 시 <b>`HighCharts` 모듈은 구매 시 전달받은 제품으로만 사용</b>하셔야 합니다.
+
 ### 데모 패키지
 
 * [React 데모 패키지 (github)](https://github.com/ibsheet/loader-chart-react-guide-samples)

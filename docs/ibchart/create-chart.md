@@ -4,6 +4,10 @@ title: 차트 만들기
 sidebar_label: 차트 만들기
 ---
 
+## 사용 시 유의 사항
+
+`ibchart` 사용 시 <b>`HighCharts` 모듈은 구매 시 전달받은 제품으로만 사용</b>하셔야 합니다.
+
 ## createChart
 
 `ibchart`를 로드하고 `createChart`의 인자를 기반으로 시트를 생성합니다. <br/>
