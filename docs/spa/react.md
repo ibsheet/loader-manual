@@ -4,24 +4,18 @@ title: React Framework
 sidebar_label: React.js
 ---
 
-가이드는 [`create-react-app`](https://github.com/facebook/create-react-app#creating-an-app/)의 시작 패키지를 기준으로 작성되었습니다. <br/>
+가이드는 [Vite](https://vitejs.dev/)의 시작 패키지를 기준으로 작성되었습니다. <br/>
 아래 가이드의 완성본은 [시작 패키지](/loader-manual/docs/etc/starter-packages) 문서에서 확인할 수 있습니다. <br/>
 React Hooks, Redux 를 적용한 가이드는 [데모 패키지](/loader-manual/docs/demo/react-demo)에서 확인할 수 있습니다.
 
 ## 사전 설정
 
-### CLI 설치
-
-* <https://github.com/facebook/create-react-app#creating-an-app/>
-
-```bash
-npm install -g create-react-app
-```
-
 ### 프로젝트 생성
 
+* <https://vitejs.dev/guide/>
+
 ```bash
-create-react-app <project_dir>
+npm create vite@latest <project_dir> -- --template react
 ```
 
 ### 패키지 설치
@@ -54,20 +48,18 @@ yarn add @ibsheet/loader react-router-dom
 ### 개발서버 실행
 
 ```bash
-yarn start
+yarn dev
 # using npm
-# npm start
+# npm run dev
 ```
-
-## 시작 패키지
 
 ## 메인 컴포넌트
 
 메인 컴포넌트 혹은 모듈에서 사용할 라이브러리들을 설정(등록)합니다.
 
-### App.js
+### App.jsx
 
-`src/App.js`
+`src/App.jsx`
 
 ```jsx
 import React from 'react'
@@ -144,15 +136,15 @@ export default App
 
 ## 서브 컴포넌트
 
-* `src/components/home.js`
-* `src/components/page1.js`
-* `src/components/page2.js`
+* `src/components/home.jsx`
+* `src/components/page1.jsx`
+* `src/components/page2.jsx`
 
 ### Home
 
 홈 화면에서는 `ibsheet` 라이브러리를 로드하지 않습니다. 만약 로드되어 있다면 컴포넌트 마운트시 `unload` 합니다.
 
-`src/components/home.js`
+`src/components/home.jsx`
 
 ```jsx
 import React, { useEffect } from 'react'
@@ -181,7 +173,7 @@ export default Home
 
 컴포넌트 마운트시 첫 번째 샘플 데이터로 시트를 생성합니다. 컴포넌트가 제거될 때, 해당 테이블도 제거합니다.
 
-`src/components/page1.js`
+`src/components/page1.jsx`
 
 ```jsx
 import React, { useEffect } from 'react'
@@ -224,7 +216,7 @@ export default Page1
 
 두 번째 샘플 데이터로 시트를 생성합니다. 컴포넌트가 제거될 때, 해당 테이블도 제거합니다.
 
-`src/components/page2.js`
+`src/components/page2.jsx`
 
 ```jsx
 import React, { useEffect } from 'react'
@@ -268,14 +260,13 @@ export default Page2
 ```
   "dependencies": {
     "@ibsheet/loader": "^1.1.22",
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.15.0",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "react-router-dom": "^6.15.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.0.0",
+    "vite": "^5.0.0"
   },
 ```
 

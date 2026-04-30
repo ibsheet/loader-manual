@@ -4,7 +4,7 @@ title: Vue Framework
 sidebar_label: Vue.js
 ---
 
-이 가이드는 [`@vue/cli`](https://cli.vuejs.org/)의 시작 패키지를 기준으로 작성되었습니다. <br/>
+이 가이드는 [Vite](https://vitejs.dev/)의 시작 패키지를 기준으로 작성되었습니다. <br/>
 아래 가이드의 완성본은 [시작 패키지](/loader-manual/docs/etc/starter-packages) 문서에서 확인할 수 있습니다. <br/>
 vue3, vuex 를 적용한 가이드는 [데모 패키지](/loader-manual/docs/demo/vue-demo)에서 확인할 수 있습니다. <br/>
 
@@ -13,34 +13,28 @@ vue3, vuex 를 적용한 가이드는 [데모 패키지](/loader-manual/docs/dem
 
 ## 사전 설정
 
-### CLI 설치
-
-* <https://cli.vuejs.org/>
-
-```bash
-npm install -g @vue/cli @vue/cli-service
-```
-
 ### 프로젝트 생성
 
+* <https://vitejs.dev/guide/>
+
 ```bash
-vue create <project_dir>
+npm create vite@latest <project_dir> -- --template vue
 ```
 
 ### 패키지 설치
 
 ```bash
 cd <project_dir>
-yarn add @ibsheet/loader vue-router@3.5.0
-yarn add -D node-sass sass-loader
+yarn add @ibsheet/loader vue-router
+yarn add -D sass
 # using npm
-# npm i -S @ibsheet/loader vue-router@3.5.0
-# npm i -D node-sass sass-loader
+# npm i -S @ibsheet/loader vue-router
+# npm i -D sass
 ```
 
 * 라우트 기능의 사용을 위해 `vue-router` 패키지를 추가로 설치합니다.
-* vue2에서 vue-router는 3.x버전을 설치해야합니다. 
-* `scss` 스타일 시트 언어를 사용하기 위해 `node-sass`, `sass-loader`를 설치합니다.
+* vue3에서 vue-router는 4.x버전을 설치해야합니다.
+* `scss` 스타일 시트 언어를 사용하기 위해 `sass`를 설치합니다. (Vite에서 sass-loader 없이 동작합니다.)
 
 ### IBSheet 라이브러리
 
@@ -61,9 +55,9 @@ yarn add -D node-sass sass-loader
 ### 개발서버 실행
 
 ```bash
-yarn serve
+yarn dev
 # using npm
-# npm serve
+# npm run dev
 ```
 
 ## 메인 컴포넌트
@@ -73,17 +67,23 @@ yarn serve
 `src/main.js`
 
 ```js
-import Vue from 'vue'
-import VueRouter from 'vue-router'
+import { createApp } from 'vue'
+import { createRouter, createWebHistory } from 'vue-router'
 import App from './App.vue'
+import HelloWorld from './components/HelloWorld.vue'
+import PageOne from './components/PageOne.vue'
+import PageTwo from './components/PageTwo.vue'
 
-// 라우터 사용 추가
-Vue.use(VueRouter)
-Vue.config.productionTip = false
+const router = createRouter({
+  history: createWebHistory(),
+  routes: [
+    { path: '/', name: 'home', component: HelloWorld },
+    { path: '/page1', name: 'page1', component: PageOne },
+    { path: '/page2', name: 'page2', component: PageTwo }
+  ]
+})
 
-new Vue({
-  render: h => h(App),
-}).$mount('#app')
+createApp(App).use(router).mount('#app')
 ```
 
 ### App.vue
@@ -95,7 +95,7 @@ new Vue({
 #### template
 
 ```html
-<div id="app">
+<div>
   <p>@ibsheet/loader v{{loaderVersion}}</p>
   <div class="main-navs">
     <h3>Go to Pages:</h3>
@@ -115,19 +115,6 @@ new Vue({
 
 ```js
 import loader from '@ibsheet/loader'
-import VueRouter from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
-import Page1 from './components/PageOne.vue'
-import Page2 from './components/PageTwo.vue'
-
-const router = new VueRouter({
-  mode: 'history',
-  routes: [
-    { path: '/', name: 'home', component: HelloWorld },
-    { path: '/page1', name: 'page1', component: PageOne },
-    { path: '/page2', name: 'page2', component: PageTwo }
-  ]
-})
 
 loader.config({
   registry: [{
@@ -137,13 +124,12 @@ loader.config({
 })
 
 export default {
-  name: 'app',
+  name: 'App',
   data() {
     return {
       loaderVersion: loader.version
     }
-  },
-  router
+  }
 }
 ```
 
@@ -256,7 +242,7 @@ export default {
       SHEET_ID = sheet.id
     });
   },
-  beforeDestroy() {
+  beforeUnmount() {
     loader.removeSheet(SHEET_ID)
   }
 }
@@ -296,7 +282,7 @@ export default {
       SHEET_ID = sheet.id
     });
   },
-  beforeDestroy() {
+  beforeUnmount() {
     loader.removeSheet(SHEET_ID)
   }
 }
@@ -307,9 +293,13 @@ export default {
 ```
   "dependencies": {
     "@ibsheet/loader": "^1.1.22",
-    "core-js": "^3.8.3",
-    "vue": "^2.6.14",
-    "vue-router": "3.5.0"
+    "vue": "^3.3.0",
+    "vue-router": "^4.2.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.0",
+    "sass": "^1.69.0",
+    "vite": "^5.0.0"
   }
 ```
 
