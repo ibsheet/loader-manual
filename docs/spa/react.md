@@ -8,6 +8,8 @@ sidebar_label: React.js
 아래 가이드의 완성본은 [시작 패키지](/loader-manual/docs/etc/starter-packages) 문서에서 확인할 수 있습니다. <br/>
 React Hooks, Redux 를 적용한 가이드는 [데모 패키지](/loader-manual/docs/demo/react-demo)에서 확인할 수 있습니다.
 
+**참고: 이 가이드는 JavaScript(`.jsx`) 기준으로 작성되었습니다.** TypeScript(`.tsx`)로 프로젝트를 구성하는 경우 `npm create vite@latest <project_dir> -- --template react-ts`로 생성하고, 예제 코드의 파일 확장자를 `.tsx`로, `import`하는 컴포넌트 경로도 이에 맞게 변경해주세요.
+
 ## 사전 설정
 
 ### 프로젝트 생성
@@ -31,7 +33,7 @@ yarn add @ibsheet/loader react-router-dom
 
 ### IBSheet 라이브러리
 
-만약 서버 URL을 사용한다면 이 단계는 생략합니다.
+만약 서버 URL을 사용한다면 이 단계는 생략합니다. (예: `https://demo.ibsheet.com/ibsheet/v8/samples/customer-sample/assets/ibsheet/`와 같은 데모 서버 URL은 학습용으로만 사용하고, 실제 서비스에서는 라이브러리를 프로젝트에 포함해 배포하는 것을 권장합니다.)
 
 프로젝트 폴더의 `public` 폴더에 `ibsheet` 라이브러리를 복사합니다.
 
@@ -57,33 +59,57 @@ yarn dev
 
 메인 컴포넌트 혹은 모듈에서 사용할 라이브러리들을 설정(등록)합니다.
 
+### main.jsx
+
+`src/main.jsx`
+
+```jsx
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+// import './index.css'
+import App from "./App.jsx";
+import { BrowserRouter } from "react-router-dom";
+
+createRoot(document.getElementById("root")).render(
+  <StrictMode>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </StrictMode>
+);
+```
+
 ### App.jsx
 
 `src/App.jsx`
 
 ```jsx
-import React from 'react'
-import { BrowserRouter, Route, Link, Routes } from 'react-router-dom'
-import loader from '@ibsheet/loader'
-import Home from './components/home'
-import Page1 from './components/page1'
-import Page2 from './components/page2'
-import './App.css'
+// import './App.css'
+import { Routes, Route, Link } from 'react-router-dom';
+import loader from '@ibsheet/loader';
+import Home from './components/home';
+import Page1 from './components/page1';
+import Page2 from './components/page2';
 
+const ibsheetLib = {
+  name: 'ibsheet',
+  baseUrl: '/ibsheet',
+  locales: ['en', 'ko'],
+  plugins: ['excel', 'common', 'dialog']
+}
+
+// 로더 config
 loader.config({
-  registry: [{
-    name: 'ibsheet',
-    baseUrl: '/ibsheet'
-  }]
-})
+  registry: [ibsheetLib]
+});
 
-const App = () => {
-  const loaderVersion = loader.version
+function App() {
+  const loaderVersion = loader.version;
 
   return (
-    <div className="App">
-      <p>@ibsheet/loader v{ loaderVersion }</p>
-      <BrowserRouter className="main">
+    <>
+      <div className="App">
+        <p>@ibsheet/loader v{ loaderVersion }</p>
         <div className="top-nav">
           <ul>
             <li><Link to="/">Home</Link></li>
@@ -91,41 +117,17 @@ const App = () => {
             <li><Link to="/page2">Page2</Link></li>
           </ul>
         </div>
-       <Routes>
-          <Route path="/" element={ <Home /> }/>
-          <Route path="/page1" element={ <Page1 /> }/>
-          <Route path="/page2" element={ <Page2 /> }/>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/page1" element={<Page1 />} />
+          <Route path="/page2" element={<Page2 />} />
         </Routes>
-      </BrowserRouter>
-    </div>
+      </div>
+    </>
   )
 }
 
 export default App
-
-```
-
-### App.css
-
-`src/App.css`
-
-```css
-.App { text-align: center }
-.App-logo { height: 40vmin }
-.home {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-.App-link { color: #09d3ac }
-.top-nav ul { padding: 0 }
-.top-nav li { display: inline-block }
-.top-nav li + li { margin-left: 1rem }
 ```
 
 ## 샘플 공유 데이터
@@ -133,6 +135,8 @@ export default App
 각 컴포넌트에서 사용할 공용 샘플 데이터 파일을 만듭니다.
 
 * [`src/shared/ibsheet-data.js`](../etc/start-package)
+
+`ibsheet-data.js`는 날짜/숫자 포맷 등의 컬럼 옵션을 재사용하기 위해 `IB_Preset`을 정의한 `src/shared/common.js`를 import 해서 사용합니다.
 
 ## 서브 컴포넌트
 
@@ -147,22 +151,25 @@ export default App
 `src/components/home.jsx`
 
 ```jsx
-import React, { useEffect } from 'react'
-import loader from '@ibsheet/loader'
-import logo from '../logo.svg'
+import React, { useEffect } from 'react';
+import loader from '@ibsheet/loader';
+import reactLogo from '../assets/react.svg'
 
-const Home = () => {
-  const msg = 'IBSheetLoader for React!'
+function Home () {
+  const msg = 'IBSheetLoader for React!';
 
   useEffect(() => {
-    loader.unload()
+    loader.unload();
   }, [])
 
   return (
-    <div className="home">
-      <img src={logo} className="App-logo" alt="logo" />
-      <p>{ msg }</p>
-    </div>
+    <>
+      <div className="home" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+        <h1>{ msg }</h1>
+        <br/>
+        <img src={reactLogo} className="App-logo" alt="logo" width="150" height="150" />
+      </div>
+    </>
   )
 }
 
@@ -176,40 +183,45 @@ export default Home
 `src/components/page1.jsx`
 
 ```jsx
-import React, { useEffect } from 'react'
-import loader from '@ibsheet/loader'
-import { SheetSampleData } from '../shared/ibsheet-data'
+import React, { useEffect } from "react";
+import loader from "@ibsheet/loader";
+import { SheetSampleData } from "../shared/ibsheet-data";
 
-const Page1 = () => {
-  let sheetId = ''
-  const sheetEl = 'sheetContainer'
+let sheetId = "";
+const sheetEl = "sheetContainer";
 
+function Page1() {
   useEffect(() => {
-    const { data, options } = SheetSampleData[0]
+    const { data, options } = SheetSampleData[0];
 
-    loader.createSheet({
-      el: sheetEl,
-      options,
-      data
-    }).then(sheet => {
-      // 주의: 해당 구간에서 데이터 조회를 하면 안됩니다. 데이터 조회는 onRenderFirstFinish 이벤트에서 실행해야합니다.
-      sheetId = sheet.id;
-      console.log('created sheet', sheet.id);
-    });
+    loader
+      .createSheet({
+        el: sheetEl,
+        options,
+        data,
+      })
+      .then((sheet) => {
+        // 주의: 해당 구간에서 데이터 조회를 하면 안됩니다. 데이터 조회는 onRenderFirstFinish 이벤트에서 실행해야합니다.
+        sheetId = sheet.id;
+        console.log("created sheet", sheet.id);
+      });
+
     return () => {
-      loader.removeSheet(sheetId)
-    }
-  }, [])
+      loader.removeSheet(sheetId);
+    };
+  }, []);
 
   return (
-    <div>
-      <p>page1 works!</p>
-      <div id={ sheetEl }></div>
-    </div>
-  )
+    <>
+      <div>
+        <p>SearchMode: 2, 기본 페이지 입니다.</p>
+        <div id={sheetEl}></div>
+      </div>
+    </>
+  );
 }
 
-export default Page1
+export default Page1;
 ```
 
 ### Page2
@@ -219,16 +231,17 @@ export default Page1
 `src/components/page2.jsx`
 
 ```jsx
-import React, { useEffect } from 'react'
-import loader from '@ibsheet/loader'
-import { SheetSampleData } from '../shared/ibsheet-data'
+import React, { useEffect } from 'react';
+import loader from '@ibsheet/loader';
+import { SheetSampleData } from '../shared/ibsheet-data';
 
-const Page2 = () => {
-  let sheetId = ''
-  const sheetEl = 'sheetContainer'
+let sheetId = '';
+const sheetEl = 'sheetContainer';
+
+function Page2() {
 
   useEffect(() => {
-    const { data, options } = SheetSampleData[1]
+    const { data, options } = SheetSampleData[1];
 
     loader.createSheet({
       el: sheetEl,
@@ -239,17 +252,21 @@ const Page2 = () => {
       sheetId = sheet.id;
       console.log('created sheet', sheet.id);
     });
+
     return () => {
-      loader.removeSheet(sheetId)
-    }
-  }, [])
+      loader.removeSheet(sheetId);
+    };
+  }, []);
 
   return (
-    <div>
-      <p>page2 works!</p>
-      <div id={ sheetEl }></div>
-    </div>
+    <>
+      <div>
+        <p>SearchMode: 0, 기본 페이지입니다.</p>
+        <div id={ sheetEl }></div>
+      </div>
+    </>
   )
+
 }
 
 export default Page2
@@ -259,7 +276,7 @@ export default Page2
 
 ```
   "dependencies": {
-    "@ibsheet/loader": "^1.1.22",
+    "@ibsheet/loader": "^1.3.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.15.0"
